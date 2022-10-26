@@ -43,19 +43,52 @@ class StyleSelector {
     document.querySelector("#csslink").setAttribute("href", this.path);
   }
 }
+let allSelectors = [];
+
+function getRandomSubarray(arr, size) {
+  var shuffled = arr.slice(0),
+    i = arr.length,
+    temp,
+    index;
+  while (i--) {
+    index = Math.floor((i + 1) * Math.random());
+    temp = shuffled[index];
+    shuffled[index] = shuffled[i];
+    shuffled[i] = temp;
+  }
+  return shuffled.slice(0, size);
+}
+
+function grabSome(bigList) {
+  return getRandomSubarray(bigList, 5);
+}
+
+function updateSelections() {
+  let styleListElement = document.querySelector("#design-selection nav ul");
+  styleListElement.innerHTML = "";
+  let mySelection = grabSome(allSelectors);
+  for (let item of mySelection) {
+    item.buildElement();
+    styleListElement.appendChild(item.li);
+  }
+}
 
 function setupInitialList() {
-  let styleListElement = document.querySelector("#design-selection nav ul");
+  let selected = location.hash.slice(1);
   for (let style of styles) {
     let selector = new StyleSelector(style);
-    styleListElement.appendChild(selector.li);
+    allSelectors.push(selector);
+    if (selected == selector.id) {
+      selector.applyStyle();
+    }
   }
+
+  updateSelections(selected);
 
   document.querySelector(".next a").addEventListener("click", function () {
     let currentIndex = styles.findIndex(
       (style) => getSelectedStylePath().indexOf(style.path) > -1
     );
-    debugger;
     let nextIndex = (currentIndex + 1) % styles.length;
     new StyleSelector(styles[nextIndex]).applyStyle();
   });
