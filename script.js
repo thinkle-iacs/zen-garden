@@ -63,10 +63,13 @@ function grabSome(bigList) {
   return getRandomSubarray(bigList, 5);
 }
 
-function updateSelections() {
+function updateSelections(includeAll = false) {
   let styleListElement = document.querySelector("#design-selection nav ul");
   styleListElement.innerHTML = "";
   let mySelection = grabSome(allSelectors);
+  if (includeAll) {
+    mySelection = allSelectors;
+  }
   for (let item of mySelection) {
     item.buildElement();
     styleListElement.appendChild(item.li);
@@ -83,7 +86,7 @@ function setupInitialList() {
     }
   }
 
-  updateSelections(selected);
+  updateSelections();
 
   document.querySelector(".next a").addEventListener("click", function () {
     let currentIndex = styles.findIndex(
@@ -91,6 +94,10 @@ function setupInitialList() {
     );
     let nextIndex = (currentIndex + 1) % styles.length;
     new StyleSelector(styles[nextIndex]).applyStyle();
+  });
+
+  document.querySelector(".viewall a").addEventListener("click", function () {
+    updateSelections(true);
   });
 }
 
