@@ -1,0 +1,176 @@
+:root {
+  ----text-1 : #c879ff;
+  --text-1: black;
+  ----text-2 : #Daff7d;
+  --text-2: #232323;
+  ----text-3 : #545e75;
+  --text-3: white;
+  ----text-4 : #f34213;
+  --text-4: white;
+  ----text-5: #5c8001;
+  --text-5: white;
+  ----text-6: #58fcec;
+  --text-6: black;
+  ----text-7: #C45BAA;
+  --text-7: white;
+  ----text-8 : #C84630;
+  --text-8: white;
+  ----text-9: #004FFF;
+  --text-9: #fcfcfc;
+  ----text-10: #FF007F;
+  --text-10: white;
+}
+
+body {
+  --bg: black;
+  --text: yellow;
+  font-family: Futura;
+}
+
+.page-wrapper > * {
+  display: contents;  
+}
+* {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+.page-wrapper > * > *, aside > * > * {
+  display: grid;
+  place-content: center;
+  overflow: auto;
+  padding: 1em;
+  box-sizing: border-box;
+  justify-self: stretch;
+  align-self: stretch;
+
+}
+
+.page-wrapper {
+  display: grid;
+  --size : calc(25vw - 16px);
+  grid-template-areas : 
+    "M I A C"
+    "M  B  B D"
+    "M  E  F G"
+    "H  F2  J F1";
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.page-wrapper::before {
+  grid-area: F2;
+  --bg: green;
+  display: grid;
+}
+.page-wrapper::after {
+  grid-area: F3;
+  --bg: yellow;
+}
+
+
+aside .wrapper {
+  display: contents;  
+}
+
+.page-wrapper, .page-wrapper > * {
+  grid-template-columns: repeat(200px);
+  grid-template-rows: repeat(200px);
+}
+
+
+header h1 {
+  grid-area: A;
+  --bg: var(----text-1);
+  --text: var(--text-1);
+  text-align: center;
+}
+header h2 {
+  grid-area : B;  
+  --bg: var(----text-2);
+  --text: var(--text-2);
+  text-align: center;
+}
+
+#zen-summary {
+  grid-area: C;
+  --bg: var(----text-3);
+  --text: var(--text-3);
+}
+a {
+  --text: inherit;
+}
+
+#zen-preamble {
+  grid-area : D;
+  --bg: var(----text-4);
+  --text: var(--text-4);
+}
+
+#zen-explanation {
+  grid-area : E;
+  --bg: var(----text-5);
+  --text: var(--text-5);
+}
+
+#zen-participation {
+  grid-area : F;
+  --bg: var(----text-6);
+  --text: var(--text-6);
+}
+
+#zen-requirements {
+  grid-area : G;
+  --bg: var(----text-7);
+  --text: var(--text-7);
+}
+
+#design-selection {
+  grid-area: M;
+  --bg: var(----text-8);
+  --text: var(--text-8);
+}
+#design-archives {
+  grid-area: I;
+  --bg: var(----text-9);
+  --text: var(--text-9);
+}
+#zen-resources {
+  grid-area: J;
+  --bg: var(----text-10);
+  --text: var(--text-10);
+}
+
+li {
+  list-style: none;
+  position: relative;
+}
+li::before {
+  display: grid;
+  position: absolute;
+  width: 0.6em;
+  height: 0.6em;
+  left: -1em;
+  top: 0.3em;
+  content: " ";
+  background-color: var(--text);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+* {
+  background-color: var(--bg);
+  color: var(--text);
+}

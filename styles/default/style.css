@@ -1,0 +1,45 @@
+:root {
+  --left-side : calc(min(600px,100vw - 200px));
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #222;
+}
+.page-wrapper {
+  width: var(--left-side);
+  background-color: #ccc;
+  color: #222;  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;  
+}
+
+aside {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 200px;
+  background-color: #ccc;
+  padding: 2em;
+}
+
+aside ul {
+  padding: 0;
+}
+aside ul li {
+  list-style: '▶ ';
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
