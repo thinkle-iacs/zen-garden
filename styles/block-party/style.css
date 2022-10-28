@@ -53,9 +53,9 @@ p {
   --size : calc(25vw - 16px);
   grid-template-areas : 
     "M I A C"
-    "M  B  B D"
+    "M  B  B F2"
     "M  E  F G"
-    "H  F2  J F1";
+    "D  D  F1 J";
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
