@@ -17,4 +17,10 @@ const styles = [
     designer: "Mr. Hinkle",
     portfolio: "https://www.tomhinkle.net",
   },
+  {
+    path: "ar-tree/style.css",
+    designer: "Aarav Patel",
+    name: "Fall Tree",
+    portfolio: "",
+  },
 ];
