@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald');
+
+:root {
+  --dark-green: #2A4840;
+  --light-green: #B9DFC6;
+  --header-color: #F26419;
+  --link-color: #FE6D73;
+  --size: 8vw;
+  --column-width: 1fr;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Oswald', sans-serif;
+}
+abbr[title] {
+  text-decoration: none;
+}
+.page-wrapper{
+  display: grid;
+  grid-template-areas: 
+    "head head head"
+    "c1 c1 ."
+    ". c2 c2"
+    "m1 m2 m3";
+  grid-template-columns: var(--column-width) var(--column-width) var(--column-width);
+  grid-template-rows: 100vh 80vh 80vh 40vh;
+}
+
+header {
+  height: 100vh;
+  background-image: url(/styles/23-julian-construction/construct7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px;
+  box-sizing: border-box;
+
+  display: grid;
+  grid-area: head;
+}
+.intro {
+  display: grid;
+  grid-area: c1;
+
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.main {
+  display: grid;
+  grid-area: c2;
+
+  margin-right: 30px;
+  margin-left: 30px;
+}
+.sidebar {
+  display: contents;
+}
+.wrapper {
+  display: contents;
+}
+.design-selection {
+  display: grid;
+  grid-area: m1;
+  margin-left: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+.design-archives {
+  display: grid;
+  grid-area: m2;
+  margin-left: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+.zen-resources {
+  display: grid;
+  grid-area: m3;
+  margin-left: 30px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  background-color: var(--dark-green);
+}
+
+p, ul{
+  color: var(--light-green);
+}
+ul {
+  list-style-type: none;
+}
+h1,h2, h3, h4 {
+  color: var(--header-color);
+  text-shadow: var(--dark-green) 2px 2px;
+}
+
+h1{
+  font-size: var(--size);
+}
+h2 {
+  font-size: calc(var(--size)*0.66);
+}
+
+h3,h4 {
+  font-size: 30px;
+}
+
+[role = banner] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  
+  .page-wrapper {
+    grid-template-rows: 100vh 120vh 120vh 60vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .page-wrapper {
+    grid-template-rows: 100vh 140vh 140vh 60vh;
+  }
+  h3,h4{
+    font-size: 15px;
+  }
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: var(--link-color);
+  
+  transition: all 0ms;
+}
+a:hover {
+  text-decoration: underline; 
+  text-decoration-color: var(--light-green);
+  animation-name: dance;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes dance {
+  0%{
+  }
+  12% {
+    transform: translate(2px, -2px);
+  }
+  24% {
+    transform: translate(4px, 0px);
+  }
+  36% {
+    transform: translate(2px, -2px);
+  }
+  48% {
+    transform: translate(0px, 0px);
+  }
+  60%{
+    transform: translate(-2px, -2px);
+  }
+  72%{
+    transform: translate(-4px, 0px);
+  }
+  84%{
+    transform: translate(-2px, -2px);
+  }
+}

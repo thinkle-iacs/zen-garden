@@ -1,0 +1,108 @@
+/* Grid setup */
+
+@import url(/styles/nathan-halo/fonts.css);
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas: 
+        "header  header"
+        "main    menu"
+        "second  menu";
+}
+
+body{
+  background: url(/styles/nathan-halo/masterchief.jpeg); 
+  background-size: cover;
+}
+header {
+  height: 200px;
+  width: 700px;
+  padding: 24px;
+  color: #57abff;
+  font-family: 'haloregular';
+  src: url(/styles/nathan-halo/halo3-webfont.woff);
+  font-weight: bold;
+  margin: center;
+  text-decoration: underline;
+  
+  
+
+grid-area: header;
+
+}
+.design-selection {
+  font-family: 'haloregular';
+  color: #57abff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.design-archives {
+  font-family: 'haloregular';
+  color: #57abff;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.zen-resources {
+  font-family: 'haloregular';
+  color: #57abff;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.summary {
+  font-family: 'haloregular';
+  color: #57abff;
+  font-size: 20px;
+  font-weight: bold;
+}
+.requirements { 
+font-family: 'haloregular';
+src: url(/styles/nathan-halo/halo3-webfont.woff);
+color: #57abff;
+font-size: 20px;
+font-weight: bold;
+}
+.participation {
+ font-family: 'haloregular';
+  color: #57abff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.explanation {
+  font-family: 'haloregular';
+  color: #57abff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.preamble {
+  font-family: 'haloregular';
+  color: #57abff;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+h3 {
+  text-decoration: underline;
+}
+
+h4 {
+  text-decoration: underline;
+}
+.intro {
+    grid-area: main;
+  }
+
+  .main {
+    grid-area: second;
+  }
+  .sidebar {
+    grid-area: menu;
+  }
+
+
+

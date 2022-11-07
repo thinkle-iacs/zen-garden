@@ -1,0 +1,135 @@
+/*palette: https://coolors.co/292f36-4ecdc4-ffffff-ff6b6b-dc5665 */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&family=Lexend:wght@300&display=swap');
+
+body{
+  
+  font-family: 'Josefin Sans', sans-serif;
+}
+.sidebar{
+position: absolute;
+  top: 120px;
+  right: 0;
+  background-color: #FF6B6B;
+  height: 98.5%;
+}
+h1{
+  font-family: 'Lexend', sans-serif;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #292F36;
+  position: sticky;
+  top: 0;
+}
+h2{
+  font-family: 'Lexend', sans-serif;
+  color: #292F36;
+}
+h3{
+  font-family: 'Lexend', sans-serif;
+  color: #292F36;
+}
+h4{
+  font-family: 'Lexend', sans-serif;
+  color: #292F36;
+}
+.intro{
+  width: 65%;
+  margin-left: 5px;
+}
+.explanation{
+  width: 65%;
+  margin-left: 5px;
+}
+.participation{
+  width: 65%;
+  margin-left: 5px;
+}
+.requirements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10pt;
+  width: 100%;
+  background-color: #FF6B6B;
+  bottom: 0;
+  margin-bottom: 0;
+}
+a{
+  color: #4ECDC4;
+}
+a:hover{
+  font-size: 17px;
+  background-color: #4ECDC4;
+  color: #292F36;
+}
+.summary::after{
+  content: " ";
+  background-color: #4ECDC4;
+  width: 150%;
+  height: 10px;
+  display: block;
+}
+.explanation::after{
+   content: " ";
+  background-color: #4ECDC4;
+  width: 150%;
+  height: 10px;
+  display: block;
+}
+
+
+ul{
+  margin-bottom: 0;
+}
+abbr{
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px){
+  
+  .sidebar{
+    bottom: 0;
+    margin: auto;
+    flex-direction: row;
+    justify-items: center;
+    top: auto;
+    right: auto;
+    position:initial;
+    width: 100%;
+    
+  }
+  .page-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  div{
+    text-align: center;
+  }
+  .explanation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .participation{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  li{
+    list-style: none;
+  }
+  main{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .summary::after{
+    width: 100%;
+  }
+  .explanation::after{
+    width: 100%;
+  }
+}
+body{
+  margin: 0;
+}

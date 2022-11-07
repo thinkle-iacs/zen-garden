@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Nabla&display=swap');
+
+body{
+  font-family: 'Exo 2', cursive;
+
+}
+.page-wrapper{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-areas: "banner""sidebar";
+}
+h1{
+  font-family:'Nabla', cursive;
+  text-align: center;
+  font-size: 68px;
+  margin-top: 0;
+}
+h2{
+  font-family:'Nabla', cursive;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+}
+header{
+  grid-area: banner;
+  background-image: url(/styles/24-ethan-retro/sky.gif);
+  background-position-x: center;
+  background-position-y: 20%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  
+}
+h2 abbr{
+  text-decoration: none;
+}
+a{
+ text-decoration: none;
+ }
+.sidebar{
+  grid-area: sidebar;
+  position: sticky;
+  top:0%;
+}
+.wrapper{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #0E8B8E;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+}
+a{
+  color: #CF9F1E
+}
+a:hover{
+  background-color: #CF9F1E;
+  color: #083D77;
+  font-size: 17px;
+}
+.intro{
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  font-size: 16pt;
+
+}
+main{
+  text-align: center;
+  
+  font-size: 16pt;
+}
+ul{
+  list-style: none;
+}
+@media screen and (max-width: 800px){
+  header{
+    height: auto;
+  }
+}

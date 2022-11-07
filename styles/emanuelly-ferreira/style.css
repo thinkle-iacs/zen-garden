@@ -1,0 +1,43 @@
+
+body { 
+  
+  background-color:#F5F5F5;
+     }
+.page-wrapper {
+  display:grid;
+  grid-template-areas: 
+    "head head"
+    "c1 c1"
+  "c2 menu";
+  grid-template-columns: 
+    200px 400px 200px;
+  margin:auto;
+  width: 500px;
+}
+header {
+  color:  #778F66;
+  grid-area: head;
+  font-size: 30px;
+text-shadow: 2px 2px #94A187;  
+font-family: 'Bebas Neue', cursive;
+}
+
+.main {
+  color: #5492B6;
+  grid-area: c2;
+}
+
+.sidebar {
+   color:  #C4459A;
+  grid-area:menu;
+  text-align: center;
+}
+
+.intro {
+  color:   #897158;
+  grid-area: c1;
+}
+
+a{
+  color:#C4459A;
+}

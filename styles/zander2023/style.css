@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&display=swap');
+
+h3 {
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+}
+
+body {
+  --darkgray: #222222;
+  --white: #ffffff;
+  --offwhite: #fff8eb;
+  --blue: #4b4e6d;
+  --alignright: calc((100vw - 1000px)/2);
+  background-color: var(--darkgray);
+  width: 1105px;
+  margin: auto;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas: 
+  "head head"
+  "c1 menu";
+  grid-template-rows: 150px 600px 130px;
+  grid-template-columns: 755px 350px;
+}
+
+header {
+  color: var(--white);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row: 1;
+}
+
+main {
+  color: var(--darkgray);
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 50px;
+  margin-right: 180px;
+  text-align: center;
+  position: relative;
+}
+
+.explanation {
+  position: absolute;
+  color: var(--darkgray);
+  text-align: center;
+  padding-top: 160px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.intro {
+  color: var(--darkgray);
+  background-color: var(--offwhite);
+  grid-column: 1;
+  grid-row: 2;
+  margin-left: 50px;
+  margin-right: 180px;
+  text-align: center;
+  padding-top: 60px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.requirements a {
+  color: var(--darkgray)
+}
+
+.requirements a:visited {
+  color: var(--darkgray)
+}
+
+.sidebar {
+  color: var(--white);
+  background-color: var(--blue);
+  margin-right: 50px;
+  grid-column: 2;
+  grid-row: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.participation {
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 80px;
+}
+
+.intro:hover p, .intro:hover h3 {
+  opacity: 1;
+  transform: translate(0px,0px);
+}
+
+.intro p, .intro h3 {
+  opacity: 0;
+  transition: all 1s;
+  transform: translate(-1000px,0px);
+}
+
+.intro a {
+  color: var(--darkgray)
+}
+
+.intro a:visited {
+  color: var(--darkgray)
+}
+
+a {
+  color: var(--white)
+}
+
+a:visited {
+  color: #b2b4b8
+}
+
+.explanation:hover p, .explanation:hover h3 {
+  opacity: 1;
+  transform: translate(0px,0px);
+}
+
+.explanation p, .explanation h3 {
+  opacity: 0;
+  transition: all 1s;
+  transform: translate(-1000px,0px);
+}
+
+.explanation::after {
+  content: "Explanation";
+  opacity: 1;
+  color: white;
+  position: fixed;
+  right: var(--alignright);
+  top: 625px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  width: 300px;
+}
+
+.participation:hover p, .participation:hover h3, .participation:hover ~ * {
+  opacity: 1;
+  transform: translate(0px,0px);
+}
+
+.participation p, .participation h3, .participation ~ * {
+  opacity: 0;
+  transition: all 1s;
+  transform: translate(-1000px,0px);
+}
+
+.participation::after {
+  content: "Rules and Requirements";
+  opacity: 1;
+  color: white;
+  position: fixed;
+  right: var(--alignright);
+  top: 665px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  width: 300px;
+}
+
+.intro::after {
+  content: "Summary";
+  opacity: 1;
+  color: white;
+  position: fixed;
+  right: var(--alignright);
+  top: 585px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  width: 300px;
+}

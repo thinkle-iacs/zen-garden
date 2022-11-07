@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Gemunu+Libre:wght@300&display=swap');
+
+h1{
+  font-family: 'Chakra Petch', sans-serif;
+  top:0%;
+  left:0%;
+}
+
+h2{
+  font-family: 'Chakra Petch', sans-serif;
+}
+h3{
+  font-family: 'Chakra Petch', sans-serif;
+}
+h4{
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+@keyframes body{
+  50%{background-position-x: 8.5%;}
+  100%{background-position-x: 11%;}
+}
+
+
+body{
+  --bgcolor: #513d3d67;
+  color: white;
+  background-repeat: no-repeat;
+  background-position-x: 11%;
+  background-image: url(/styles/24-ethan-tritec/red.png);
+  background-color: #530e0e;
+  animation-name: body;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+p{
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+li{
+  font-family: 'Gemunu Libre', sans-serif;
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #1f191990;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+a{
+  color: #A30000;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: square;
+}
+
+.wrapper ul{
+  list-style: none;
+}
+
+a:hover{
+  background-color: #61000088;
+}
+.summary{
+  grid-area: desc;
+  
+}
+
+.preamble{
+  grid-area: enlight;
+}
+
+.intro{
+  display: grid;
+  grid-template-columns: 30% 6% 30% 30%;
+  grid-template-areas: "desc . enlight .";
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+abbr{
+  text-decoration: none;
+}
+
+.explanation{
+  grid-area: what;
+}
+
+.participation{
+  grid-area: rules;
+}
+
+.requirements{
+  grid-area: req;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:". what . rules"
+                      ". . req  .";
+  grid-template-rows: auto;
+}
+
+@media screen and (max-width: 800px){
+  header{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px){
+  header{
+    width: 100%;
+    top: auto;
+    left: auto;
+  }
+  .intro{
+    display: block;
+  }
+  main{
+    display: block;
+  }
+}

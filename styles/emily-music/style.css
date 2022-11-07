@@ -1,0 +1,105 @@
+body {
+  background-color: #9DCABF;
+}
+
+.page-wrapper {
+  justify-items: center;
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  ". intro intro"
+  "main main ."
+  "side side side";
+}
+
+header {
+  color: #6c3da6;
+  text-align: center;
+  border: 1px solid;
+  border-color: black;
+   background-image: url(/styles/emily-music/musicequipment.webp);
+   background-size: cover;
+  height: 700px;
+  padding-top: 315px;
+  padding-left: 9px;
+  width: 700px;
+  box-sizing: border-box;
+  grid-area: header;
+  background-color: #D8CEFF
+ }
+.intro {
+  color: #075218;
+  background-color: #AABA9E;
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  transition: all 2s;
+  position: relative;
+  border: 1px solid;
+  border-color: black;
+  text-align: right;
+  grid-area: intro;
+}
+.intro > * {
+  position: relative;
+}
+.intro::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: " ";
+  background-image: url(/styles/emily-music/cd.png);
+  width: 600px;
+  height: 600px;
+  transition: all 2s;
+  background-size: cover;
+}
+.intro:hover::before {
+  transform: rotate(1800deg);
+}
+main {
+  color: #1a3c7a;
+  height: 600px;
+  width: 600px;
+  background-size: cover;
+  background-color: #3C7A89;
+  transition: all 2s;
+  position: relative;
+  border: 1px solid;
+  border-color: black;
+  grid-area: main;
+}
+main > * {
+  position: relative;
+}
+main::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: " ";
+  background-image: url(/styles/emily-music/CD2.png);
+  width: 600px;
+  height: 600px;
+  transition: all 2s;
+  background-size: cover;
+}
+main:hover::before {
+  transform: rotate(1800deg);
+}
+.sidebar {
+  color: #811496;
+  background-image: url(/styles/emily-music/radio.png);
+  background-size: cover;
+  height: 700px;
+  width: 700px;
+  border: 1px solid;
+  border-color: black;
+  text-align: center;
+  grid-area: side;
+  background-color: #B098A4;
+}
+a {
+  color: white;
+}
