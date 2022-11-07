@@ -1,9 +1,95 @@
 [
   {
-    "id" : "th-fib",
-    "contributor" : "Tom Hinkle",
-    "url" : "https://css-zen-garden-teststudent69.iacs-wd1-fall-22-23.repl.co/style.css",
-    "name" : "Fibbonnacci",
-    "portfolio" : "https://tomhinkle.net"
+    "id" : "emily-music",
+    "contributor" : "Emily Myerov",
+    "url" : "https://css-zen-garden-emilym22.iacs-wd1-fall-22-23.repl.co/style.css",
+    "name" : "Radio Music",
+    "portfolio" : ""
+  },
+  {
+    "id" : "nathan-halo",
+    "contributor" : "Nathan E.",
+    "url" : "https://css-zen-garden-nathane5.iacs-wd1-fall-22-23.repl.co/style.css",
+    "name" : "Halo",
+    "portfolio" : ""
+  },
+  {
+    "id" : "emanuelly-ferreira",
+    "contributor" : "Emanuelly Ferreira.",
+    "url" : "https://css-zen-garden-emanuellyf.iacs-wd1-fall-22-23.repl.co/style.css",
+    "name" : "soccer",
+    "portfolio" : "your personal portfolio, if you have one — or claim a URL now on netlify and build on soon :)"
+  },
+  {
+    "id" : "Will",
+    "contributor" : "Will K",
+    "url" : "https://css-zen-garden-williamk8.iacs-wd1-fall-22-23.repl.co/style.css ",
+    "name" : "Milky Way",
+    "portfolio" : ""
+  },
+  {
+    "id" : "nai",
+    "contributor" : "Naima Kaldi",
+    "url" : "https://CSS-Zen-Garden-NaimaK.iacs-wd1-fall-22-23.repl.co/style.css",
+    "name" : "your design name",
+    "portfolio" : "your personal portfolio, if you have one — or claim a URL now on netlify and build on soon :)"
+  },
+  {
+    "id" : "zander2023",
+    "contributor" : "Zander B-V",
+    "url" : "https://css-zen-garden-zanderb2.iacs-wd1-fall-22-23.repl.co/style.css",
+    "name" : "Simple Dark",
+    "portfolio" : ""
+  },
+  {
+    "id" : "24-ethan-tritec",
+    "contributor" : "Ethan-Matte",
+    "url" : "https://css-zen-garden-ethanmatte.iacs-wd1-fall-22-23.repl.co/tritec.css",
+    "name" : "Tri-Tec Industries",
+    "portfolio" : "https://sunryze-studios.netlify.app/web.html"
+  },
+  {
+    "id" : "24-ethan-simple",
+    "contributor" : "Ethan-Matte",
+    "url" : "https://css-zen-garden-ethanmatte.iacs-wd1-fall-22-23.repl.co/style2.css",
+    "name" : "Simplicity",
+    "portfolio" : "https://sunryze-studios.netlify.app/web.html"
+  },
+  {
+    "id" : "24-ethan-retro",
+    "contributor" : "Ethan-matte",
+    "url" : "https://css-zen-garden-ethanmatte.iacs-wd1-fall-22-23.repl.co/style3.css",
+    "name" : "Retro Game",
+    "portfolio" : "https://sunryze-studios.netlify.app/web.html"
+  },
+  {
+    "id" : "24-luis-simple",
+    "contributor" : "Luis-Valiente",
+    "url" : "https://css-zen-garden-luis91.iacs-wd1-fall-22-23.repl.co/",
+    "name" : "Zen Garden ",
+    "portfolio" : "your personal portfolio, if you have one — or claim a URL now on netlify and build on soon :)"
+  },
+  {
+    "id" : "23-julian-construction",
+    "contributor" : "julian-henry",
+    "url" : "https://css-zen-garden-julianhenry.iacs-wd1-fall-22-23.repl.co/style3.css",
+    "name" : "Construction",
+    "portfolio" : "julianhenryportfolio.com"
+  },
+  {
+    "id" : "23-julian-cyberpunk",
+    "contributor" : "julian-henry",
+    "url" : "https://css-zen-garden-julianhenry.iacs-wd1-fall-22-23.repl.co/style2.css",
+    "name" : "Cyberpunk",
+    "portfolio" : "julianhenryportfolio.com"
+  },
+  {
+    "id" : "23-julian-haunted",
+    "contributor" : "julian-henry",
+    "url" : "https://css-zen-garden-julianhenry.iacs-wd1-fall-22-23.repl.co/style.css",
+    "name" : "Haunted Graveyard",
+    "portfolio" : "julianhenryportfolio.com"
   }
+ 
 ]
+
