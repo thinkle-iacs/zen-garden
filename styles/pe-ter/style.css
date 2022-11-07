@@ -1,1 +1,24 @@
-{"message":"Repl not found","name":"NotFoundError","status":404}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  font-family: "Lobster";
+}
+
+.preamble {
+background-color:lightgoldenrodyellow ;
+  color: navajowhite;
+}
+
+
+.requirements {
+  background-color: darkgoldenrod;
+  color: red;
+  padding: 16px;
+}
+header {
+  height: 600pt;
+  width: 500pt;
+  background-image: url(/styles/pe-ter/Maninsewerftercataclysm.png);
+  }
+
+.zen-explanation {background-color: navy}
