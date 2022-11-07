@@ -34,13 +34,13 @@ class StyleSelector {
     let styleLink = this.li.querySelector("a.design-name");
     styleLink.addEventListener("click", () => {
       this.applyStyle();
-      //changeLinks();
     });
   }
 
   applyStyle() {
     document.querySelector("#thestyle").setAttribute("href", this.path);
     document.querySelector("#csslink").setAttribute("href", this.path);
+    updateSelections(false, this);
   }
 }
 let allSelectors = [];
@@ -63,12 +63,18 @@ function grabSome(bigList) {
   return getRandomSubarray(bigList, 5);
 }
 
-function updateSelections(includeAll = false) {
+function updateSelections(includeAll = false, startWith = null) {
   let styleListElement = document.querySelector("#design-selection nav ul");
   styleListElement.innerHTML = "";
   let mySelection = grabSome(allSelectors);
   if (includeAll) {
     mySelection = allSelectors;
+  }
+  if (startWith) {
+    mySelection = [
+      startWith,
+      ...mySelection.filter((s) => s.id != startWith.id),
+    ];
   }
   for (let item of mySelection) {
     item.buildElement();
