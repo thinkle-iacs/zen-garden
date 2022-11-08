@@ -1,0 +1,1006 @@
+@keyframes main0 {
+    0% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(0.0vw, 0vh, 30.0vw)
+    rotateY(0.0rad);
+    z-index: 2;
+    }
+    5% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, 28.53vw)
+    rotateY(0.31rad);
+    z-index: 2;
+    }
+    10% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, 24.27vw)
+    rotateY(0.63rad);
+    z-index: 2;
+    }
+    15% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, 17.63vw)
+    rotateY(0.94rad);
+    z-index: 2;
+    }
+    20% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, 9.27vw)
+    rotateY(1.26rad);
+    z-index: 2;
+    }
+    25% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(30.0vw, 0vh, 0.0vw)
+    rotateY(1.57rad);
+    z-index: -2;
+    }
+    30% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, -9.27vw)
+    rotateY(1.88rad);
+    z-index: -2;
+    }
+    35% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, -17.63vw)
+    rotateY(2.2rad);
+    z-index: -2;
+    }
+    40% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, -24.27vw)
+    rotateY(2.51rad);
+    z-index: -2;
+    }
+    45% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, -28.53vw)
+    rotateY(2.83rad);
+    z-index: -2;
+    }
+    50% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(0.0vw, 0vh, -30.0vw)
+    rotateY(3.14rad);
+    z-index: -2;
+    }
+    55% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, -28.53vw)
+    rotateY(3.46rad);
+    z-index: -2;
+    }
+    60% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, -24.27vw)
+    rotateY(3.77rad);
+    z-index: -2;
+    }
+    65% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, -17.63vw)
+    rotateY(4.08rad);
+    z-index: -2;
+    }
+    70% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, -9.27vw)
+    rotateY(4.4rad);
+    z-index: -2;
+    }
+    75% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-30.0vw, 0vh, -0.0vw)
+    rotateY(4.71rad);
+    z-index: -2;
+    }
+    80% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, 9.27vw)
+    rotateY(5.03rad);
+    z-index: 2;
+    }
+    85% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, 17.63vw)
+    rotateY(5.34rad);
+    z-index: 2;
+    }
+    90% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, 24.27vw)
+    rotateY(5.65rad);
+    z-index: 2;
+    }
+    95% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, 28.53vw)
+    rotateY(5.97rad);
+    z-index: 2;
+    }
+    100% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-0.0vw, 0vh, 30.0vw)
+    rotateY(6.28rad);
+    z-index: 2;
+    }
+    }
+    @keyframes main1 {
+    0% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, 9.27vw)
+    rotateY(1.26rad);
+    z-index: 2;
+    }
+    5% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(30.0vw, 0vh, 0.0vw)
+    rotateY(1.57rad);
+    z-index: -2;
+    }
+    10% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, -9.27vw)
+    rotateY(1.88rad);
+    z-index: -2;
+    }
+    15% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, -17.63vw)
+    rotateY(2.2rad);
+    z-index: -2;
+    }
+    20% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, -24.27vw)
+    rotateY(2.51rad);
+    z-index: -2;
+    }
+    25% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, -28.53vw)
+    rotateY(2.83rad);
+    z-index: -2;
+    }
+    30% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(0.0vw, 0vh, -30.0vw)
+    rotateY(3.14rad);
+    z-index: -2;
+    }
+    35% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, -28.53vw)
+    rotateY(3.46rad);
+    z-index: -2;
+    }
+    40% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, -24.27vw)
+    rotateY(3.77rad);
+    z-index: -2;
+    }
+    45% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, -17.63vw)
+    rotateY(4.08rad);
+    z-index: -2;
+    }
+    50% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, -9.27vw)
+    rotateY(4.4rad);
+    z-index: -2;
+    }
+    55% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-30.0vw, 0vh, -0.0vw)
+    rotateY(4.71rad);
+    z-index: -2;
+    }
+    60% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, 9.27vw)
+    rotateY(5.03rad);
+    z-index: 2;
+    }
+    65% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, 17.63vw)
+    rotateY(5.34rad);
+    z-index: 2;
+    }
+    70% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, 24.27vw)
+    rotateY(5.65rad);
+    z-index: 2;
+    }
+    75% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, 28.53vw)
+    rotateY(5.97rad);
+    z-index: 2;
+    }
+    80% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-0.0vw, 0vh, 30.0vw)
+    rotateY(6.28rad);
+    z-index: 2;
+    }
+    85% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, 28.53vw)
+    rotateY(6.6rad);
+    z-index: 2;
+    }
+    90% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, 24.27vw)
+    rotateY(6.91rad);
+    z-index: 2;
+    }
+    95% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, 17.63vw)
+    rotateY(7.23rad);
+    z-index: 2;
+    }
+    100% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, 9.27vw)
+    rotateY(7.54rad);
+    z-index: 2;
+    }
+    }
+    @keyframes main2 {
+    0% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, -24.27vw)
+    rotateY(2.51rad);
+    z-index: -2;
+    }
+    5% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, -28.53vw)
+    rotateY(2.83rad);
+    z-index: -2;
+    }
+    10% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(0.0vw, 0vh, -30.0vw)
+    rotateY(3.14rad);
+    z-index: -2;
+    }
+    15% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, -28.53vw)
+    rotateY(3.46rad);
+    z-index: -2;
+    }
+    20% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, -24.27vw)
+    rotateY(3.77rad);
+    z-index: -2;
+    }
+    25% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, -17.63vw)
+    rotateY(4.08rad);
+    z-index: -2;
+    }
+    30% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, -9.27vw)
+    rotateY(4.4rad);
+    z-index: -2;
+    }
+    35% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-30.0vw, 0vh, -0.0vw)
+    rotateY(4.71rad);
+    z-index: -2;
+    }
+    40% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, 9.27vw)
+    rotateY(5.03rad);
+    z-index: 2;
+    }
+    45% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, 17.63vw)
+    rotateY(5.34rad);
+    z-index: 2;
+    }
+    50% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, 24.27vw)
+    rotateY(5.65rad);
+    z-index: 2;
+    }
+    55% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, 28.53vw)
+    rotateY(5.97rad);
+    z-index: 2;
+    }
+    60% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-0.0vw, 0vh, 30.0vw)
+    rotateY(6.28rad);
+    z-index: 2;
+    }
+    65% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, 28.53vw)
+    rotateY(6.6rad);
+    z-index: 2;
+    }
+    70% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, 24.27vw)
+    rotateY(6.91rad);
+    z-index: 2;
+    }
+    75% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, 17.63vw)
+    rotateY(7.23rad);
+    z-index: 2;
+    }
+    80% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, 9.27vw)
+    rotateY(7.54rad);
+    z-index: 2;
+    }
+    85% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(30.0vw, 0vh, 0.0vw)
+    rotateY(7.85rad);
+    z-index: -2;
+    }
+    90% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, -9.27vw)
+    rotateY(8.17rad);
+    z-index: -2;
+    }
+    95% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, -17.63vw)
+    rotateY(8.48rad);
+    z-index: -2;
+    }
+    100% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, -24.27vw)
+    rotateY(8.8rad);
+    z-index: -2;
+    }
+    }
+    @keyframes main3 {
+    0% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, -24.27vw)
+    rotateY(3.77rad);
+    z-index: -2;
+    }
+    5% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, -17.63vw)
+    rotateY(4.08rad);
+    z-index: -2;
+    }
+    10% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, -9.27vw)
+    rotateY(4.4rad);
+    z-index: -2;
+    }
+    15% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-30.0vw, 0vh, -0.0vw)
+    rotateY(4.71rad);
+    z-index: -2;
+    }
+    20% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, 9.27vw)
+    rotateY(5.03rad);
+    z-index: 2;
+    }
+    25% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, 17.63vw)
+    rotateY(5.34rad);
+    z-index: 2;
+    }
+    30% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, 24.27vw)
+    rotateY(5.65rad);
+    z-index: 2;
+    }
+    35% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, 28.53vw)
+    rotateY(5.97rad);
+    z-index: 2;
+    }
+    40% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-0.0vw, 0vh, 30.0vw)
+    rotateY(6.28rad);
+    z-index: 2;
+    }
+    45% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, 28.53vw)
+    rotateY(6.6rad);
+    z-index: 2;
+    }
+    50% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, 24.27vw)
+    rotateY(6.91rad);
+    z-index: 2;
+    }
+    55% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, 17.63vw)
+    rotateY(7.23rad);
+    z-index: 2;
+    }
+    60% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, 9.27vw)
+    rotateY(7.54rad);
+    z-index: 2;
+    }
+    65% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(30.0vw, 0vh, 0.0vw)
+    rotateY(7.85rad);
+    z-index: -2;
+    }
+    70% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, -9.27vw)
+    rotateY(8.17rad);
+    z-index: -2;
+    }
+    75% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, -17.63vw)
+    rotateY(8.48rad);
+    z-index: -2;
+    }
+    80% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, -24.27vw)
+    rotateY(8.8rad);
+    z-index: -2;
+    }
+    85% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, -28.53vw)
+    rotateY(9.11rad);
+    z-index: -2;
+    }
+    90% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(0.0vw, 0vh, -30.0vw)
+    rotateY(9.42rad);
+    z-index: -2;
+    }
+    95% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, -28.53vw)
+    rotateY(9.74rad);
+    z-index: -2;
+    }
+    100% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, -24.27vw)
+    rotateY(10.05rad);
+    z-index: -2;
+    }
+    }
+    @keyframes main4 {
+    0% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, 9.27vw)
+    rotateY(5.03rad);
+    z-index: 2;
+    }
+    5% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, 17.63vw)
+    rotateY(5.34rad);
+    z-index: 2;
+    }
+    10% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, 24.27vw)
+    rotateY(5.65rad);
+    z-index: 2;
+    }
+    15% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, 28.53vw)
+    rotateY(5.97rad);
+    z-index: 2;
+    }
+    20% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-0.0vw, 0vh, 30.0vw)
+    rotateY(6.28rad);
+    z-index: 2;
+    }
+    25% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, 28.53vw)
+    rotateY(6.6rad);
+    z-index: 2;
+    }
+    30% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, 24.27vw)
+    rotateY(6.91rad);
+    z-index: 2;
+    }
+    35% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, 17.63vw)
+    rotateY(7.23rad);
+    z-index: 2;
+    }
+    40% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, 9.27vw)
+    rotateY(7.54rad);
+    z-index: 2;
+    }
+    45% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(30.0vw, 0vh, 0.0vw)
+    rotateY(7.85rad);
+    z-index: -2;
+    }
+    50% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(28.53vw, 0vh, -9.27vw)
+    rotateY(8.17rad);
+    z-index: -2;
+    }
+    55% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(24.27vw, 0vh, -17.63vw)
+    rotateY(8.48rad);
+    z-index: -2;
+    }
+    60% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(17.63vw, 0vh, -24.27vw)
+    rotateY(8.8rad);
+    z-index: -2;
+    }
+    65% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(9.27vw, 0vh, -28.53vw)
+    rotateY(9.11rad);
+    z-index: -2;
+    }
+    70% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(0.0vw, 0vh, -30.0vw)
+    rotateY(9.42rad);
+    z-index: -2;
+    }
+    75% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-9.27vw, 0vh, -28.53vw)
+    rotateY(9.74rad);
+    z-index: -2;
+    }
+    80% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-17.63vw, 0vh, -24.27vw)
+    rotateY(10.05rad);
+    z-index: -2;
+    }
+    85% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-24.27vw, 0vh, -17.63vw)
+    rotateY(10.37rad);
+    z-index: -2;
+    }
+    90% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, -9.27vw)
+    rotateY(10.68rad);
+    z-index: -2;
+    }
+    95% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-30.0vw, 0vh, -0.0vw)
+    rotateY(11.0rad);
+    z-index: -2;
+    }
+    100% {
+    transform: 
+    translate3d(35vw, 20vh, 0vw)
+    translate3d(-28.53vw, 0vh, 9.27vw)
+    rotateY(11.31rad);
+    z-index: 2;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Courier, monospace;
+
+}
+
+body {
+    --period: 30s;
+    height: 100%;
+    width: 100%;
+}
+
+
+.page-wrapper {
+    perspective: 100vw;
+    perspective-origin: 50% 0%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+
+    
+/* background-image:url(/styles/seth-lupo-limbo/sky.jpg); */
+background-color: black;
+position: fixed;
+height: 100%;
+width: 100%;
+z-index: -10;
+background-size: 100vw;
+}
+
+
+
+header {
+    background-color: white;
+    transition: background-color 0.5s ease-in-out;
+    animation: 1s infinite alternate-reverse shine ;
+}
+
+h1, h2, h3 {
+    font-family: Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+@keyframes shine {
+    0% {
+        box-shadow: 4px 4px 4px yellow, -4px 4px 4px yellow;
+    }
+
+    100% {
+        box-shadow: 10px 10px 40px yellow, -10px 10px 40px yellow;
+    }
+}
+
+section, main {
+    display: contents;
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+
+header {
+    width: 50vw;
+    margin: 2vw 0vw;
+    align-self: center;
+    align-items: center;
+    padding: 1em;
+    border: 1px black solid;
+    border-radius: 1em;
+    
+}
+
+
+div[role=article] {
+    position: absolute;
+    top: 0vh;
+    float: 0px;
+    width: 30vw;
+    /* height: 30vh; */
+    border: 1px black solid;
+    color: burlywood;
+    background-color: white;
+    z-index: 10;
+    transition: top 0.3s ease-out;
+    color: black;
+    padding: 0.5vw;
+    /* transform: translate(35vw, 35vh) rotateY(21deg); */
+    /* display: none; */
+}
+
+p, ul, h4 {
+    margin: 0.5vw;
+    font-size: 0.75em;
+}
+
+div[role=article] h3 {
+    margin: 0.5vw;
+    font-size: 1.5em;
+}
+
+div:hover[role="article"]{
+    animation-play-state: paused;
+    z-index: 20;
+    top: -10vh;
+    box-shadow: 10px 10px 40px yellow, -10px 10px 40px yellow;
+   
+}
+
+.preamble[role="article"] {
+    animation: main1 var(--period) infinite linear reverse;
+    /* color:aliceblue; */
+}
+
+.summary[role="article"] {
+    animation: main0 var(--period) infinite linear reverse;
+    /* color:aliceblue; */
+}
+
+.explanation[role="article"] {
+    animation: main2 var(--period) infinite linear reverse;
+}
+
+.participation[role="article"] {
+    animation: main3 var(--period) infinite linear reverse;
+}
+
+.requirements[role="article"] {
+    animation: main4 var(--period) infinite linear reverse;
+}
+
+.preamble h3::before{
+    content: "1. "; 
+}
+
+.summary::before{
+    content: "0. Summary";
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.explanation h3::before{
+    content: "2. "; 
+}
+
+.participation h3::before{
+    content: "3. "; 
+}
+
+.requirements h3::before{
+    content: "4. "; 
+}
+
+
+
+
+a {
+    /* color: cornflowerblue; */
+    
+}
+
+ul {
+    list-style: square; 
+    margin-left: 4em;   
+}
+
+li {
+    
+}
+
+aside {
+    content: "I am ais";
+    position: fixed;
+    bottom: 0px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border: solid 1px black;
+    align-self: center;
+    transition: bottom 2s, width 2s, height 2s, background-color 2s, transform 2s;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 10;
+    transform: translateY(30vh);
+    max-height: 60vh;
+}
+
+
+aside .wrapper {
+    padding: 0.5em
+}
+
+
+
+aside:hover {
+   
+    
+    transform: translateZ(50vh) translateY(-40vh);
+	bottom: 10vh;
+    background-color: goldenrod;
+    align-self: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+@keyframes zf {
+    0% {
+        z-index: 0;
+    }
+
+    50% {
+        z-index: 10;
+    }
+
+    100% {
+        z-index: 10;
+    }
+}
+
+@keyframes zb {
+    0% {
+        z-index: 10;
+    }
+
+    50% {
+        z-index: 0;
+    }
+
+    100% {
+        z-index: 0;
+    }
+}
+
+@keyframes ap {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+    20% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
