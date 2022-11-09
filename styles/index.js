@@ -106,6 +106,24 @@ const styles=[
     "path": "23-julian-haunted/style.css",
     "designer": "julian-henry",
     "portfolio": "julianhenryportfolio.com"
+  },
+  {
+    "name": "Soaring Sky",
+    "path": "seth-lupo-soaring-sky/style.css",
+    "designer": "Seth Lupo",
+    "portfolio": ""
+  },
+  {
+    "name": "Modernist Blocks",
+    "path": "seth-lupo-modernist-blocks/style.css",
+    "designer": "Seth Lupo",
+    "portfolio": ""
+  },
+  {
+    "name": "Limbo",
+    "path": "seth-lupo-limbo/style.css",
+    "designer": "Seth Lupo",
+    "portfolio": ""
   }
 ];
 exports.styles = styles;
