@@ -14,6 +14,7 @@ class StyleSelector {
     this.path = `styles/${style.path}`;
     this.designer = style.designer;
     this.portfolio = style.portfolio;
+    this.highlight = style.highlight;
     this.buildElement();
   }
 
@@ -59,8 +60,13 @@ function getRandomSubarray(arr, size) {
   return shuffled.slice(0, size);
 }
 
-function grabSome(bigList) {
-  return getRandomSubarray(bigList, 5);
+function grabSome(bigList) {  
+  let filteredList = bigList.filter((i)=>i.highlight);  
+  if (filteredList.length >= 5) {
+    return getRandomSubarray(filteredList,5);
+  } else {  
+    return getRandomSubarray(bigList, 5);
+  }
 }
 
 function updateSelections(includeAll = false, startWith = null) {
