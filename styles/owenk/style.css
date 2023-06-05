@@ -1,91 +1,78 @@
-section {
-  color: #6e3f4a
-}
-p {
-  color: #a91e3e
-}
-h2 {
-  color: #810909
-}
-h1 {
-  color: #d14768
-}
-h3 {
-  color: #d14768
-}
-h4 {
-  color: #d14768
-}
-h5 {
-  color:#b5263c
-}
-.page-wrapper{
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+.page-wrapper {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas: 
-  "header   header header"
-  "main   menu   second";
-  "second   menu"
+  "h1 h1"
+  "h2 h2"
+  "sum pre"
+  "exp pre"
+  "par req"
+  "side ."
+  ;
   
 }
-Header{
-  grid-area: header;
-  border: 2px solid #641220;
+h1,h2,.summary,.preamble,.intro,.explanation,.participation,.requirements,.sidebar{
+  font-family: 'Gloria Hallelujah', cursive;
 }
-.into{
-  grid-area: main;
-  border: 2px solid #641220
-}
-.main{
- grid-area: second;
-  border: 2px solid #641220
-}
-.sidebar{
-  grid-area: menu;
-  border: 2px solid #641220
-}
-body{
-  background-image: url(/styles/owenk/HD-wallpaper-giger-art-background-biomechanical-landscape-creepy-dark-fantasy-gothic-landscape-skeleton.jpeg)
-}
-body{
-  background-attachment: fixed;
-  background-repeat: ;
- background-position: fill;
+header{
+  display: contents;
 }
 h1 {
-  font-family: 'Amatic SC', cursive;
-}
-h2 {
-  font-family: 'Caveat', cursive;
-}
-h3 {
-  font-family: 'Caveat', cursive;
-}
-h4 {
-  font-family: 'Caveat', cursive;
-}
-h1::after {
-  content: "";
-  display: block;
-  width: 20%;
-  height: 10px;
-  backrground-color: #810909;
-  
+  border: 5px solid red;
+  font-size: 40px;
+  grid-area: h1;
 }
 
-h1 {
-  text-shadow: 2px 2px 5px red;
-}
 h2 {
-  text-shadow: 2px 2px 5px #e5b3bf
+  grid-area: h2;
+  border: 5px solid blue;
 }
-h3 {
- text-shadow: 2px 2px 5px red
+
+.summary{
+  border: 5px solid green;
+  grid-area: sum;
 }
-h4 {
-  text-shadow: 2px 2px 5px red
+
+.preamble{
+  border: 5px solid purple;
+  grid-area: pre;
 }
-p.ex3 {
-  border: 2px solid black;
-  outline-style: outset;
-  outline-color: #641220;;
+
+.intro {
+  display: contents;
+  font-size: 20px;
 }
+
+#zen-supporting{
+  display: contents;
+}
+.explanation{
+  border: 5px solid orange;
+  padding: 10%;
+  grid-area: exp;
+}
+
+.participation {
+  border: 5px solid gray;
+  padding: 1%;
+  grid-area: par;
+}
+
+.requirements {
+  border: 5px solid brown;
+  padding: 1%;
+  grid-area: req
+}
+.sidebar{
+  grid-area: side;
+  border: 5px solid teal;
+}
+
+
+
+
+  
