@@ -1,45 +1,12 @@
 [
-   {
-    "id" : "eli-d",
-    "contributor" : "Elijah D",
-    "url" : "https://css-zen-garden-elijahdonoghue.web-design-spring-2023.repl.co/style.css",
-    "name" : "Eli's Dark Mode",
-    "portfolio" : ""
-  },
-  {
-    "id" : "avery-sky",
-    "contributor" : "Avery K",
-    "url" : "https://css-zen-garden-elijahdonoghue.web-design-spring-2023.repl.co/stylesky.css",
-    "name" : "Sky",
-    "portfolio" : ""
-  },
-  {
-    "id" : "avery-space",
-    "contributor" : "Avery K",
-    "url" : "https://css-zen-garden-elijahdonoghue.web-design-spring-2023.repl.co/stylespace.css",
-    "name" : "Space",
-    "portfolio" : ""
-  },
-  {
-    "id" : "avery-theater",
-    "contributor" : "Avery K",
-    "url" : "https://css-zen-garden-elijahdonoghue.web-design-spring-2023.repl.co/styletheater.css",
-    "name" : "Space",
-    "portfolio" : ""
-  },
+   
   {
     "id" : "owenk",
     "contributor" : "Owen K",
-    "url" : "https://css-zen-garden-elijahdonoghue.web-design-spring-2023.repl.co/styletheater.css",
+    "url" : "https://css-zen-garden-elijahdonoghue.web-design-spring-2023.repl.co/style.css",
     "name" : "Bold Lines",
     "portfolio" : ""
-  },
- {
-    "id" : "lex-space",
-    "contributor" : "Lex R",
-    "url" : "https://css-zen-garden-lexr.web-design-spring-2023.repl.co/style.css",
-    "name" : "Space Wide",
-    "portfolio" : ""
   }
+ 
 ]
 
