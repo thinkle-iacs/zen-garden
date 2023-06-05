@@ -124,6 +124,42 @@ const styles=[
     "path": "seth-lupo-limbo/style.css",
     "designer": "Seth Lupo",
     "portfolio": ""
+  },
+  {
+    "name": "Eli's Dark Mode",
+    "path": "eli-d/style.css",
+    "designer": "Elijah D",
+    "portfolio": ""
+  },
+  {
+    "name": "Sky",
+    "path": "avery-sky/style.css",
+    "designer": "Avery K",
+    "portfolio": ""
+  },
+  {
+    "name": "Space",
+    "path": "avery-space/style.css",
+    "designer": "Avery K",
+    "portfolio": ""
+  },
+  {
+    "name": "Space",
+    "path": "avery-theater/style.css",
+    "designer": "Avery K",
+    "portfolio": ""
+  },
+  {
+    "name": "Bold Lines",
+    "path": "owenk/style.css",
+    "designer": "Owen K",
+    "portfolio": ""
+  },
+  {
+    "name": "Space Wide",
+    "path": "lex-space/style.css",
+    "designer": "Lex R",
+    "portfolio": ""
   }
 ];
 exports.styles = styles;
