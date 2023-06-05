@@ -3,25 +3,29 @@ const styles=[
     "name": "Boring Default",
     "path": "default/style.css",
     "designer": "Mr. Hinkle",
-    "portfolio": "https://www.tomhinkle.net"
+    "portfolio": "https://www.tomhinkle.net",
+    "highlight": true
   },
   {
     "name": "Golden Ratio",
     "path": "th-fib/style.css",
     "designer": "Mr. Hinkle",
-    "portfolio": "https://www.tomhinkle.net"
+    "portfolio": "https://www.tomhinkle.net",
+    "highlight": true
   },
   {
     "name": "Block party",
     "path": "block-party/style.css",
     "designer": "Mr. Hinkle",
-    "portfolio": "https://www.tomhinkle.net"
+    "portfolio": "https://www.tomhinkle.net",
+    "highlight": true
   },
   {
     "path": "ar-tree/style.css",
     "designer": "Aarav Patel",
     "name": "Fall Tree",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "The Cataclysm: as seen by scavenger in sewer",
@@ -33,13 +37,15 @@ const styles=[
     "name": "Radio Music",
     "path": "emily-music/style.css",
     "designer": "Emily Myerov",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "Halo",
     "path": "nathan-halo/style.css",
     "designer": "Nathan E.",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "soccer",
@@ -63,7 +69,8 @@ const styles=[
     "name": "Simple Dark",
     "path": "zander2023/style.css",
     "designer": "Zander B-V",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "Tri-Tec Industries",
@@ -81,7 +88,8 @@ const styles=[
     "name": "Retro Game",
     "path": "24-ethan-retro/style.css",
     "designer": "Ethan-matte",
-    "portfolio": "https://sunryze-studios.netlify.app/web.html"
+    "portfolio": "https://sunryze-studios.netlify.app/web.html",
+    "highlight": true
   },
   {
     "name": "Zen Garden ",
@@ -93,37 +101,43 @@ const styles=[
     "name": "Construction",
     "path": "23-julian-construction/style.css",
     "designer": "julian-henry",
-    "portfolio": "julianhenryportfolio.com"
+    "portfolio": "julianhenryportfolio.com",
+    "highlight": true
   },
   {
     "name": "Cyberpunk",
     "path": "23-julian-cyberpunk/style.css",
     "designer": "julian-henry",
-    "portfolio": "julianhenryportfolio.com"
+    "portfolio": "julianhenryportfolio.com",
+    "highlight": true
   },
   {
     "name": "Haunted Graveyard",
     "path": "23-julian-haunted/style.css",
     "designer": "julian-henry",
-    "portfolio": "julianhenryportfolio.com"
+    "portfolio": "julianhenryportfolio.com",
+    "highlight": true
   },
   {
     "name": "Soaring Sky",
     "path": "seth-lupo-soaring-sky/style.css",
     "designer": "Seth Lupo",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "Modernist Blocks",
     "path": "seth-lupo-modernist-blocks/style.css",
     "designer": "Seth Lupo",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "Limbo",
     "path": "seth-lupo-limbo/style.css",
     "designer": "Seth Lupo",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "Eli's Dark Mode",
@@ -141,19 +155,22 @@ const styles=[
     "name": "Space",
     "path": "avery-space/style.css",
     "designer": "Avery K",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
-    "name": "Space",
+    "name": "The Theater",
     "path": "avery-theater/style.css",
     "designer": "Avery K",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "Bold Lines",
     "path": "owenk/style.css",
     "designer": "Owen K",
-    "portfolio": ""
+    "portfolio": "",
+    "highlight": true
   },
   {
     "name": "Space Wide",
