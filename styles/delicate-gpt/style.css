@@ -1,0 +1,108 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Josefin+Sans:wght@300&display=swap');
+
+/* CSS Variables */
+:root {
+  --primary-bg: #F5E1DA;
+  --secondary-bg: #D4A5A5;
+  --primary-text: #392F5A;
+  --secondary-text: #DAC3C3;
+  --highlight: #6B4226;
+}
+
+/* Base Styles */
+body, .page-wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+/* Floral Background */
+.page-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><circle cx='50' cy='50' r='20' fill='%23DAC3C3'/></svg>");
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grid Layout */
+.page-wrapper {
+  display: grid;
+  grid-template-areas: "header header"
+                       "main sidebar";
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+header {
+  grid-area: header;
+  background: var(--secondary-bg);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
+  border-bottom: 2px solid var(--highlight);
+}
+
+/* Main Content */
+main {
+  grid-area: main;
+  background: var(--primary-bg);
+  padding: 20px;
+  border: 1px solid var(--highlight);
+}
+
+/* Sidebar */
+aside {
+  grid-area: sidebar;
+  background: var(--secondary-bg);
+  padding: 20px;
+  border: 1px solid var(--highlight);
+}
+
+/* Links */
+a {
+  color: var(--highlight);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-text);
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  background: var(--primary-bg);
+  margin: 8px 0;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid var(--highlight);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 800px) {
+  .page-wrapper {
+    grid-template-areas: "header"
+                         "main"
+                         "sidebar";
+    grid-template-columns: 1fr;
+  }
+}

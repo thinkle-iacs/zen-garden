@@ -1,0 +1,809 @@
+/****************************************
+* 
+* Import and color and font variables 
+*
+********************************/
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&family=Pixelify+Sans:wght@400;500&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700;1,900&family=Roboto:ital,wght@0,100;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+  src: url(/styles/beach-waves/LautsprecherDJR-Regular.woff2) format("woff2"),
+       url(/styles/beach-waves/LautsprecherDJR-Regular.woff) format("woff");
+  font-family: 'LautsprecherDJR Web';
+  font-style: normal;
+  font-weight: normal;
+  }
+@font-face {
+  src: url(/styles/beach-waves/BildVariableV3-VF.woff2) format("woff2"),
+       url(/styles/beach-waves/BildVariableV3-VF.woff) format("woff");
+  font-family: 'Bild Variable V3 Web';
+  font-style: normal;
+  font-weight: 100 900;
+  }
+@font-face {
+  src: url(/styles/beach-waves/JobClarendonVariable-VF.woff2) format("woff2"),
+       url(/styles/beach-waves/JobClarendonVariable-VF.woff) format("woff");
+  font-family: 'Job Clarendon Web';
+  font-style: normal;
+  font-weight: 100 900;
+  }
+
+/* 
+font-family: 'Architects Daughter', cursive;
+font-family: 'Arvo', serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Pixelify Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Define my variables */
+
+:root {
+  --decorative : 'LautsprecherDJR Web', cursive;
+  --paragraph : 'Job Clarendon Web';
+  --ui : 'Bild Variable V3 Web', sans-serif;
+  --normal: 22px;
+  --big: 42px;
+  --xlarge: 84px;
+  --small: 18px;
+  --bar-height: 48px;
+  --accent-bg: #FFD700;
+  --accent-fg: #777;
+  --body-bg: #a8b8ef;
+  --body-fg: #42202077;    
+  --grey-shadow : #777a;
+  --light-shadow: #c4b693a6;
+  --text-width: 450px;
+  background-color: var(--body-bg);
+  color: var(--body-fg);
+  font-family: var(--paragraph);
+  font-size: var(--normal);
+}
+.summary::after {
+  background-image: url(/styles/beach-waves/beach-chair.png);
+  background-size: contain;
+  width: 15vw;
+  height: 15vw;
+  content: " ";
+  display: block;
+  position: fixed;
+  right: 10px;
+  top: calc(50vh - 7.5vw + var(--bar-height));
+}
+code {
+  font-family: var(--ui);
+}
+
+/****************************************
+* 
+* Hover effects on links and abbr
+*
+********************************/
+
+a {
+  text-decoration-color: var(--accent-bg);
+  text-decoration-line: underline;
+  color: inherit;  
+  transition: all 300ms;
+}
+/*a:hover {
+  transform: translateY(-3px)rotateZ(5deg);
+  filter: drop-shadow(3px 3px var(--grey-shadow));
+  background-color: var(--accent-bg);
+  color: var(--accent-fg);
+}*/
+h2 abbr {
+  -webkit-text-stroke: 1px var(--accent-bg);  
+}
+abbr {
+  text-decoration: none;
+}
+abbr:hover {
+  text-decoration: dotted underline;
+  text-decoration-color: var(--accent-bg); 
+}
+/* "Info pop-up" */
+h2 abbr:hover::after {
+  left: 10px;
+  -webkit-text-stroke: 0px transparent;
+}
+abbr:hover::after,
+a:hover::after {
+  position: absolute;
+  left: calc(-50vw + 0.75*var(--text-width));
+  bottom: 0;
+  width: 150px;
+  display: block;
+  word-wrap: break-word;
+  backdrop-filter: blur(3px);
+  place-content: center;
+  font-family: var(--paragraph);  
+  font-size: var(--normal);
+  text-decoration-color: var(--accent-bg);
+  text-decoration-line: underline;
+  color: var(--accent-fg);  
+}
+abbr:hover::after {
+  content: attr(title);
+}
+a:hover::after {
+  content: attr(href);  
+}
+abbr:hover::after {
+ opacity: 1;
+ pointer-events: all;
+}
+
+/* Drop Cap */
+p:first-of-type::first-letter {
+  font-family: var(--decorative);
+  float: left;
+  font-size: calc(1.5*var(--big));
+  margin-right: 12px;
+  line-height: 1;
+}
+
+/* Pseudoelements to increase area of of section/main/etc. for our hover in effects */
+
+section h3,main h3 {
+  position: relative;;
+}
+section h3::after,main h3::after {
+  content : " ";
+  display: block;
+  width: 100vw;
+  height: 60vh;
+  top: -20vh;
+  left: calc(-50vw + 200px);
+  position: absolute;
+}
+
+p,li {
+  transition: filter 1500ms;
+
+}
+
+main  p, .preamble p, main li, section li {
+  filter: blur(2px)drop-shadow(1px 1px var(--light-shadow))drop-shadow(-1px -1px var(--light-shadow))drop-shadow(1px -1px var(--light-shadow))drop-shadow(-1px 1px var(--light-shadow));
+}
+
+main:hover p, main:hover li, section:hover p, section:hover li
+{
+  filter: drop-shadow(1px 1px var(--light-shadow))drop-shadow(-1px -1px var(--light-shadow))drop-shadow(1px -1px var(--light-shadow))drop-shadow(-1px 1px var(--light-shadow));
+}
+main *:hover, 
+section *:hover,
+main *:hover + p,
+section *:hover + p {
+  filter : none;
+}
+/****************************************
+* 
+* Headings and Body Text
+*
+********************************/
+
+/* Typography and setting of main text */
+h1,h2 {
+    font-family: var(--decorative);
+    font-weight: 500;
+    font-size: var(--xlarge);
+    text-align: center;
+color: var(--body-fg);  
+  filter: drop-shadow(8px 8px var(--light-shadow));
+  padding-left: calc(50vw - 3em);
+  padding-right: calc(50vw - 3em);
+  line-height: 1;
+  }
+h1 {
+  font-size: var(--big);
+  padding-left: calc(50vw - 10em);
+  padding-right: calc(50vw - 10em);
+}
+h2 {
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+/*****************************
+*
+* Layout 
+*
+*****************************/
+
+/* Sizing */
+body {
+  margin: 0;
+  max-width: 100vw;
+}
+.page-wrapper {
+  overflow-x: hidden;
+}
+.page-wrapper {
+  padding-top: var(--bar-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.requirements::after {
+  content: " ";
+  display: block;
+  height: 100vh;
+}
+
+main,section {
+  max-width: var(--text-width);
+  line-height: 1.8;
+}
+
+header {
+  grid-area: h;
+}
+aside {
+  grid-area: menu;
+}
+main {
+  grid-area : main;
+}
+section {
+  grid-area: intro;
+}
+/* responsive */
+@media (max-width: 800px) {
+  .page-wrapper {
+    grid-template-areas:
+      "h"
+      "menu"
+      "intro"
+      "main";    
+  }
+}
+body {
+  background-image: url(/styles/beach-waves/sand-texture.jpg);
+  background-size: 200px;
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+/***********************************/
+/* Menu Bar w/ Dropdowns and Icons */
+/***********************************/
+
+aside {
+  background-color: var(--accent-bg);
+  color: var(--accent-fg);
+  font-family: var(--ui);
+  font-size: var(--normal);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+aside .wrapper::before,aside .wrapper::after {
+  height: calc(var(--bar-height));
+  width: calc(var(--bar-height));
+  display: block;
+  content: " ";
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  
+}
+aside .wrapper::before {
+  background-image: url(/styles/beach-waves/LeftTop.png);  
+}
+aside .wrapper::after {
+  background-image: url(/styles/beach-waves/RightTop.png);
+}
+
+aside h3 {
+  margin: 0;
+  height: var(--bar-height);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+aside .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--bar-height);
+}
+aside .wrapper > * {
+  max-height: var(--bar-height);
+  display: grid;
+}
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+aside li {
+  display: block;
+  text-align: center;
+  padding: 8px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+aside a {
+  text-decoration: none;  
+  color: inherit;
+}
+li.viewall {
+  position: absolute;
+  left: 8px;
+  color: transparent;
+  transition: all 300ms;
+}
+li.viewall:hover {
+  color: var(--accent-fg);
+}
+li.viewall a::after {
+  content: "+";
+  color: var(--accent-fg);
+}
+
+.zen-resources h3::before,.design-selection h3::before {
+  content: " ";
+  width: var(--bar-height);
+  height: var(--bar-height);
+  display: block;
+  background-size: cover;
+}
+.design-selection h3::before {
+  background-image: url(/styles/beach-waves/seastar.png);
+}
+.zen-resources h3::before
+ {
+  background-image: url(/styles/beach-waves/shell.png)
+}
+.design-selection nav,.zen-resources ul {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms;
+}
+.design-selection:hover nav,.zen-resources:hover ul {
+  opacity: 1;
+  transform: translateY(0);
+  backdrop-filter: brightness(1.1)blur(7px);
+  box-shadow: 3px 3px #7777;
+  pointer-events: all;
+}
+.design-archives h3 {
+  display: none;
+}
+.wrapper > .design-archives {
+  display: flex;
+}
+/* We just want these as menu-bar buttons */
+.design-archives nav,.design-archives ul {
+  display: contents;
+}
+.design-archives li {
+  display: inline;
+  border: none;
+}
+
+
+/**********************/
+/* Begin Animations!  */
+/**********************/
+*::after,*::before {
+  /* None of our animations
+  should intercept the mouse */
+  pointer-events: none;
+}
+
+/**********************/
+/* Flying Seagull  !  */
+/**********************/
+
+
+/* Seagull */
+h2:hover::after {
+  content: " ";
+  display: block;
+  background-image: url(/styles/beach-waves/seagull-sprite.png);
+  background-size: 1920px 543px;  
+  width: 230px;
+  height: 240px;
+  position: absolute;
+  background-position: -847px 0;
+  right: 10px;
+  top: -88px;
+  scale : 0.25;
+  animation: flap 800ms linear infinite, bird-flight 20s infinite;
+}
+
+@keyframes bird-flight {
+  0%,100% {
+    transform: translateX(800px);
+    opacity: 0;
+  }
+  5% {
+    transform: translateX(-10px);
+    opacity: 1;
+  }
+  15% {
+    transform: translateX(-80vw)translateY(10vh);
+  }
+  20% {
+    transform: translateX(-240vw)trnslateY(-5vh);
+  }
+  25%{
+    transform: translateX(-310vw)translateY(8vh);
+  }
+  50% {
+    transform: translateX(-420vw)translateY(10vh);
+    opacity: 0;
+  }
+}
+
+
+@keyframes flap {
+  0%, 5.559999% {
+    background-position: 0px 0px;
+  }
+  5.56%, 11.109999% {
+    background-position: -231px 0px;
+  }
+  11.11%, 16.666666% {
+    background-position: -426px 0px;
+  }
+  16.67%, 22.219999% {
+    background-position: -639px 0px;
+  }
+  22.22%, 27.779999% {
+    background-position: -849px 0px;
+  }
+  27.78%, 33.329999% {
+    background-position: -1048px 0px;
+  }
+  33.33%, 38.889999% {
+    background-position: -1248px 0px;
+  }
+  38.89%, 44.439999% {
+    background-position: -1452px 0px;
+  }
+  44.44%, 49.999999% {
+    background-position: -1684px 0px;
+  }
+  50%, 55.559999% { /*10 */
+    background-position: -10px -245px; 
+  }
+  55.56%, 61.109999% {
+    background-position: -234px -245px;
+    width: 220px;
+    margin-right: 10px;
+  }
+  61.11%, 66.666666% {
+    background-position: -426px -245px;
+  }
+  66.67%, 72.219999% {
+    background-position: -633px -245px;
+    width: 220px;
+  }
+  72.22%, 77.779999% {
+    background-position: -837px -245px;
+    width: 220px; margin-right: 10px;
+  }
+  77.78%, 83.329999% {
+    background-position: -1041px -245px;    
+  }
+  83.33%, 88.889999% {
+    background-position: -1241px -245px;
+  }
+  88.89%, 94.449999% {
+    background-position: -1441px -245px;
+  }  
+  94.45%, 100% {
+    background-position: 0px 0px; /* Reset to the start for looping */
+  }
+}
+
+/**********************/
+/*       Waves        */
+/**********************/
+/*
+* We define three overlapping waves, each with two 
+* pseudoelements -- 
+*
+*   ::before (the wave itself) and ::after
+*   ::after  (the wave "shadow")
+*
+* We will use:
+* body => main wave
+* section => secondary wave
+* main => tertiary wave
+*/
+
+:root {
+  /* Waves crest at 25%, so we want the subsequent wave
+  to follow at a little after that */
+  --wave-delay: 1s;
+  --wave-duration : 24s;
+  --wave-duration- : 6s;
+  --second-wave : 7s;
+  --second-wave- : 1.75s;
+  --third-wave: 13s;
+  --third-wave-: 3.25s;
+  /* Shift duration should be 20 * wave duration */
+  --shift-duration: 480s;
+  --shift-duration-: 120s;
+  --second-shift: 100s;
+  --shift-duration-: 25s;
+  --third-shift: 55s;
+  --third-shift-: 11s;
+}
+
+main::before,main::after,
+section::before,section::after,
+body::before,body::after {
+  content: " ";
+  position: fixed;
+  display: block;
+  background: linear-gradient(to top, #91fdfb44, #74cefbaa);
+  transform: translateY(1000vh);
+  height: 100vh;
+  bottom: 0;  
+  animation-duration: var(--wave-duration),var(--wave-duration),var(--shift-duration);
+  animation-timing-function: cubic-bezier(0.5,0,0.5,1),cubic-bezier(0.5,0,0.5,1),linear;
+  animation-delay: var(--wave-delay),var(--wave-delay),var(--wave-delay);
+  animation-iteration-count: infinite, infinite, infinite;
+  animation-name: wave, foam, shift-waves;
+  z-index: 1;
+}
+/* Shadows*/
+main::after,
+section::after,
+body::after {
+  animation-name: shadow-wave, sandshadow;
+  z-index: 1;
+  background: transparent;  
+}
+/* Big wave */
+body::before,body::after {  
+  width: 340vh;
+  left: calc(50vw - 170vh);  
+}
+
+
+/* secondary wave */
+section::before,section::after {
+  width: 240vh;
+  height: 80vh;
+  left: calc(50vw - 120vh);
+  animation-delay: var(--second-wave),var(--second-wave),var(--second-shift);
+  z-index: 2;
+}
+
+/* tertiary wave */
+main::before,main::after {
+  animation-delay: var(--third-wave),var(--third-wave),var(--third-shift);
+  width: 130vh;
+  height: 60vh;
+  left : calc(50vw - 65vh);
+  z-index: 3;
+}
+
+@media screen {
+@keyframes sandshadow {
+  0%,20% {
+    backdrop-filter: brightness(1);
+  }
+  25% {
+    backdrop-filter: brightness(0.8);
+  }
+  75% {
+    backdrop-filter: brightness(1);
+  }
+}
+
+@keyframes foam {
+  0% {
+    box-shadow: 0 0 0 white;
+  }
+  20% {
+    box-shadow: 0 -33px 5px rgba(255,255,255,0.4);
+  }
+  25% {
+    box-shadow: 1px -160px 20px rgba(255,255,255,0.8);
+  }
+  30% {
+    
+      box-shadow: 1px -120px 20px rgba(255,255,255,0.9);
+    
+  }
+  50%{
+    box-shadow: 1px -20px 20px rgba(255,255,255,0.2);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translateY(100vh)translateX(0);
+    height: 100vh;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;  
+  }
+  25% {
+    /* Reaches its peak and slows down */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;       
+    transform: translateY(90vh)translateX(10vw)skewY(-4deg);
+    height: 125vh;
+  }
+  50% {
+    height: 125vh;
+    transform: translateY(125vh)translateX(20vw);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+}
+@keyframes shadow-wave {
+  0% {
+    transform: translateY(100vh)translateX(0);
+    height: 100vh;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;  
+  }
+  25%,49% {
+    /* Reaches its peak and slows down */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;       
+    transform: translateY(90vh)translateX(10vw)skewY(-4deg);
+    height: 125vh;
+  } /* We end at 75% but we'll slowly transition back out... */
+  100% {
+    height: 100vh;
+    transform: translateY(100vh)translateX(10vw);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  /*50%,75% {
+    height: 125vh;
+    transform: translateY(90vh)translateX(10vw)skewY(-10deg);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  75.1%,100% {
+    height: 125vh;
+    transform: translateY(125vh)translateX(20vw);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }*/
+}
+/* Shifting movement for random feeling wave positions */
+@keyframes shift-waves {
+  0% {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  30% {
+    margin-left: 20vw;
+    margin-bottom: -10vh;
+  }
+  50% {
+    margin-left: -10vw;
+    margin-bottom: 5vh;
+  }
+  80% {
+    margin-left: -20vw;
+    margin-bottom: 3vh;
+  }
+  100% {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+}
+/*
+* Footprints
+***************/
+
+.preamble {
+  --walking-length: 10s;
+  --right-delay: 0s;
+  --left-delay: 1s;
+}
+
+.preamble:hover::before,.preamble:hover::after {
+  animation-name: footprints;
+  animation-duration: var(--walking-length);
+  animation-iteration-count: infinite;
+}
+.preamble:hover::after,.preamble:hover::before {
+  content: " ";
+  width: 4vw;
+  height: 5vw;
+  position: fixed;
+  opacity: 0.0;  
+  bottom: 5vh;
+  right: 25vh;
+  background-image: url(/styles/beach-waves/footprint.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-delay: var(--right-delay);
+  rotate: 12deg;
+}
+.preamble:hover::before{
+  transform: scaleX(-1)translate(5vh,-10vh);  
+  animation-delay: var(--left-delay);
+}
+
+@keyframes footprints{
+  0% {
+    opacity: 0;
+    filter: none;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  9% {
+    opacity: 0.5; /* First footprint down (BEAT)*/
+    filter: none;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  18% {
+    filter: 
+      drop-shadow(0 -20vh transparent); /* second starts */
+      
+
+  }
+ 27% {
+    filter: 
+      drop-shadow(0 -20vh var(--grey-shadow)); /* second down (BEAT)*/
+   clip-path: polygon(0% -20vh, 100% -20vh, 100% 100%, 0% 100%);
+  }
+  36% {
+    filter: 
+      drop-shadow(0 -20vh var(--grey-shadow))
+      drop-shadow(0 -40vh transparent); /* Start third... */
+  }
+  45% {
+    filter: 
+      drop-shadow(0 -20vh var(--grey-shadow)) 
+      drop-shadow(0 -40vh var(--grey-shadow)); /* Third down (BEAT) */
+    clip-path: polygon(0% -40vh, 100% -40vh, 100% 100%, 0% 100%);
+  }
+  54% { 
+    filter: 
+      drop-shadow(0 -20vh var(--grey-shadow)) 
+      drop-shadow(0 -40vh var(--grey-shadow)) 
+      drop-shadow(0 -60vh transparent); /* Start 4th */
+  }
+  63% {
+    filter: 
+      drop-shadow(0 -20vh var(--grey-shadow)) 
+      drop-shadow(0 -40vh var(--grey-shadow)) 
+      drop-shadow(0 -60vh var(--grey-shadow)); /* 4th down (BEAT) */
+    clip-path: polygon(0% -60vh, 100% -60vh, 100% 100%, 0% 100%);
+  }
+  72% {
+    filter: 
+      drop-shadow(0 -20vh var(--grey-shadow)) 
+      drop-shadow(0 -40vh var(--grey-shadow)) 
+      drop-shadow(0 -60vh var(--grey-shadow)) 
+      drop-shadow(0 -80vh transparent); /* Start 5th */
+  }
+  81%,91% {
+    filter: 
+      drop-shadow(0 -20vh var(--grey-shadow)) 
+      drop-shadow(0 -40vh var(--grey-shadow)) 
+      drop-shadow(0 -60vh var(--grey-shadow)) 
+      drop-shadow(0 -80vh var(--grey-shadow)); /* 5th down  (BEAT) */
+    clip-path: polygon(0% -80vh, 100% -80vh, 100% 100%, 0% 100%);
+      opacity: 0.5;
+  }
+  
+  100% {
+    opacity: 0; /* All fade away */
+    filter: drop-shadow(0 -20vh var(--grey-shadow)) drop-shadow(0 -40vh var(--grey-shadow)) drop-shadow(0 -60vh var(--grey-shadow)) drop-shadow(0 -80vh var(--grey-shadow));
+  }
+ 
+}

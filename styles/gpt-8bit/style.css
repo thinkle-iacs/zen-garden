@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-bg: #1b1b1b;
+  --secondary-bg: #333;
+  --primary-text: #fff;
+  --secondary-text: #ccc;
+  --highlight: #ffcc00;
+  --grid-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Base Styles */
+body, .page-wrapper {
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  background: var(--primary-bg);
+  color: var(--primary-text);
+}
+
+/* CRT Grid Background */
+.page-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(0deg, transparent, transparent 95%, var(--grid-color) 95%, var(--grid-color) 100%),
+              repeating-linear-gradient(90deg, transparent, transparent 95%, var(--grid-color) 95%, var(--grid-color) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Grid Layout */
+.page-wrapper {
+  display: grid;
+  grid-template-areas: "header header"
+                       "main sidebar";
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+header {
+  grid-area: header;
+  background: var(--secondary-bg);
+  padding: 20px;
+  text-align: center;
+  border: 3px solid var(--highlight);
+}
+
+/* Main Content */
+main {
+  grid-area: main;
+  background: var(--secondary-bg);
+  padding: 20px;
+  border: 3px solid var(--highlight);
+}
+
+/* Sidebar */
+aside {
+  grid-area: sidebar;
+  background: var(--secondary-bg);
+  padding: 20px;
+  border: 3px solid var(--highlight);
+}
+
+/* Links */
+a {
+  color: var(--highlight);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--primary-text);
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  background: var(--primary-bg);
+  margin: 8px 0;
+  padding: 12px;
+  text-align: center;
+  border: 2px solid var(--highlight);
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 800px) {
+  .page-wrapper {
+    grid-template-areas: "header"
+                         "main"
+                         "sidebar";
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra Retro Flair */
+header::before {
+  content: "🕹️";
+  font-size: 2em;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
+}

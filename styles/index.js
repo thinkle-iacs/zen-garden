@@ -45,7 +45,6 @@ const styles = [
     path: "nathan-halo/style.css",
     designer: "Nathan E.",
     portfolio: "https://nathans-portfolio-project.netlify.app/",
-    highlight: true,
   },
   {
     name: "soccer",
@@ -85,6 +84,7 @@ const styles = [
     path: "24-ethan-simple/style.css",
     designer: "Ethan-Matte",
     portfolio: "https://sunryze-studios.netlify.app/web.html",
+    highlight: true,
   },
   {
     name: "Retro Game",
@@ -180,6 +180,34 @@ const styles = [
     path: "lex-space/style.css",
     designer: "Lex R",
     portfolio: "",
+  },
+  {
+    name: "Beach Wave",
+    path: "beach-waves/style.css",
+    designer: "Mr. Hinkle",
+    portfolio: "https://www.tomhinkle.net",
+    highlight: true,
+  },
+  {
+    name: "Stars (by ChatGPT4)",
+    path: "stars-gpt/style.css",
+    designer: "ChatGPT 4",
+    portfolio: "https://chat.openai.com/",
+    highlight: true,
+  },
+  {
+    name: "Stars (by ChatGPT4)",
+    path: "gpt-8bit/style.css",
+    designer: "ChatGPT 4",
+    portfolio: "https://chat.openai.com/",
+    highlight: true,
+  },
+  {
+    name: "Delicate Touch (by ChatGPT4)",
+    path: "delicate-gpt/style.css",
+    designer: "ChatGPT 4",
+    portfolio: "https://chat.openai.com/",
+    highlight: true,
   },
 ];
 exports.styles = styles;
