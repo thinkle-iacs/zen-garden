@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playpen+Sans&display=swap');
+
+
+
+:root {
+ --space :#000022;
+ --words :#ff8fd6;
+--headings :#be55b6;
+  --link :#FEE63D;
+}
+
+
+
+body#css-zen-garden {
+  color: var(--words);
+  font-family: 'Playpen Sans', cursive;
+    background-size: cover;
+    background-image: url(https://www.nlspacecampus.eu/cache/3/1920x1080/mob-shutterstock-481251031-20210610135721_1920x1080.jpg);
+    background-repeat: no-repeat;
+
+  
+}
+
+.page-wrapper {
+display:grid;
+  grid-template-areas:
+    'heading heading heading'
+  'intro intro menu'
+  'main main menu';
+  column-gap: 6%;
+margin-left: 7%;
+  margin-right: 4%;
+}
+
+/* 
+Media queries! How we change rules depending on screen size
+*/
+@media screen and (max-width: 800px) {
+  .page-wrapper {
+    font-size: 16px;
+    
+  }  
+}
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+  .page-wrapper {
+    font-size: 18px;
+    
+  }
+}
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+  .page-wrapper {
+    font-size: 20px;
+    
+  }
+}
+
+@media screen and (max-width: 1660px) and (min-width: 1441px) {
+  .page-wrapper {
+    font-size: 22px;
+    
+  }
+}
+
+@media screen and (min-width: 1661px) {
+  .page-wrapper {
+    font-size: 24px;
+    
+  }
+}
+
+
+
+header {
+color: #FEE63D;
+  grid-area:heading;  
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  font-family: 'Lobster', sans-serif;
+}
+
+section {
+  grid-area:intro;
+}
+
+main {
+  grid-area:main;
+}
+
+a.design-name {
+    margin-inline-end: 4px;
+}
+
+
+
+
+
+.summary a {
+  color: #8a3cbe;
+}
+
+h3, h4 {
+  color: var(--headings);
+  font-family: 'Lobster', sans-serif;
+  
+}
+
+
+
+
+li a {
+  color: var(--link);
+  margin-inline-start:4px;
+}
+
+aside {
+position:sticky;
+  top: 0;
+  place-self: start;
+  grid-area:menu;
+  
+}
+
+aside h3{
+  color:#cd70ff;
+}
+
+
+
+
+aside a {
+  text-decoration: none;
+color: var(--link);
+
+
+  
+}
+
+li::before{
+  content:"⭐";
+  display: grid;
+  place-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 100%;
+}
+
+
+
+li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 32px;      
+  min-height: 32px;
+  color: #fff593;
+}
+
+
+
+
+
+.
+
+
+/* 
+Colors that I am using!!
+#000022
+#fffec9 <--- bad looking
+#fffd99
+#fffaf0
+
+#3E2778
+#56316E
+#823E70
+#E6A8C6
+
+#1766D3
+#FFF593
+#FEE63D
+
+color picker history link 
+chrome-extension://ohcpnigalekghcmgcdcenkpelffpdolg/options.html?history=1766D3
+
+*/
+
+

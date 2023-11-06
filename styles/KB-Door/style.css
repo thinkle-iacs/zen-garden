@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body{
+  background-image: url('https://images.squarespace-cdn.com/content/v1/58fd82dbbf629ab224f81b68/1565856731691-YGPVH8XXEYFA3GCRCKIP/Shoji-Lattice.jpg');
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: caveat;
+  line-height: 1.6;
+  margin:auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-shadow: 1px 0px #000;
+}
+.page-wrapper{
+  display:flex;
+  gap:3.5vw;
+}
+header{
+  width:22vw;
+  color:#c4c79e;
+  margin-left: 1vw;
+}
+.intro{
+  width:32vw;
+}
+.main_supporting{
+  width:40vw;
+}
+.page-wrapper > * {
+backdrop-filter: blur(5px);
+padding:10px;
+}
+
+h3, h4 {
+  color:#c4c79e;
+}
+
+.page-wrapper p{
+  margin: 20px;
+  color:#c4c79e;
+  font-size: 18px;
+}
+
+li{
+  color:#c4c79e;
+  list-style-type: none;
+}
+
+a{
+  color:#8cc5f8;
+  text-decoration: none;
+}
+
+a:hover{
+  color:white;
+}
+
+.sidebar{
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  right:0;
+  height: 60px;
+/*from w3schools*/
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.sidebar a{
+  display: block;
+  color:#c4c79e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.sidebar ul{
+  padding: 0;;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources{
+  /*position: fixed;*/
+  bottom: 0;
+}
+
+.design-selection ul,
+.design-archives ul,
+.zen-resources ul{
+  opacity: 0.3;
+  pointer-events: none;
+  position: absolute;
+  background-color: white;
+  transition: all 800ms;
+  align-items: center;
+  text-shadow: 1px 0px;
+}
+
+.design-selection:hover ul,
+.design-archives:hover ul,
+.zen-resources:hover ul{
+  transform: translate(0,-100%);
+  opacity: 1;
+  pointer-events: all;
+} /*from thinkle*/

@@ -1,0 +1,101 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&family=Pacifico&display=swap');
+
+h3{
+font-family: Pacifico;
+}
+
+
+header{
+  grid-area: head ;
+border: 3px solid #5f595a;
+background-color: #ffc2c2;
+  color: white;
+  font-family: ;
+}
+
+p{
+  font-size: 25px;
+  
+  color: white;
+}
+body{
+  background-image: url(/styles/Sams-Cotton-candy/yuh.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+h3{
+  color: white;
+}
+header{
+  font-weight: big;
+}
+
+.page-wrapper{
+  display: grid;
+  grid-template-areas: 
+    "head head"
+  "Left Right"
+  ;
+}
+h4{
+  color:white;
+}
+ ul{
+   color:white;
+ }
+header {
+    grid-area: head;
+    padding: 1px;
+  display: block;
+  position: top right;
+  
+}
+h1 {
+    font-size: 8em;
+}
+h2{
+  font-size: 6
+}
+aside {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 200px;
+  background-color: #ff42a7;
+  padding: 2em;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.page-wrapper{
+margin-right: 200px;
+}
+header::after {
+    content: " ";
+    background-image: url(/styles/Sams-Cotton-candy/Kirby.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 20vh;
+    z-index: -99;
+    animation-name: backandforth;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes backandforth {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(500px);
+    }
+    100% {
+      transform: translateX(0);
+      
+    }
+    
+  }

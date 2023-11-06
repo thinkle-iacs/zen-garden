@@ -1,0 +1,143 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+
+html{
+  background-color: #680C9B;
+  background-image: linear-gradient(#680C9B, #27092f, black);
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas: 
+  "h           h"
+  "intro    menu"
+  "main     menu";
+}
+
+@media only screen and (max-width: 768px) {
+  .page-wrapper {
+    grid-template-areas: 
+    "h"
+    "main"
+    "intro"
+    "menu";
+  }
+}
+
+header {
+  grid-area: h;
+}
+aside {
+  grid-area: menu;
+}
+main {
+  grid-area: main;
+}
+section {
+  grid-area: intro;
+}
+
+body{
+  
+  font-size: 25px;
+  color: white;
+  text-shadow: 0 0 3px #27092f, 0 0 5px #d778f2;
+  font-family: 'Jolly Lodger', cursive;
+  padding-top: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  width: 1000px;
+  
+}
+
+h1 {
+  font-family:'Nosifer', cursive;
+  color: #4ce920;
+  text-shadow: 0 0 3px #162f09, 0 0 5px #d0f4a4;
+  
+}
+
+
+a:link {
+  color: orange;
+}
+a:visited {
+  color: yellow
+}
+a:hover, a:focus, a:active { 
+  text-decoration: underline; 
+  color: #ff0000;
+  
+  }
+
+div::after {
+  content: " ";
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url(/styles/GR-Halloween/candy.png);
+  background-size: contain;
+  animation: fall 10s infinite;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: -38px;
+  left: 0px;
+  z-index: -1;
+}
+
+div:nth-child(1)::after {
+  margin-left: 35vh;
+  animation-duration: 2000ms;
+}
+
+div:nth-child(2)::after {
+  margin-left: 70vh;
+  animation-duration: 2000ms;
+}
+
+div:nth-child(3)::after {
+  margin-left: 60vh;
+  animation-duration: 2500ms;
+  animation-delay: 500ms;
+}
+
+div:nth-child(4)::after {
+  margin-left: 30vh;
+  animation-duration: 3000ms;
+  animation-delay: 600ms;
+}
+
+div:nth-child(5)::after {
+  margin-left: 10vh;
+  animation-duration: 5000ms;
+}
+
+div:nth-child(6)::after {
+  margin-left: 20vh;
+  animation-duration: 1450ms;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 110vh) rotate(720deg);
+  } 
+                                                                  
+  @media only screen and (max-width: 600px) {
+  body {
+    padding: 50px 50px;
+    ;
+  }
+
+}
+
+
+

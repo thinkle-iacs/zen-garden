@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo:wght@400&display=swap');
+
+html {
+  margin: 0;
+  padding: 0;
+  background-image: url(/styles/SB-Minecraft-Pastel/bg2.png);
+  background-position: center;
+  background-size: 1300px 750px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main::after {
+  /* Pseudoelement example from Hinkle */
+  content: "Image from chilcrafting.tumblar";  
+  color: white;
+}
+
+.page-wrapper {
+  padding: 32px;
+  max-width: min(80%, 1000px);
+  margin: 0 auto;
+}
+
+.font {
+  font-family: 'Agbalumo', sans-serif;
+  font-size: 12px;
+  color: #a3cce6;
+}
+
+a, a:visited {
+  color: #165d6f;
+}
+
+header {
+  font: 75% 'Agbalumo', sans-serif;
+  line-height: 1.88889;
+  color: #c4e3e4;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #000;
+  text-align: center;
+}
+
+aside a {
+  color: #5a3f58;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #5a3f58;
+  transition: all 300ms;
+}
+
+aside a:hover {
+  background-color: #90c69c;
+  color: #444370;
+}
+
+aside a:active {
+  background-color: #5a3f58;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "menu main";
+}
+
+.header, .h1, .h2 {
+  grid-area: header;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+.summary, .preamble, .explanation, .participation, .requirements, .sidebar h3 {
+  grid-area: main;
+  padding: 20px;
+  text-align: center;
+  margin: 30px;
+  box-shadow: 2px 2px 2px #363267;
+}
+
+.summary {
+  color: #343460;
+  background-color: #a9758a;
+}
+
+.preamble {
+  color: #654351;
+  background-color: #c69095;
+  display: flex;
+  flex-direction: column;
+}
+
+.explanation {
+  color: #3b2d3a;
+  background-color: #b0a8b2;
+}
+
+.participation {
+  color: #654351;
+  background-color: #bccdd7;
+}
+
+.requirements {
+  color: #3b2d3a;
+  background-color: #c4e3e4;
+  text-align: left;
+}
+
+.sidebar, .sidebar h3 {
+  grid-area: menu;
+  color: #3b2d3a;
+  background-color: #cae2d8;
+  margin: 30px;
+}
+
+@media screen and (max-width: 600px) {
+.page-wrapper {
+  grid-template-areas: 
+    "header"
+    "main"
+    "sidebar";
+}

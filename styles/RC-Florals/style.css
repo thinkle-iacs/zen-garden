@@ -1,0 +1,88 @@
+header {
+  color : #192a51;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  grid-area: box1;
+  background-color: #d3c7de;
+  border: 5px solid white;
+  width: 450px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+html {
+  background-color: #D5C6E0;
+  font-style: 'Playfair Display', serif;
+  font-size: large
+
+}
+body {
+  text-align: center;
+  padding: 200px;
+  background-image: url(/styles/RC-Florals/purple.jpeg);
+}
+
+p {
+  background-color: white;
+  border: 3px solid #967aa1;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, p, a, li, ul {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h3 {
+  color : #967AA1;
+}
+a, h1, h2, h3, h4  {
+	color: #000;
+}
+
+.page-wrapper {
+  display: grid;
+  gap : 16px;
+  grid-template-areas: 
+    "box1      box1"
+    "box2      box2"
+    "box3      box4"
+    "box5      box6"
+    "box7      box7";
+}
+
+.intro, main {
+  display: contents;
+  gap: 4px;
+}
+.summary {
+  grid-area: box2;
+}
+.preamble {
+  grid-area: box3;
+}
+.explanation {
+  grid-area: box4;
+}
+.participation {
+  grid-area: box5;
+}
+.sidebar {
+  grid-area: box7;
+}
+
+.requirements ul {
+  background-color: white;
+  border: 3px solid #967aa1;
+}
+
+.wrapper {
+  background-color: #d3c7de;
+  border: 5px solid white;
+}
+
+p, li {
+	font-style: italic;
+}

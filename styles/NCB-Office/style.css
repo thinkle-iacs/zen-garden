@@ -1,0 +1,95 @@
+html { background-color: #b1b294;
+     margin: auto;}
+header{
+  color: red;
+}
+
+p {
+  color:#292c21;
+  border-width: 8px;
+  border-radius: 5px;
+    background-color:#535246;
+}
+h1{
+  color: #443428;
+}
+h2{
+  color: #443428;
+}
+h3{
+  color: #443428
+}
+h4{
+  color: #443428;
+}
+li{
+  border-width: 8px;
+  border-radius: 5px;
+  color:#292c21;
+}
+a{
+  color:#0c0404;
+  
+}
+.page-wrapper{
+
+  display: grid;
+  grid-template-areas:
+  "box1      box2"
+  "box3      box4"
+  "box5      box6"
+  "box7      box8"
+  "box9      box9"; 
+  row-gap: 15px;
+  column-gap: 15px;
+}
+.summary{
+ grid-area: box1;
+  display: block;
+  border: solid #535246;
+}
+
+.preamble{
+  grid-area: box2;
+  display: block;
+  border: solid #535246;
+}
+
+.explanation{
+  grid-area: box3;
+  display: block;
+  border: solid #535246;
+}
+
+.participation{
+  grid-area: box4;
+  display: block;
+  border: solid #535246;
+}
+
+.requirements{
+  grid-area: box5;
+  display: block;
+  border: solid #535246;
+}
+
+.wraper{
+  grid-area: box6;
+  display: block;
+  border: solid #535246;
+}
+.design-selection{
+  grid-area: box7;
+  display: block;
+  border: solid #535246;
+}
+.design-archives{
+  grid-area: box8;
+  display: block;
+  border: solid #535246;
+}
+.zen-resources{
+  grid-area: box9;
+  display: block;
+  border: solid #535246;
+}

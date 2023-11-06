@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Molle&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ribeye&display=swap');
+
+body {
+  background-color: #D4E09B;
+  color: #3B322B;
+  font-size: 16pt;
+  max-width: 45em;
+  margin: auto;
+  font-family: 'Ribeye', serif;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas: 
+    "header      header"
+    "intro      sidebar"
+    "main       sidebar";
+}
+
+header {
+  grid-area: header;
+  font-family: 'Spicy Rice', serif;
+  font-size: 35pt;
+  text-align: center;
+  border: none;
+  border-radius: 70px;
+  margin: 30px;
+  padding: 10px;
+}
+
+h1 {
+  color: #72825C;
+  -webkit-text-stroke-color: #313828;
+  -webkit-text-stroke-width: 1px;
+  font-size: 70pt;
+  margin-bottom: 0px;
+}
+
+h2 {
+  color: #313828;
+  font-size: 35pt;
+  font-family: 'Ribeye', serif;
+}
+
+h3 {
+  font-family: 'Spicy Rice', serif;
+  font-size: 24pt;
+  color: #29231E;
+}
+
+h4 {
+  font-family: 'Spicy Rice', serif;
+  font-size: 20pt;
+  color: #29231E;
+}
+
+section {
+  grid-area: intro;
+}
+
+main {
+  grid-area: main;
+}
+
+main ul {
+  list-style-type: circle;
+}
+
+div {
+  margin-bottom: 50px;
+}
+
+aside {
+  grid-area: sidebar;
+  margin-left: 125px;
+  max-width: 15em;
+}
+
+aside div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+}
+
+aside div div {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+aside div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside div ul li {
+  margin: 15px;
+  border: #D4E09B;
+  border-radius: 30px;
+  padding: 13px;
+  text-align: center;
+}
+
+aside div ul li:hover {
+  background-color: #595E41;
+  border-color: #595E41;
+  color: #D4E09B;
+  transition: all 300ms;
+}
+
+a {
+  text-decoration: underline wavy;
+  color: #3B322B;
+}
+
+a:hover {
+  color: #72825C;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside li:hover a {
+  color: #D4E09B;
+  transition: all 300ms;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 25px;
+  }
+
+  h1 {
+    font-size: 45pt;
+  }
+
+  h2 {
+    font-size: 25pt;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    max-width: none;
+  }
+}
+
+/* following leaf falling animation was inically made by Mr. Hinkle and has been modified slightly to fit this design */
+
+/* the leaf photo was made by me */
+
+div::after {
+  content: " ";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 0%;
+  background-color: none;
+  background-image: url(/styles/LL-leaves/leaf2.png);
+  background-size: cover;
+  animation: fall 10s infinite;
+  position: absolute;
+}
+
+div:nth-child(3)::after {
+  margin-left: 300px;
+}
+div:nth-child(4)::after {
+  margin-left: 800px;
+  animation-duration: 1500ms;
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, 0);
+    opacity: 90%;
+  }
+  100% {
+    transform: translate(50px, 1000px) rotate(720deg);
+    opacity: 90%;
+  }
+}

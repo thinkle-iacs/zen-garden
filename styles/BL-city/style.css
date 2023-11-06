@@ -1,0 +1,70 @@
+header {
+  color: white;
+}
+html { color: white; }
+
+div { font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+body{
+    background-image: url(/styles/BL-city/1d26c5b022c071fb8f1e3ae2f0f65ba9.gif);
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+h3 { color: #ffffff}
+
+h2 { color: #ffffff}
+
+.preamble { color: white}
+
+.participation { color: white}
+
+
+
+.design-selection {
+ display: flex; -ms-flex-align: center; flex-direction: column;
+}
+* {
+  margin: 0;
+  padding: ;
+}
+.
+.design-archives {
+  border:  display: flex; -ms-flex-align: center; flex-direction: column;
+   
+}
+.zen-resources { display: flex; -ms-flex-align: center; flex-direction: column;}
+
+
+.page-wrapper { 
+  max-width: 800px;
+  margin: auto;
+  backdrop-filter: blur(3px);
+  padding: 32px;
+}
+
+
+.explanation,.participation,.requirements,.design-selection,.design-archives,.zen-resources,.preamble,.summary {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: 2px solid black;
+   border-radius: 8px;
+    padding: 3px;
+  margin-bottom: 1rem
+}
+
+h1 { text-align: center;}
+h2 { text-align: center;
+   margin-bottom: 1rem;}
+
+h1 {
+  background-color: #003994;
+}
+
+h1::after {
+  content: " By. Billy Lannan";
+  background-color: #0062ff;
+  border-color: black;
+  margin-left: 10px;
+}

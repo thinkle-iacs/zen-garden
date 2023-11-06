@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+/* I made the background image but it was heavly inspired by Vector vintage grunge retro background of swirling lines from Freepik */
+
+body {
+  background-image: url(/styles/LL-cirus/newbackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Vollkorn', serif;
+  color: #FDF7D3;
+  font-size: 16pt;
+  line-height: 1.5;
+  max-width: 45em;
+  margin: auto;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas: 
+    "header        header"
+    "summary      summary"
+    "main         sidebar"
+}
+
+header {
+  grid-area: header;
+  padding: 5px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #242422;
+}
+
+h1 {
+  margin-bottom: 1px;
+  font-size: 65pt; 
+  font-family: 'Rye', serif;
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 30pt;
+  font-family: 'Vollkorn', serif;
+}
+
+section {
+  grid-area: summary;
+}
+
+section div {
+  padding: 20px;
+  background-color: #065A5C;
+  border: none;
+  border-radius: 10px;
+  margin: 15px;
+}
+
+main {
+  grid-area: main;
+}
+
+main div {
+  display: content;
+  padding: 20px;
+  background-color: #065A5C;
+  border: none;
+  border-radius: 10px;
+  margin: 15px
+}
+
+h3 {
+  font-family: 'Rye', serif;
+  text-decoration: none;
+}
+
+main .requirements {
+  grid-area: require;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #962125;
+  border: none;
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  max-width: 15em;
+}
+
+aside ul {
+  list-style: none;
+}
+
+.design-selection {
+  margin-bottom: 70px;
+}
+
+.design-archives {
+  margin-bottom: 70px;
+}
+
+aside div ul li {
+  border: 3px solid #FDF7D3;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+aside div ul li:hover {
+  background-color: #630C0F;
+  border-color: #630C0F;
+}
+
+a {
+  color: #FDF7D3;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    margin: 10px;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sidebar {
+    max-width: none;
+  }
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>IACS CSS Zen Garden: The Beauty of CSS Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="IACS Students">
+  <meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+  <meta name="robots" content="all">
+  <!-- change the href in the link tag to change the default style
+  you see when you load the page -->
+  <link href="style.css" rel="stylesheet" id="thestyle">
+</head>
+<!-- This project is inspired by the CSS Zen Garden -->
+
+<!--
+
+
+
+
+        NO EDITING THIS FILE!
+
+        ALL OF YOUR WORK WILL GO IN THE 
+        CSS FILES (STYLE.CSS ETC)
+
+        THE HTML MUST BE UNTOUCHED :-)
+
+
+
+
+
+  -->
+  
+<body id="css-zen-garden">
+  <div class="page-wrapper">
+    <header role="banner">
+      <h1><span class="iacs">IACS</span> CSS Zen Garden</h1>
+      <h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+    </header>
+    <section class="intro" id="zen-intro">
+
+
+      <div class="summary" id="zen-summary" role="article">
+        <p>
+          This project is inspired by David Shea's
+          <a href="http://www.csszengarden.com/">CSS Zen Garden</a>,
+          a webpage from the early days of CSS that sought
+          to show designers just how powerful this new
+          language was.
+        </p>
+        <p>As you work on this project, you can create up
+          to 3 different designs for this template, showing
+          off your design skills. Once we are done, your
+          teacher will work to put all of the class designs
+          into a single gallery so we can enjoy them
+          as a class.</p>
+      </div>
+
+      <div class="preamble" id="zen-preamble" role="article">
+        <h3>The Road to Enlightenment</h3>
+        <p>In your early projects, you inserted style directly into your
+          HTML with <code>style=</code> tags. In the early days of the web,
+          coders were forced to abuse the <code>&lt;table&gt;</code> tag to
+          create side-by-side layouts.</p>
+        <p>We must clear the mind of the past.</p>
+        <p>The CSS Zen Garden invites you to relax and focus all your efforts
+          on a single <code>style.css</code> file, working in a single
+          language: <b style="css">Cascading Style Sheets</b>.</p>
+        </p>
+        <p>Create a dynamic and beautiful layout using only CSS and
+          show it off to your friends.
+        </p>
+      </div>
+    </section>
+
+    <main class="main supporting" id="zen-supporting" role="main">
+      <div class="explanation" id="zen-explanation" role="article">
+        <h3>So What is This About?</h3>
+        <p>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The Zen
+          Garden aims to excite, inspire, and encourage participation.</p>
+        <p><abbr title="Cascading Style Sheets">CSS</abbr> allows complete and
+          total control over the style of a hypertext document. This page is
+          designed so that clicking on one of the links to a stylesheet will change
+          the CSS, but leave the HTML in tact.
+        </p>
+        <p>When we are done, we will have radically different designs
+          achieved with identical HTML. We will be many and also one.
+          Diverse and yet the same. United, but distinct.
+        </p>
+      </div>
+
+      <div class="participation" id="zen-participation" role="article">
+        <h3>Rules of the Garden</h3>
+        <p>You may modify the style sheet in any way you wish, but not the
+          <abbr title="HyperText Markup Language">HTML</abbr>.
+          This may seem daunting at
+          first, but breathe deeply, study CSS, and you will find the way to web
+          enlightenment.
+        </p>
+      </div>
+
+      <div class="requirements" id="zen-requirements" role="article">
+        <h3>Requirements</h3>
+        <p>To complete this project, you must do the following:</p>
+        <ul>
+          <li>Create at least one beautiful design.</li>
+          <li>Make the design selector menu beautiful and usable.</li>
+          <li>Use images and color wisely in your design.</li>
+
+        </ul>
+        <h4>Honors requirements</h4>
+        <ul>
+          <li>Make your designs
+            <a class="responsive" href="https://www.w3schools.com/html/html_responsive.asp">responsive</a>.
+          </li>
+          <li>Create 3 unique designs using at least two different approaches
+            to layout.</li>
+        </ul>
+
+      </div>
+    </main>
+
+
+    <aside class="sidebar" role="complementary">
+      <div class="wrapper">
+
+        <div class="design-selection" id="design-selection">
+          <h3 class="select">Select a Design:</h3>
+          <nav role="navigation">
+            <ul>
+              <li>
+                <a id="exLink" href="#example.css" class="design-name">Example template</a> by
+                <a href="http://daveshea.com/">David Shea</a>
+              </li>
+              <li>
+                <a href="#example2.css" class="design-name">Example 2</a>
+                by
+                <a href="#style.css" class="designer-name">Mr. Hinkle</a>
+              </li>
+              <li>
+                <a href="#style.css" class="design-name">Design Title</a>
+                by
+                <a href="#portfolio" class="designer-name">Future Student</a>
+              </li>
+              <li>
+                <a href="#style2.css" class="design-name">Design #2</a>
+                by
+                <a href="#portfolio" class="designer-name">Future Student</a>
+              </li>
+              <li>
+                <a href="#style3.css" class="design-name">Design #3</a>
+                by
+                <a href="#portfolio" class="designer-name">Future Student</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="design-archives" id="design-archives">
+          <h3 class="archives">Archives:</h3>
+          <nav role="navigation">
+            <ul>
+              <li class="next">
+                <a href="#next">
+                  Next Designs <span class="indicator">&rsaquo;</span>
+                </a>
+              </li>
+              <li class="viewall">
+                <a href="#all" title="View every submission to the Zen Garden.">
+                  View All Designs </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="zen-resources" id="zen-resources">
+          <h3 class="resources">Resources:</h3>
+          <ul>
+            <li class="view-css">
+              <a id="csslink" href="style.css" title="View the source CSS file of the currently-viewed design.">
+                View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr> </a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/css_intro.asp">
+                W3 Schools Intro to CSS
+              </a>
+            </li>
+            <li>
+              <a href="https://www.w3schools.com/css/css_grid.asp">
+                A guide to the grid
+              </a>
+            </li>
+            <li>
+              <a href="https://fonts.google.com">
+                Google Fonts
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

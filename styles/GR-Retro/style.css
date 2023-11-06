@@ -1,0 +1,75 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+html{
+  background-image: url(/styles/GR-Retro/Background%20waves.png);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas: 
+  "h           h"
+  "intro    intro"    
+  "main      main"    
+  "menu      menu";
+}
+
+@media only screen and (max-width: 768px) {
+  .page-wrapper {
+    grid-template-areas: 
+    "h"
+    "menu"
+    "intro"
+    "main";
+  }
+}
+
+header {
+  grid-area: h;
+}
+aside {
+  grid-area: menu;
+}
+main {
+  grid-area: main;
+}
+section {
+  grid-area: intro;
+}
+
+body{
+
+  font-size: 25px;
+  color: #90c7df;
+  font-family:'VT323', monospace;
+  text-shadow: 2px 2px #000000;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  width: 950px;
+
+}
+h1{
+  font-family: 'Bungee Shade', sans-serif;
+}
+
+a:link {
+  color: #11ff00;
+   text-shadow: 0 0 3px #156a16, 0 0 5px #8af542;
+  
+}
+a:visited {
+  color: #f5ea9e;
+   text-shadow: 0 0 3px #ffffff, 0 0 5px #ffffff;
+}
+a:hover, a:focus, a:active { 
+  text-decoration: underline; 
+  color: #ff00c8;
+  text-shadow: 0 0 3px #520354, 0 0 5px #ee87e5;
+
+  }

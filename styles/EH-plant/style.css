@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Lemonada&family=swap");
+
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas:
+    "box1     box1"
+    "box2     menu"
+    "box3     menu"
+    "box4     menu"
+    "box5     menu"
+    "box6     menu";
+  row-gap: 15px;
+  column-gap:10px;
+}
+aside {
+  grid-area: menu;
+}
+
+
+a {
+  color: #bc795c;
+}
+
+main {
+  display: contents;
+  row-gap: 10px;
+}
+
+a:hover {
+  color: #66442e;
+  transition: .5s;
+}
+
+section#zen-intro {
+  display:contents;
+}
+
+body {
+  background-image:url(/styles/EH-plant/Mossy-forest-overlay-two-scaled.jpg);
+}
+
+header {
+  grid-area: box1;
+  background-color: #348d4f;
+  padding: 20px;
+  border-radius: 500px;
+  text-align: center;
+  width:700px;
+  font-family: 'Sedgwick Ave Display', cursive;
+  opacity: 70%;
+}
+
+.summary {
+  grid-area: box2;
+  background-color: #3d8f5b;
+  border-radius: 20px;
+  padding: 20px;
+  width:700px;
+  font-family: 'Handlee', cursive;
+  opacity: 70%;
+}
+
+.preamble {
+  grid-area: box3;
+  background-color: #43754b;
+  border-radius: 20px;
+  padding: 20px;
+  width:700px;
+  font-family: 'Handlee', cursive;
+  opacity: 70%;
+}
+
+.explanation {
+  grid-area: box4;
+  background-color: #a47a41;
+  border-radius: 20px;
+  padding: 20px;
+  width:700px;
+  font-family: 'Handlee', cursive;
+  opacity: 70%;
+}
+
+.participation {
+  grid-area: box5;
+  background-color: #ccbd8a;
+  border-radius: 20px;
+  padding: 20px;
+  width:700px;
+  font-family: 'Handlee', cursive;
+  opacity: 70%;
+}
+
+.requirements {
+  grid-area: box6;
+  background-color: #9ba470;
+  border-radius: 20px;
+  padding: 20px;
+  width:700px;
+  font-family: 'Handlee', cursive;
+  opacity: 70%;
+}
+
+.wrapper {
+  background-color: #adcf8c;
+  border-radius: 20px;
+  padding: 20px;
+  width:250px;
+  font-family: 'Handlee', cursive;
+  opacity: 70%;
+}
+
+Header::after {
+  content: " ";
+  width: 625px;
+  height: 300px;
+  display: block;
+  background-image:url(/styles/EH-plant/vines.png);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+

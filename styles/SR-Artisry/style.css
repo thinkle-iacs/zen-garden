@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+
+html {
+  background-color: #5c5c5c;
+  font-family: 'Lumanosimo', cursive;
+  font-size: 80%;
+  color-scheme: dark;
+  margin: auto;
+  width: 80%;
+  padding: 5px;
+  --primary-light: #b22ab2;
+  --primary-dark: #770d64;
+  --secondary-light: #7380e8;
+  --secondary-dark: #0337a0;
+  --tertiary: #e2aa32;
+}  
+.page-wrapper {
+  display: grid;
+  grid-template-areas:
+    "Header Header Header Header"
+    "Word-2 Word-2 Word-1 Word-1"
+    "Participation Explanation Explanation Requirement"
+    "Sidebar Sidebar Sidebar Sidebar";
+  column-gap: 15px;
+}
+.page-wrapper > div {
+  padding: 32px;
+}
+header {
+  color: var(--tertiary);
+  text-align: right;
+  background-color: var(--primary-dark);
+  padding: 10px;
+  border-radius: 40px;
+  margin: 0;
+  height: fit-content;
+  margin-bottom: 5px;
+  grid-area: Header;
+}
+h2 {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 100%;
+}
+abbr {
+  text-decoration: none;
+}
+.summary {
+  grid-area: Word-1;
+  display: block;
+  border-top: 20px solid #5c5c5c
+}
+.preamble {
+  grid-area: Word-2;
+  display: block;
+  border-top: 20px solid #5c5c5c
+}
+.participation {
+  grid-area: Participation;
+  display: block;
+  border-top: 20px solid #5c5c5c
+}
+.explanation {
+  grid-area: Explanation;
+  display: block;
+  border-top: 20px solid #5c5c5c
+}
+.requirements {
+  grid-area: Requirement;
+  display: block;
+  border-top: 20px solid #5c5c5c;
+  border-bottom: 22px solid #5c5c5c
+}
+.sidebar a:hover {
+  color: var(--tertiary);
+}
+.sidebar {
+  display: block;
+  width: auto;
+  padding: 10px;
+  border-top: 20px solid var(--primary-light);
+  border-radius: 40px;
+  grid-area: Sidebar;
+  text-align: center;
+  list-style: none;
+} 
