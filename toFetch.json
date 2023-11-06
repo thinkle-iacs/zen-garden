@@ -1,10 +1,172 @@
 [
-  {
-    "id" : "owenk",
-    "contributor" : "Owen K",
-    "url" : "https://css-zen-garden-owenkearnan1.web-design-spring-2023.repl.co/style.css",
-    "name" : "Bold Lines",
+  
+{
+    "id" : "stardust-klein",
+    "contributor" : "Sarah K",
+    "url" : "https://css-zen-garden-sarahklein1.iacs-web-design-23.repl.co/style.css",
+    "name" : "Stardust", 
+    "portfolio" : "https://sarah-klein-portfolio-shenanigans.netlify.app/"
+  },
+{
+    "id" : "SR-Artisry",
+    "contributor" : "S. Rader",
+    "url" : "https://css-zen-garden-samuelrader.iacs-web-design-23.repl.co/style.css",
+    "name" : "Artistry",
+    "portfolio": "INSERT PORTFOLIO HERE"
+  },
+{
+    "id" : "RC-Florals",
+    "contributor" : "Ridnie C.",
+    "url" : "https://css-zen-garden-ridniechen.iacs-web-design-23.repl.co/style.css",
+    "name" : "florals",
+    "portfolio" : "https://ridnie-iacs-web-portfolio.netlify.app"
+  },
+{
+    "id" : "LL-cirus",
+    "contributor" : "L. Lovell",
+    "url" : "https://css-zen-garden-leolovell.iacs-web-design-23.repl.co/style.css",
+    "name" : "Circus",
+    "portfolio" : "https://lovell-web-design-portfolio.netlify.app/"
+  },
+{
+    "id" : "LL-leaves",
+    "contributor" : "L. Lovell",
+    "url" : "https://css-zen-garden-leolovell.iacs-web-design-23.repl.co/style2.css",
+    "name" : "Leaves",
+    "portfolio" : "https://lovell-web-design-portfolio.netlify.app/"
+  },
+{
+    "id" : "LL-minimalism",
+    "contributor" : "L. Lovell",
+    "url" : "https://css-zen-garden-leolovell.iacs-web-design-23.repl.co/style3.css",
+    "name" : "Minimalism",
+    "portfolio" : "https://lovell-web-design-portfolio.netlify.app/"
+  },
+
+
+{
+    "id" : "NCB-Office",
+    "Contributor" : "Nicholas Burns",
+    "url" : "https://css-zen-garden-nicholasburns5.iacs-web-design-23.repl.co/style.css",
+    "name" : "NCB Office",
     "portfolio" : ""
+  },
+
+{
+    "id" : "SB - Minecraft Pastel",
+    "contributor" : "Sadie Bush",
+    "url" : "https://css-zen-garden-sadiebush.iacs-web-design-23.repl.co/style.css",
+    "name" : "Minecraft Pastel",
+    "portfolio" : "Web Design Portfolio 2023"
+  },
+
+{
+    "id": "SB - Spooky Month",
+    "contributor" : "Sadie Bush",
+    "url" : "https://css-zen-garden-sadiebush.iacs-web-design-23.repl.co/style2.css",
+    "name" : "Spooky Month",
+    "portfolio" : "Web Design Portfolio 2023"
+  },
+
+{
+    "id" : "SB - Fish Tank",
+    "contributor" : "Sadie Bush",
+    "url" : "https://css-zen-garden-sadiebush.iacs-web-design-23.repl.co/style3.css",
+    "name" : "Fish Tank",
+    "portfolio" : "Web Design Portfolio 2023"
+  },
+{
+    "id" : "EH-plant",
+    "contributor" : "Emily Hanlon",
+    "url" : "https://css-zen-garden-emilyhanlon2.iacs-web-design-23.repl.co/style.css",
+    "name" : "Plant",
+    "portfolio" : ""
+  },
+{
+    "id" : "MO - CyberShock-Miguel",
+    "contributor" : "Miguel Osorio",
+    "url" : "https://css-zen-garden-miguelosorio10.iacs-web-design-23.repl.co/",
+    "name" : "CyberShock-Miguel",
+    "portfolio" : ""
+  },
+{
+    "id" : "BL - city",
+    "contributor" : "Billy Lannan",
+    "url" : "https://css-zen-garden-williamlannan.iacs-web-design-23.repl.co/style.css",
+    "name" : "city-Billy",
+    "portfolio" : "https://BL-IACS-Portolio.netlify.app/"
+  },
+{
+    "id" : "RH - 80s",
+    "contributor" : "Rylie Hegarty",
+    "url" : "https://css-zen-garden-ryliehegarty.iacs-web-design-23.repl.co/style.css",
+    "name" : "80s",
+    "portfolio" : "https://rhwebdesignportfolio.netlify.app/ "
+  },
+{
+    "id" : "GR-Halloween",
+    "contributor" : "Grayson Reska",
+    "url" :"https://css-zen-garden-graysonreska.iacs-web-design-23.repl.co/style.css",
+    "name" : "Halloween",
+    "portfolio" : "https://grayson-reska-portfolio.netlify.app/"
+  },
+{
+    "id" : "GR-Retro",
+    "contributor" : "Grayson Reska",
+    "url":"https://css-zen-garden-graysonreska.iacs-web-design-23.repl.co/style2.css",
+    "name" : "Retro",
+    "portfolio" : "https://grayson-reska-portfolio.netlify.app/"
+  },
+{
+    "id" : "GR-Fall",
+    "contributor" : "Grayson Reska",
+    "url":"https://css-zen-garden-graysonreska.iacs-web-design-23.repl.co/style3.css",
+    "name" : "Fall",
+    "portfolio" : "https://grayson-reska-portfolio.netlify.app/"
+  },
+{
+    "id" : "Sams-Cotton candy",
+    "contributor" : "Sam",
+    "url" : "https://css-zen-garden-samhorace.iacs-web-design-23.repl.co/style.css",
+    "name" : "Cotton-Candy",
+    "portfolio" : ""
+  },
+{
+    "id" : "Joshua Lopes Wall",
+    "contributor" : "Joshua Lopes",
+    "url" : "https://replit.com/@iacs-web-design-23/CSS-Zen-Garden-JoshuaLopes4#style.css",
+    "name" : "Wall",
+    "portfolio" : ""
+  },
+  {
+    "id" : "KB-Sand",
+    "contributor" : "Khang B",
+    "url" : "https://zen-garden-3.khangbui20.repl.co/style.css",
+    "name" : "Sandy",
+    "portfolio" : ""
+  },
+{
+    "id" : "KB-Nature",
+    "contributor" : "Khang B",
+    "url" : "https://css-zen-garden-khangbui20.iacs-web-design-23.repl.co/style.csshttps://css-zen-garden-khangbui20.iacs-web-design-23.repl.co/style.css",
+    "name" : "Nature",
+    "portfolio" : ""
+  },
+{
+    "id" : "KB-Door",
+    "contributor" : "Khang B",
+    "url" : "https://css-zen-garden-2.khangbui20.repl.co/style.css",
+    "name" : "Door",
+    "portfolio" : ""
+  },
+
+{
+    "id" : "AK-halloween",
+    "contributor" : "Addison K.",
+    "url" : "https://fonts.googleapis.com/css2?family=Griffy&display=swap",
+    "name" : "The nightmare before christmas",
+    "portfolio" : "aek.iacs.web.portfolio"
   }
+
 ]
 
