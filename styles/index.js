@@ -47,11 +47,11 @@ const styles = [
     portfolio: "https://nathans-portfolio-project.netlify.app/",
   },
   {
-    name: "soccer",
+    name: "clean and simple",
     path: "emanuelly-ferreira/style.css",
     designer: "Emanuelly Ferreira.",
-    portfolio:
-      "your personal portfolio, if you have one — or claim a URL now on netlify and build on soon :)",
+    portfolio: "#",
+    highlight: true,
   },
   {
     name: "Milky Way",
@@ -193,10 +193,9 @@ const styles = [
     path: "stars-gpt/style.css",
     designer: "ChatGPT 4",
     portfolio: "https://chat.openai.com/",
-    highlight: true,
   },
   {
-    name: "Stars (by ChatGPT4)",
+    name: "8-Bit (by ChatGPT4)",
     path: "gpt-8bit/style.css",
     designer: "ChatGPT 4",
     portfolio: "https://chat.openai.com/",
