@@ -1,1 +1,70 @@
-{"message":"Repl not found","name":"NotFoundError","status":404}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Signika+Negative&display=swap');
+
+
+header {color:white;}
+  body{
+    background-image: url(/styles/Joshua-Lopes-Wall/Bricky.jpeg);
+  }
+
+h3 { color: white;
+   ;
+   }
+.preamble{
+  color: white;
+  border: 6px solid
+
+  font-style:italtic;
+  color: #white;
+  backdrop-filter: blur(6px);
+  border: 10px #white
+}
+.summary,.design-selection,.explanation,.participation,.requirements,.zen-resources,.preamble{
+  color:black;
+  backdrop-filter: blur(6px);
+                    
+  font-style: m y;
+  font-size: 120%;
+  ;
+} /*
+.design-selection{
+  color: #black;
+  backdrop-filter: blur(6px);
+  border: 6px solid: #black;
+}
+.design-archives{
+    color: #black;
+    border: 6px solid #black
+}
+.explanation{
+  color: #black;
+  background-color: ;
+  border: 6px solid #black
+}
+.participation{
+  color: #black;
+  border: 6px solid #black
+}
+.requirements{
+  color: #black;
+  border: 6px solid #black
+}
+.zen-resources{
+  color: #black;
+  border: 6px solid #black
+} */
+
+    .page-wrapper {
+        max-width: 400px;
+        margin: auto;
+        backdrop-filter: blur(2px)brightness(1.1);
+        padding: 32px;
+    }
+
+
+body { font-family: 'Mukta', sans-serif;r55
+     font-family: 'Signika Negative', sans-serif;}
+p::first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
