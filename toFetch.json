@@ -46,7 +46,7 @@
 
 {
     "id" : "NCB-Office",
-    "Contributor" : "Nicholas Burns",
+    "contributor" : "Nicholas Burns",
     "url" : "https://css-zen-garden-nicholasburns5.iacs-web-design-23.repl.co/style.css",
     "name" : "NCB Office",
     "portfolio" : ""
@@ -148,7 +148,7 @@
 {
     "id" : "KB-Nature",
     "contributor" : "Khang B",
-    "url" : "https://css-zen-garden-khangbui20.iacs-web-design-23.repl.co/style.csshttps://css-zen-garden-khangbui20.iacs-web-design-23.repl.co/style.css",
+    "url" : "https://css-zen-garden-khangbui20.iacs-web-design-23.repl.co/style.css",
     "name" : "Nature",
     "portfolio" : ""
   },
