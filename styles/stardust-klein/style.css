@@ -16,7 +16,7 @@ body#css-zen-garden {
   color: var(--words);
   font-family: 'Playpen Sans', cursive;
     background-size: cover;
-    background-image:image();
+    background-image: url(/styles/stardust-klein/stardust.jpeg);
   /* I got the image from here 
   https://www.nlspacecampus.eu/cache/3/1920x1080/mob-shutterstock-481251031-20210610135721_1920x1080.jpg */
     background-repeat: no-repeat;

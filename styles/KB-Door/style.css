@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 body{
-  background-image: url('https://images.squarespace-cdn.com/content/v1/58fd82dbbf629ab224f81b68/1565856731691-YGPVH8XXEYFA3GCRCKIP/Shoji-Lattice.jpg');
+  background-image: url(/styles/KB-Door/Shoji-Lattice.jpg);
   background-repeat: repeat-y;
   background-size: 100%;
   background-attachment: fixed;

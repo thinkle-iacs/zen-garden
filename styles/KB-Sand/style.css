@@ -5,7 +5,7 @@
 }
 
 body{
-  background-image: url('https://iacs-zen-garden.netlify.app/styles/beach-waves/sand-texture.jpg');
+  background-image: url(/styles/KB-Sand/sand-texture.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -33,21 +33,15 @@ h1::after {
   width:3000px;
   left: -1000px;
   top: 0;
-  background-image: url('https://www.billboard.com/wp-content/uploads/media/ocean-g-billboard-1548.jpg');
+  background-image: url(/styles/KB-Sand/ocean-g-billboard-1548.webp);
 background-repeat:no-repeat;
   background-size:cover;
   pointer-events: none;
+  transition: top 2s;
 }
 .page-wrapper:hover::after{
-  animation-name: wave;
-  animation-duration: 3s;
-  animation-iteration-count: 1;
-  pointer-events: all;
-}
-@keyframes wave{
-  0%{top:0}
-  100%{top:100%}
-}
+  top: 100%;
+} 
 
 .page-wrapper {
   position: relative;
