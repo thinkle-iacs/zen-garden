@@ -4,12 +4,18 @@
   "description": "A garden of student work, inspired by David Shea's CSS Zen Garden",
   "scripts": {
     "dev": "serve -s .",
-    "fetch-work": "node ./fetchStudentScript.js"
+    "fetch-work": "node ./fetchStudentScript.js",
+    "fetch-gc": "node ./githubClassroomScript/fetchGithubUi.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "serve": "^13.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "inquirer": "^12.2.0",
+    "node-fetch": "^3.3.2"
   }
 }
