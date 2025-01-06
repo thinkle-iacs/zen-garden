@@ -3,13 +3,9 @@ function getSelectedStylePath() {
 }
 class StyleSelector {
   constructor(style) {
-    /*
-    style.path.replace(/\/.*$/, ""),
-      style.name,
-      `styles/${style.path}`,
-      style.designer,
-      style.portfolio;*/
-    this.id = style.path.replace(/\/.*$/, "");
+    const folderName = style.path.replace(/\/.*$/, ""); // Extract folder name (e.g., "foo")
+    const fileName = style.path.split("/").pop().replace(".css", ""); // Extract file name without extension (e.g., "style" or "two")
+    this.id = `${folderName}--${fileName}`; // Combine folder and file name (e.g., "foo--style")
     this.name = style.name;
     this.path = `styles/${style.path}`;
     this.designer = style.designer;

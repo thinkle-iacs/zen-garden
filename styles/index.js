@@ -1,4 +1,4 @@
-const styles=[
+const styles = [
   {
     "name": "Boring Default",
     "path": "default/style.css",
@@ -346,6 +346,138 @@ const styles=[
     "designer": "Rylie Hegarty",
     "portfolio": "https://rhwebdesignportfolio.netlify.app/ ",
     "highlight": true
+  },
+  {
+    "name": "Dev P",
+    "path": "NRpatel002/style.css",
+    "designer": "Design 1",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
+  },
+  {
+    "name": "Fall Forest",
+    "path": "NRpatel002/style2.css",
+    "designer": "Dev P",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
+  },
+  {
+    "name": "Design 3",
+    "path": "NRpatel002/style3.css",
+    "designer": "Dev P",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
+  },
+  {
+    "name": "indian colors",
+    "path": "aravpatel2009/style.css",
+    "designer": "Arav Patel",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-aravpatel2009"
+  },
+  {
+    "name": "The Future of Design...",
+    "path": "Lkidschool/style.css",
+    "designer": "Joshua Simoneau",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-Lkidschool"
+  },
+  {
+    "name": "Y2K",
+    "path": "escaffidi08/style.css",
+    "designer": "Ellie Scaffidi",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-escaffidi08"
+  },
+  {
+    "name": "Euphoric",
+    "path": "leoo-joy/style.css",
+    "designer": "Joy-Deborah",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-leoo-joy"
+  },
+  {
+    "name": "style2",
+    "path": "leoo-joy/style2.css",
+    "designer": "leoo-joy",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-leoo-joy"
+  },
+  {
+    "name": "style",
+    "path": "JewlianCruz/style.css",
+    "designer": "Jewlian G.",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-JewlianCruz"
+  },
+  {
+    "name": "Celestial",
+    "path": "maddieec0124/style.css",
+    "designer": "Maddie Evans-Cole",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-maddieec0124"
+  },
+  {
+    "name": "Lights Out",
+    "path": "iGoob/style.css",
+    "designer": "Joseph Burns",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-iGoob"
+  },
+  {
+    "name": "style",
+    "path": "Adrianorib2/style.css",
+    "designer": "Adrinao R.",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-Adrianorib2"
+  },
+  {
+    "name": "A CSS Christmas",
+    "path": "AAIDANN/style.css",
+    "designer": "Aidan Negga",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AAIDANN"
+  },
+  {
+    "name": "Valentine's Day",
+    "path": "lara-pocoyo/style.css",
+    "designer": "Lara L",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo"
+  },
+  {
+    "name": "Christmas",
+    "path": "lara-pocoyo/style2.css",
+    "designer": "Lara L",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo"
+  },
+  {
+    "name": "Ghost",
+    "path": "lara-pocoyo/style3.css",
+    "designer": "Lara L",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo"
+  },
+  {
+    "name": "ECO",
+    "path": "AngelDevia452/style.css",
+    "designer": "Angel Devia",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AngelDevia452"
+  },
+  {
+    "name": "hearts",
+    "path": "nyjahrae/style.css",
+    "designer": "Nyjahrae Brown",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-nyjahrae"
+  },
+  {
+    "name": "style3",
+    "path": "nyjahrae/style3.css",
+    "designer": "nyjahrae",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-nyjahrae"
+  },
+  {
+    "name": "Sakura Tree",
+    "path": "CheryBerroa/style.css",
+    "designer": "Chery Berroa",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-CheryBerroa"
+  },
+  {
+    "name": "I can't believe it's not Geocities",
+    "path": "geocities/style.css",
+    "designer": "Lilly B.",
+    "portfolio": "https://lainiwakura.xyz/"
+  },
+  {
+    "name": "Unfinished",
+    "path": "1234567890-qwertyuiop-asdfghjkl-zxcvbnm/style.css",
+    "designer": "Ethan S.",
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-1234567890-qwertyuiop-asdfghjkl-zxcvbnm"
   }
 ];
 exports.styles = styles;

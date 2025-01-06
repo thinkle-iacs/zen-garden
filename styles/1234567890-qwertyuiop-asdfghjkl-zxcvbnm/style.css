@@ -1,0 +1,66 @@
+/********************************** 
+* Design by:  Ethan S.
+* Design name:  Unfinished
+* 
+* MIT License
+* 
+* Acknowledgments/Sources:
+* - fonstruct for free fonts
+* - got some help from stack exchange and other adjacent sites
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+@font-face {
+    font-family: rpg1;
+    src: url("/styles/1234567890-qwertyuiop-asdfghjkl-zxcvbnm/rpg1.otf") format("opentype");
+}
+@font-face {
+  font-family: yume;
+  src: url("/styles/1234567890-qwertyuiop-asdfghjkl-zxcvbnm/yume.otf") format("opentype")
+}
+body {
+  background-color:#000000
+}
+h1 {
+  font-family: yume;
+  font-size:0.8em;
+  font-weight:inherit;
+  filter: drop-shadow(2px 2px 0px #5A3C5A)
+}
+h2, .intro, .main, .supporting, .sidebar {
+  background-image: url("/styles/1234567890-qwertyuiop-asdfghjkl-zxcvbnm/GRADIENT.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 6px 16px ;
+  filter: drop-shadow(1px 1px 0px #290831)
+}
+p,h1,h2,h3,h4,li,ul {
+  list-style-type: none;
+  margin:0
+}
+.page-wrapper {
+  font-family: rpg1;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size:inherit;
+  font-weight: inherit;
+}
+b, code {
+  font: inherit
+}
+html {
+  font-size: calc(16px / 1.3);
+  padding: none;
+  margin: none;
+  line-height: 1.3em;
+  color:#FFFFFF;
+}
+header:has(h2:hover) + section .summary,
+.summary:hover 

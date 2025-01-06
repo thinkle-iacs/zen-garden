@@ -1,0 +1,273 @@
+/********************************** 
+* Design by:  [Joseph Burns]
+* Design name:  [Lights Out]
+* 
+* License: [MIT]
+* 
+* Acknowledgments/Sources:
+* - Seth Lupo
+* - Chat GPT
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+/*
+Started with copied CSS from  Seth Lupo 
+https://iacs-zen-garden.netlify.app/?authuser=0#seth-lupo-modernist-blocks
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 70px green;
+  }
+  to {
+    text-shadow: 0 0 80px greenyellow;
+  }
+}
+
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+body {
+  font-family:"Bebas Neue", serif;
+  font-weight:400;
+  background-color: #a18d75;
+  text-align:center;
+  
+}
+
+h1 {
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  font-weight: 2;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+div[role="article"] h3 {
+}
+p,
+h4 {
+  font-size: 0.85em;
+  padding: 0.3em 0.3em;
+ 
+}
+
+h4 {
+  font-style: italic;
+}
+
+div[role="article"] {
+  background-color:
+}
+
+header {
+  grid-area: header;
+
+  background-color: #a18d75;
+}
+
+main {
+  grid-area: rules;
+  margin: 0em 0em 0.6em 0em;
+}
+
+section {
+  grid-area: section;
+  margin: 0.6em 0em 0.6em 0em;
+}
+
+a {
+  color: #694501;
+}
+
+aside {
+  grid-area: menu;
+}
+
+aside .wrapper {
+  margin-top: 75px;
+  margin-left:50px;
+  width: max-content;
+  align-self: center;
+  /* margin: 0.6em 0.6em;   */
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+}
+
+.page-wrapper {
+
+  text-align:center;
+}
+
+div[role="article"] {
+  padding: 0.3em;
+  
+}
+
+
+
+.summary {
+  margin-bottom: 0.em;
+  width: 250px;
+ text-align: center;
+ margin-left:175px;
+
+}
+
+li {
+ 
+  font-size: 0.68em;
+  list-style:none;
+}
+
+
+
+
+
+aside a {
+  
+  color: black;
+  text-align: center; 
+  display: inline-block; 
+  transition: font-size 0.3s;
+
+  /* text-shadow: 1px 1px 1px rgba(0,0,0,20); */
+  transition: font-size 0.3s;
+}
+
+aside a:hover {
+  font-size: 1.2em;
+  transform: scale(1.05);
+}
+.page-wrapper:has(header:hover) a {
+  color: greenyellow;
+  transition: background-color 1.5s ease, color 1.5s ease;
+  
+}
+.page-wrapper:has(header:hover){
+  background: black;
+  color:greenyellow;
+  transition: background-color 2s ease, color 2s ease;
+  /* -webkit-animation: glow 200ms ease-in-out infinite alternate;
+  -moz-animation: glow 200ms ease-in-out infinite alternate;
+  animation: glow 200ms ease-in-out infinite alternate; */
+
+
+
+}
+
+aside div {
+  padding: 0.6em;
+
+}
+
+.preamble h3,
+.explanation h3 {
+  margin-top: 0.1em;
+}
+
+.requirements[role="article"] {
+  padding-bottom: 0.em;
+}
+.page-wrapper {
+  display: grid;
+  grid-template-areas:
+    "inspire bulb road"
+    "beauty  bulb road"
+    "summary bulb road"
+    "rules rules menu";
+}
+header:hover::after {
+  background-image: url("/styles/iGoob/image.png");
+ background-size:cover;
+ background-position: center;
+}
+header::after {
+  content:" ";
+  grid-area: bulb;
+  margin-left: 75px;
+   width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/styles/iGoob/image.png");
+}
+
+header {
+  /* Ignore header in the hierarchy */
+  display: contents;
+}
+header h1 {
+  grid-area: inspire;
+}
+header h2 {
+  grid-area: beauty;
+}
+/* Ignore intro so we can place children */
+section.intro {
+  display: contents;
+}
+.intro .summary {
+  grid-area: summary;
+}
+.preamble {
+  grid-area: road;
+  max-width: 250px;
+  margin-left: 20%;
+  margin-top: 40px;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width:600px;
+  padding-left:150px;
+  
+
+}
+.requirements{
+  width:300px;
+  margin-left:145px;
+}
+
+
+aside li {
+margin-left:3px;
+  list-style: none;
+  font-weight: 4;
+  text-align:center;
+}
+
+
+aside nav {
+  display: block;
+  width: fit-content;
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+
+
+
+/*off bulb /styles/iGoob/image.png */

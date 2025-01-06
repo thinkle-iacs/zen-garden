@@ -1,0 +1,106 @@
+/********************************** 
+* Design by:  [Arav Patel]
+* Design name:  [indian colors]
+]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution]
+* 
+* Acknowledgments/Sources:
+* - background image from Adobe
+* - chatGBT
+* - Help from Mr.Hinkle
+*/
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Alegreya+Sans:wght@900&family=Alkatra:wght@400..700&family=Amita:wght@400;700&family=Bokor&family=Dancing+Script:wght@400..700&family=Eagle+Lake&family=Ga+Maamli&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Kurale&family=Merienda:wght@300..900&family=Ponnala&family=Rajdhani:wght@300;400;500;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.iacs {
+  color: rgb(255, 255, 255);
+}
+.page-wrapper{
+  background: rgb(255, 169, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 169, 0, 1) 0%,
+    rgba(252, 70, 70, 1) 100%);
+  width: 1000px;
+margin: auto;
+ }
+h1 {
+  text-decoration-color: red;
+  align-items: center;
+  margin: auto;
+  color: #ffffff;
+  border: 5px double orange;
+  text-shadow: 4px 4px 1px orange;
+  font-size: 70px;
+  font-family: "Merienda", cursive;
+ border-bottom-left-radius:100px;
+ border-top-right-radius:100px ;
+ width:900px ;
+ text-align: center;
+ padding-bottom: 5px;
+}
+body {
+  font-family: "Alkatra", system-ui;
+  line-height: 1.6;
+  font-size: 15px;
+  text-shadow: 2px 1px 1px orange;
+  color: #ffffff;
+  margin: auto;
+  background-image: url(/styles/aravpatel2009/backgrond.jpg); 
+  font-weight: 500;  
+}
+.page-wrapper {
+  margin-right: 300px;
+}
+aside {
+  position: fixed;
+  width: 284px;
+  right: 8px;
+  top: 8px;
+  max-height: 100vh;
+  overflow-y: auto;
+  font-weight: 1000;
+  text-shadow: 2px 1px 1px orange;
+}
+h3{
+  font-family: "Eagle Lake", serif;
+}
+h2{
+  font-family: "Eagle Lake", serif;   
+}
+h4{ font-family: "Eagle Lake", serif;
+}
+.page-wrapper {
+   max-width: calc(100vw - 320px); 
+  margin-inline: auto;
+}
+@media (max-width: 1100px) {
+  .page-wrapper {
+    margin-left: 8px;
+    margin-right: auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+ 
+}
+
+
+a:hover {
+  background-color: white;
+  transform: translateY(-3px); 
+  color:red;
+}
+
+a:active {
+  background-color: #ffffff;
+   transform: translateY(1px); 
+}

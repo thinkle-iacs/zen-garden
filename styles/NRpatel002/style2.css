@@ -1,0 +1,157 @@
+/* Required for honors students */
+/********************************** 
+* Design by:  Dev P
+* Design name:  Fall Forest
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+/* style.css */
+
+/* General Styles */
+body {
+  background-image: url("/styles/NRpatel002/fall-forest.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #4a403a;
+  font-family: "Aldrich", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #d35400;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #e67e22;
+}
+
+/* Header Styles */
+header {
+  background-color: rgba(211, 84, 0, 0.8);
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 2.5em;
+  margin: 0;
+}
+
+header h2 {
+  font-family: "VT323", monospace;
+  font-size: 1.5em;
+  margin: 10px 0 0;
+}
+
+/* Section Styles */
+section {
+  background-color: rgba(243, 156, 18, 0.8);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section h3 {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+section p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+code {
+  background-color: #ffffff;
+  color: #d35400;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* Main Styles */
+main {
+  background-color: rgba(230, 126, 34, 0.8);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+main h3 {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 2em;
+  margin-top: 0;
+}
+
+main p,
+main ul {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Sidebar Styles */
+aside {
+  background-color: rgba(211, 84, 0, 0.8);
+  color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+aside h3 {
+  font-family: "Saira Stencil One", cursive;
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside li {
+  margin: 10px 0;
+}
+
+aside a {
+  color: #ffffff;
+}
+
+aside a:hover {
+  color: #faf3e0;
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgba(211, 84, 0, 0.8);
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Additional Styles */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(250, 243, 224, 0.8);
+  border-radius: 10px;
+}
+
+h4 {
+  font-family: "VT323", monospace;
+  font-size: 1.25em;
+  margin-top: 20px;
+}

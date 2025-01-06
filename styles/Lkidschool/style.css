@@ -1,0 +1,136 @@
+/********************************** 
+* Design by:  [Joshua Simoneau]
+* Design name:  [The Future of Design...]
+* 
+* License: [All Rights Reserved]
+* 
+* Acknowledgments/Sources:
+*/
+
+/* Protest-revolution from Google Fonts */
+@font-face {
+  font-family:protest;
+  src: url(/styles/Lkidschool/ProtestRevolution-Regular.ttf);
+}
+
+.iacs::before {
+  content: "Join the Following...";
+  font-family:protest;
+  font-size:smaller;
+  color: rgb(83, 17, 17)
+} 
+h1 {
+  font-family: protest;
+  color: rgba(194, 16, 16, 1);
+}
+h2 {
+  font-family: protest;
+  color: rgba(194, 16, 16, 1);
+}
+h3 {
+  font-family: protest;
+  color: rgba(194, 16, 16, 1);
+}
+h4 {
+  font-family: protest;
+  color: rgba(194, 16, 16, 1);
+}
+p {
+  font-family: protest;
+  color: rgba(194, 16, 16, 1);
+}
+li {
+  font-family: protest;
+  color: rgba(194, 16, 16, 1);
+}
+abbr{
+  color: white;
+}
+a {
+  color: rgba(83, 36, 51, 1);
+}
+
+
+/* Background */
+#css-zen-garden {
+  background: rgba(0, 0, 0, 1);
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 1);
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 0 auto;
+}
+body::after {
+  content: url(/styles/Lkidschool/guy.png);
+  display: block;
+  position: fixed;
+  top: 19%;
+  left: 0%;
+  animation-name: gaze-of-style-sheets;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+@keyframes gaze-of-style-sheets {
+  0% {
+    rotate: 0deg;
+    scale: 1;
+  }
+  100% {
+    rotate: 0deg;
+    scale: 1;
+  }
+}
+div.page-wrapper::after {
+  content: url(/styles/Lkidschool/guy.png);
+  display: block;
+  position: fixed;
+  top: 19%;
+  left: 80%;
+  animation-name: gaze-of-style-sheets2;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+@keyframes gaze-of-style-sheets2 {
+  0% {
+    rotate: 0deg;
+    scale: 1;
+  }
+  100% {
+    rotate: 0deg;
+    scale: 1;
+  }
+}
+.page-wrapper {
+  /* Make space for it */
+  margin-bottom: 205px;
+  height: calc(100vh - 205px);
+  overflow: scroll;
+  
+}
+aside {
+  position: fixed;
+  width: 100%;
+  height: 195px;
+  left: 0;
+  bottom: 0;
+  border-top: 30px solid red;
+  /* Make sidebar
+scrollable when it gets
+long (when they click "All designs") */
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+aside .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}

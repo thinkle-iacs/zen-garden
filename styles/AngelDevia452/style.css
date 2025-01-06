@@ -1,0 +1,75 @@
+/********************************** 
+* Design by:  [Angel Devia]
+* Design name:  [ECO]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.page-wrapper {
+  /* Main font */
+  font-family: Poppins, sans-serif;
+}
+h1
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Marcellus", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Background */
+#css-zen-garden {
+  background-image: url('/styles/AngelDevia452/photo-1703221291880-303643093c22.jpeg');
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 0 auto;
+}
+.iacs{
+  background-color: red;
+}
+/*Animations*/
+h1::after {
+  content: "🐟";
+  display: inline-block;
+  animation: swim 10s infinite linear;
+}
+
+@keyframes swim {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-30vw, 30vh) rotate(-20deg);
+  }
+  51% {
+    transform: translate(-30vw, 30vh) rotateY(180deg);
+  }
+  100% {
+    transform: translate(30vw, 80vh) rotateY(200deg);
+  }
+}

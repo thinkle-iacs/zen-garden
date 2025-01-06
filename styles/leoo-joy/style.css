@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Cookie&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Megrim&family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Cookie&family=Genos:ital,wght@0,100..900;1,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Megrim&family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bahiana&family=Cookie&family=Genos:ital,wght@0,100..900;1,100..900&family=Iceland&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Megrim&family=Nuosu+SIL&display=swap');
+
+/********************************** 
+* Design by:  [Joy-Deborah]
+* Design name:  [Euphoric]
+* 
+* License: [This work is licensed under CC BY-NC 4.0 ]
+* 
+* Acknowledgments/Sources:
+* - Amazing Astronaut images Designed by Freepik
+* - Astronaut Image Animations from ; CSS Bounce-in Animation by Nelle de Jones
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+body{
+  color: white;
+}
+
+/* Get your own import URL from Google Fonts */
+
+  /* Main font */
+  font-family: Poppins, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Dancing Script", cursive;
+}
+
+/* Background */ /*used W3Schools for help*/
+#css-zen-garden {
+    background-image: url("/styles/leoo-joy/rocketspace.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-color: transparent;
+    background-attachment: fixed;
+    -moz-background-size: auto 100%, auto 100%;
+    -o-background-size: auto 100%, auto 100%;
+
+} 
+
+h1 ,h2, h3, h4, h5, h6{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: Megrim;
+    color:rgb(99, 3, 48);
+}
+
+.summary{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+}
+
+
+.preamble{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+}
+
+.explanation{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+}
+
+.participation{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+}
+
+.requirements{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+}
+
+
+.design-selection{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+    
+}
+
+
+.design-archives{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+   
+}
+
+#zen-resources{
+  display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: Genos;
+}
+
+body a {
+   color: 		rgb(238, 219, 244);
+  background-color: rgba(62, 62, 62, 0.64);
+}
+
+
+
+.page-wrapper{
+   background-color: rgba(196, 196, 196, 0.29);
+   font-size: large;
+
+}
+
+.summary, .preamble, .explanation, .participation{
+  line-height: 2;
+  max-width: 700px;
+  margin: auto;
+}
+
+.explanation::before {
+  content: " ";
+  background-image: url("/styles/leoo-joy/astromoon.png");
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.explanation::before {
+  animation: bounce-out 2s ease infinite;
+}
+@keyframes bounce-out {
+  0% { transform: scale(1); }
+  25% { transform: scale(.95); }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(.3);
+  } 
+}
+
+.requirements::before {
+  content: " ";
+  background-image: url("/styles/leoo-joy/astrochill.png");
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.requirements::before {
+  animation: wobble 2s ease infinite;
+}
+@keyframes wobble {
+  0% { transform: translateX(0%); }
+  15% { transform: translateX(-25%) rotate(-5deg); }
+  30% { transform: translateX(20%) rotate(3deg); }
+  45% { transform: translateX(-15%) rotate(-3deg); }
+  60% { transform: translateX(10%) rotate(2deg); }
+  75% { transform: translateX(-5%) rotate(-1deg); }
+  100% { transform: translateX(0%); }
+}
+.design-selection::before {
+  content: " ";
+  background-image: url("/styles/leoo-joy/guyastro.png");
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.design-selection::before{
+  animation: grow 2s ease infinite;
+}
+@keyframes grow {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.fade-in {
+  animation: fade-in 2s linear infinite;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.zen-resources::before {
+  content: " ";
+  background-image: url("/styles/leoo-joy/astrorocket.png");
+  width: 100px;
+  height: 100px;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.zen-resources::before {
+  animation: bounce-in-right 2s ease infinite;
+}
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(30px);
+  }
+  80% { transform: translateX(-10px); }
+  100% { transform: translateX(1000px); }
+}
+/* Page wrapper */
+
+
+  

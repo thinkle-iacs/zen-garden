@@ -1,0 +1,277 @@
+/********************************** 
+* Design by:  Aidan Negga
+* Design name:  A CSS Christmas
+* 
+* License: © Aidan Negga 2024. All rights reserved.
+* 
+* Acknowledgments/Sources:
+* - ChatGPT for contributing AI art (the wintery cabin backgrounds)
+* - Adobe Firefly for contributing art (The green ornament wrapping paper)
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius&display=swap');
+
+.delius-regular {
+  font-family: "Delius", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Delius";
+}
+
+h1 {
+  color: rgb(251,235,175);
+  line-height: 0.8em;
+  font-size:75px;
+  margin-top:40px;
+  text-shadow: 
+    8px 8px 0px #42385e, 
+    -2px 2px 2px rgb(58,28,28), 
+    2px -2px 2px rgb(58,28,28), 
+    -2px -2px 2px rgb(58,28,28);
+}
+
+h2 {
+  color:#a86090;
+  margin-top: -20px;
+  font-family: "Delius";
+   text-shadow: 
+    8px 8px 0px #42385e, 
+    -2px 2px 2px rgb(58,28,28), 
+    2px -2px 2px rgb(58,28,28), 
+    -2px -2px 2px rgb(58,28,28);
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 75px;
+  margin: auto;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  font-size: 40px;
+  justify-content: space-between;
+   text-shadow: 
+    2px 2px 0px #42385e, 
+    -2px 2px 2px rgb(58,28,28), 
+    2px -2px 2px rgb(58,28,28), 
+    -2px -2px 2px rgb(58,28,28);
+}
+h2::after {
+  padding:5px;
+  content: "Scroll To Start!";
+  text-align: center;
+  color: #4e6aab;
+  border-top: 4px solid #4e617c;
+  border-bottom: 4px solid red;
+  line-height: 0.9;
+  box-shadow: 6px 5px 4px 4px black;
+  margin-top:5rem;
+  backdrop-filter: blur(10px);
+}
+h2, h1, .banner{
+  margin-bottom: 3em;
+}
+header {
+  font-size: 45px;
+  text-align: center;
+  object-fit:cover;
+  background-image: url(/styles/AAIDANN/ThreeCabinsAllInALine.jpg);
+  background-size: cover;
+  height: 100vh;
+  animation: bg-scroll 120s infinite;
+  transform: translateY(0%);
+}
+
+@keyframes bg-scroll {
+  0% {
+    
+    background-position: 0px;
+    transform: translateY(0%);
+  }
+  /*50% {
+    background-position: -200px;
+    transform: translateY(0%);
+  }*/
+  100% {
+    background-position: 5000px;
+  }
+}
+.page-wrapper {
+  /* Main font */
+  font-family: "Delius";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Dancing Script", cursive;
+}
+
+/* Background */
+#css-zen-garden {
+  background: hsla(64, 100%, 97%, 1);
+
+background: linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEFFEF", endColorstr="#A86090", GradientType=1 );
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: hsla(64, 100%, 97%, 1);
+
+  padding: 1em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.summary {
+  text-align:center;
+  font-family: "Delius";
+}
+
+
+.summary::after {
+  content: "Open your Presents!";
+  font-family: "Delius";
+  margin: auto;
+  border-radius: 50px;
+  top:1300px;
+  font-size: 40px;
+  position:absolute;
+  
+}
+
+.explanation, .preamble, .participation, .requirements {
+  margin-top:15px;
+  font-size:15px;
+  width:30%;
+  display:flex;
+  display:inline-block;
+  justify-content:space-evenly;
+  flex-direction:row;
+  border: 1px solid black;
+  padding:10px;
+  position:relative;
+  color: transparent;
+  font-family: "Delius";
+}
+
+.requirements:hover, .explanation:hover, .preamble:hover, .participation:hover  {
+  animation: flip-horizontal-bottom 2s forwards;
+}
+
+.preamble, .requirements, .explanation, .participation {
+background-image: url(/styles/AAIDANN/wrappingPaper1.jpeg);
+  background-size:cover;
+  animation: bg-scroll 120s infinite;
+  transform: translateY(0%);
+  font-family: "Delius";
+}
+
+.explanation, .participation {
+  background-image:url(/styles/AAIDANN/Griffin.png);
+}
+
+.responsive {
+  color:transparent;
+  font-family: "Delius";
+}
+
+.requirements:hover {
+    .responsive {
+       animation: flip-horizontal-bottom 2s forwards;
+}
+ }
+
+ a {
+  padding:1px;
+  text-align:center;
+  border-style:solid;
+  border-color:white;
+  background-color:white;
+  align-items: center;
+  color:green;
+  border-radius:10px;
+  line-height:2;
+ }
+
+.select, .archives, .resources, .sidebar{
+  margin-top:15px;
+  display:flex;
+  display:inline-block;
+  justify-content:space-evenly;
+  flex-direction:row;
+  text-align: center;
+  border: 2px solid black;
+  padding:20px;
+  width:90%;
+  font-family: "Delius";
+}
+.sidebar {
+  background: hsla(64, 100%, 97%, 1);
+
+background: linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(64, 100%, 97%, 1) 10%, hsla(320, 29%, 52%, 1) 30%, hsla(222, 37%, 49%, 1) 64%, hsla(204, 45%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FEFFEF", endColorstr="#A86090", GradientType=1 );
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-12-9 8:57:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flip-horizontal-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+            color:transparent;
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+            background-image:none;
+            color:black;
+            background-image: background: hsla(256, 25%, 29%, 1);
+
+background: hsla(9, 85%, 32%, 1);
+
+background: linear-gradient(90deg, hsla(9, 85%, 32%, 1) 0%, hsla(31, 65%, 44%, 1) 51%, hsla(0, 0%, 65%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(9, 85%, 32%, 1) 0%, hsla(31, 65%, 44%, 1) 51%, hsla(0, 0%, 65%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(9, 85%, 32%, 1) 0%, hsla(31, 65%, 44%, 1) 51%, hsla(0, 0%, 65%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#96200C", endColorstr="#B87327", GradientType=1 );
+            
+        
+  }
+}

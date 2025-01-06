@@ -1,0 +1,206 @@
+/********************************** 
+* Design by: Design 1
+* Design name:  Dev P
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+/* General body styles */
+body {
+  font-family: "VT323", sans-serif;
+  font-size: 24px;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: #f1f1f1; /* Light text color */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page wrapper */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+/* Header styles */
+header {
+  font-family: "Aldrich", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 40px;
+  transform: scale(1.3);
+  transition: transform 0.1s ease-in-out;
+}
+
+header:hover {
+  transform: scale(1.5);
+}
+
+h1 {
+  font-family: "Saira Stencil One", serif;
+  font-weight: 400;
+  font-size: 60px;
+  font-style: normal;
+  color: #ffcc00; /* Keep the golden color for the header */
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; /* White glow */
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+h1:hover {
+  text-shadow: 0 0 25px white, 0 0 35px white, 0 0 50px white; /* Enhanced glow on hover */
+}
+
+.iacs {
+  color: #0033a0;
+  text-shadow: 3px 3px 3px #c6093b;
+}
+
+h2 {
+  color: #c6093b; /* Dark red for subtitles */
+  font-weight: 500;
+  text-shadow: 0 0 10px white, 0 0 20px white; /* White glow */
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+h2:hover {
+  text-shadow: 0 0 25px white, 0 0 35px white; /* Enhanced glow on hover */
+}
+
+/* Paragraphs and text formatting */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #333; /* Slightly darker background for text blocks */
+  border: 1px solid #fff; /* White border for text blocks */
+  border-radius: 5px;
+  color: #fff; /* Ensure text is white for readability */
+  text-shadow: 0 0 10px white, 0 0 20px white; /* White glow */
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+p:hover {
+  text-shadow: 0 0 25px white, 0 0 35px white; /* Enhanced glow on hover */
+}
+
+/* Boxes */
+div {
+  animation-name: blur-in;
+  animation-duration: 1ms;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+  padding: 8px;
+  margin: 8px;
+  border: 1px solid #fff; /* White border for all boxes */
+  border-radius: 8px; /* Slight rounding for a modern look */
+  background-color: #444; /* Medium gray background */
+}
+
+/* Keyframes for scroll animations */
+@keyframes blur-in {
+  0% {
+    scale: 0.8;
+    opacity: 0.8;
+    filter: none; /* Removed blur */
+  }
+  20%,
+  70% {
+    scale: 1;
+    opacity: 1;
+    filter: none;
+    background-color: #555; /* Slightly darker gray during the animation */
+  }
+  100% {
+    background-color: #666; /* Final state of the animation */
+  }
+}
+
+/* Sidebar and other sections */
+aside {
+  background-color: #333;
+  padding: 20px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px white, 0 0 20px white; /* White glow */
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+h3:hover {
+  text-shadow: 0 0 25px white, 0 0 35px white; /* Enhanced glow on hover */
+}
+
+/* Adding spacing to all UL elements */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+  padding: 5px;
+  color: #ffffff; /* White text color */
+  text-shadow: 0 0 10px rgba(128, 0, 128, 0.8), 0 0 20px rgba(128, 0, 128, 0.8),
+    0 0 30px rgba(128, 0, 128, 0.8), 0 0 40px rgba(128, 0, 128, 0.8); /* Purple glow effect */
+}
+
+ul li a {
+  color: #ffffff; /* White color for links */
+  text-shadow: 0 0 10px rgba(128, 0, 128, 0.8), 0 0 20px rgba(128, 0, 128, 0.8),
+    0 0 30px rgba(128, 0, 128, 0.8), 0 0 40px rgba(128, 0, 128, 0.8); /* Purple glow effect for links */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px;
+  border-top: 1px solid #fff;
+}
+
+/* Scroll progress line */
+.scroll-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  width: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  transition: width 0.3s ease-out;
+  z-index: 1000;
+}
+
+/* Keyframes for animated gradient background */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

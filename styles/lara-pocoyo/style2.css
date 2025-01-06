@@ -1,0 +1,722 @@
+/* Required for honors students */
+/********************************** 
+* Design by:  [Lara L]
+* Design name:  [Christmas]
+* 
+* License: [This work is licensed under CC BY-NC 4.0 ]
+* 
+* Acknowledgments/Sources:
+* - chatgpt
+* - Pextel
+* -
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Mountains+of+Christmas:wght@400;700&family=Nosifer&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Mountains+of+Christmas:wght@400;700&family=Nosifer&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* Typography */
+.page-wrapper {
+  font-family: Pixelify Sans;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:  Mountains of Christmas;
+  
+}
+
+p{
+  font-family: Pixelify Sans
+;
+}
+
+/* Background */
+#css-zen-garden {
+  background: linear-gradient(60deg, #403636 0%, #0c1579 100%);
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(46, 45, 52, 0.9);
+  color: rgb(243, 255, 246);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 820px;
+  margin: 0 auto;
+}
+.page-wrapper a {
+  color: rgb(223, 223, 255);
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+
+  background: white;
+}
+.sidebar .wrapper {
+  display: flex;
+  justify-content:space-around;
+  gap: 148px;
+}
+
+header {
+  margin-top: 64px;
+}
+
+aside > div > div {
+  height: 64px;
+}
+
+
+aside ul {
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: transform 300ms, opacity 600ms;
+}
+aside > div > div:hover ul {
+  transform: translateY(0);
+  opacity: 1;
+  background: white;
+}
+
+aside > div > div nav {
+  overflow: hidden;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  display: block;
+  padding: 8px 4px;
+}
+
+aside li a:first-child {
+  display: block;
+  background: rgb(170, 16, 16);
+  color: white;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family:Pixelify Sans ;
+  letter-spacing: 1px;
+}
+aside li {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+
+}
+.page-wrapper {
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.select::after{
+  content:'';
+  width: 8vh;
+  height: 10vh;
+background-image: url(/styles/lara-pocoyo/gift1.png);
+position:absolute;
+top: -23px;
+left: 6px;
+ display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+}
+
+.resources::after{
+  content:'';
+  width: 12vh;
+  height: 10vh;
+background-image: url(/styles/lara-pocoyo/gift2.png);
+position: absolute;
+top: -29px;
+left: 109px;
+ display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+}
+
+.archives::after{
+  content:'';
+  width: 8vh;
+  height: 10vh;
+background-image: url(/styles/lara-pocoyo/gift3.png);
+position: absolute;
+top: -24px;
+left: 15px;
+ display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+}
+
+
+.resources,.select,.archives{
+  position: absolute;
+}
+
+.preamble,.intro,.explanation,.participation,.requirements{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h1::after{
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman1.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+right: 30px;
+}
+
+h2::before {
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman2.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+left: 90px;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    position: relative;
+}
+
+body::before {
+  content: '';
+  background-image:url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png'), url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png');
+  background-size: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation: snow 10s linear infinite;
+  background-repeat: no-repeat;
+}
+
+p::after {
+  content: '';
+  background-image:url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png');
+  background-size: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation: snow 10s linear infinite;
+  background-repeat: no-repeat;
+}
+
+p::before {
+  content: '';
+  background-image: url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png'),url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png');
+  background-size: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation: snow 10s linear infinite;
+  background-repeat: no-repeat;
+}
+
+
+@keyframes snow {
+  0% {
+    background-position: 0vw 0vh, 0vw 0vh, 0vw 0vh, 0vw 0vh, 0vw 0vh;
+  }
+  50% {
+    background-position: 50vw 50vh, 20vw 40vh, -10vw 30vh, -20vw 10vh, 10vw 20vh;
+  }
+  100% {
+    background-position: 100vw 100vh, 40vw 80vh, -20vw 60vh, -40vw 30vh, 20vw 50vh;
+  }
+}
+
+.explanation {
+  content: url(/styles/lara-pocoyo/tree.png);
+  height:78px;
+  width: 63px;
+  position:absolute;
+  margin-top:0px ;
+  left:118px ;
+ }
+
+body::after {
+  content:'';
+  background-image: url(/styles/lara-pocoyo/santa.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: fixed;
+  width: 23px;
+  height: 38px;
+  top: 20px;
+  right: 2px;
+  animation-name: santa;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+@keyframes santa {
+  0% {
+    scale: 1;
+  }
+  80% {
+    transform: translateY(95px) ;
+  }
+  100% {
+    transform:  translateY(845px) ;
+  }
+}
+.requirements::after{
+  content:'';
+  background-image: url(/styles/lara-pocoyo/chamine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 38px;
+  bottom:-11px;
+  right: 6px;
+
+}
+
+ul,li,a{
+  font-family:Pixelify Sans ;
+}
+
+@media only screen and (max-width: 768px){
+.page-wrapper {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:  Mountains of Christmas;
+  
+}
+
+p{
+  font-family: Pixelify Sans
+;
+}
+
+/* Background */
+#css-zen-garden {
+  background: linear-gradient(60deg, #403636 0%, #0c1579 100%);
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(46, 45, 52, 0.9);
+  color: rgb(243, 255, 246);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 820px;
+  margin: 0 auto;
+}
+.page-wrapper a {
+  color: rgb(223, 223, 255);
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+
+  background: white;
+}
+.sidebar .wrapper {
+  display: flex;
+  justify-content:space-around;
+  gap: 148px;
+}
+
+header {
+  margin-top: 64px;
+}
+
+aside > div > div {
+  height: 64px;
+}
+
+
+aside ul {
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: transform 300ms, opacity 600ms;
+}
+aside > div > div:hover ul {
+  transform: translateY(0);
+  opacity: 1;
+  background: white;
+}
+
+aside > div > div nav {
+  overflow: hidden;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  display: block;
+  padding: 8px 4px;
+}
+
+aside li a:first-child {
+  display: block;
+  background: rgb(170, 16, 16);
+  color: white;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family:Pixelify Sans ;
+  letter-spacing: 1px;
+}
+aside li {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+
+}
+.page-wrapper {
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.select::after{
+  content:'';
+  width: 8vh;
+  height: 10vh;
+background-image: url(/styles/lara-pocoyo/gift1.png);
+position:absolute;
+top: -23px;
+left: 6px;
+ display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+}
+
+.resources::after{
+  content:'';
+  width: 12vh;
+  height: 10vh;
+background-image: url(/styles/lara-pocoyo/gift2.png);
+position: absolute;
+top: -29px;
+left: 109px;
+ display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+}
+
+.archives::after{
+  content:'';
+  width: 8vh;
+  height: 10vh;
+background-image: url(/styles/lara-pocoyo/gift3.png);
+position: absolute;
+top: -24px;
+left: 15px;
+ display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+}
+
+
+.resources,.select,.archives{
+  position: absolute;
+}
+
+.preamble,.intro,.explanation,.participation,.requirements{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h1::after{
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman1.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+right: 30px;
+}
+
+h2::before {
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman2.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+left: 90px;
+}
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    position: relative;
+}
+
+
+body::before {
+  content: '';
+  background-image:url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png'), url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png');
+  background-size: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation: snow 10s linear infinite;
+  background-repeat: no-repeat;
+}
+
+p::after {
+  content: '';
+  background-image:url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png'), url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png');
+  background-size: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation: snow 10s linear infinite;
+  background-repeat: no-repeat;
+}
+
+p::before {
+  content: '';
+  background-image: url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png'),url('/styles/lara-pocoyo/snow.png'), url('/styles/lara-pocoyo/snow2.png'), url('/styles/lara-pocoyo/snow copy.png');
+  background-size: 10px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation: snow 10s linear infinite;
+  background-repeat: no-repeat;
+}
+
+@keyframes snow {
+  0% {
+    background-position: 0vw 0vh, 0vw 0vh, 0vw 0vh, 0vw 0vh, 0vw 0vh;
+  }
+  50% {
+    background-position: 50vw 50vh, 20vw 40vh, -10vw 30vh, -20vw 10vh, 10vw 20vh;
+  }
+  100% {
+    background-position: 100vw 100vh, 40vw 80vh, -20vw 60vh, -40vw 30vh, 20vw 50vh;
+  }
+}
+
+
+
+.explanation {
+  content: url(/styles/lara-pocoyo/tree.png);
+  height:78px;
+  width: 63px;
+  position:absolute;
+  margin-top:0px ;
+  left:118px ;
+ }
+
+body::after {
+  content:'';
+  background-image: url(/styles/lara-pocoyo/santa.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: fixed;
+  width: 23px;
+  height: 38px;
+  top: 20px;
+  right: 2px;
+  animation-name: santa;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+@keyframes santa {
+  0% {
+    scale: 1;
+  }
+  80% {
+    transform: translateY(95px) ;
+  }
+  100% {
+    transform:  translateY(845px) ;
+  }
+}
+.requirements::after{
+  content:'';
+  background-image: url(/styles/lara-pocoyo/chamine.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 23px;
+  height: 38px;
+  bottom:-11px;
+  right: 6px;
+
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1399px){
+  body::after {
+  content:'';
+  background-image: url(/styles/lara-pocoyo/santa.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: fixed;
+  width: 27px;
+  height: 54px;
+  top: 20px;
+  right: 2px;
+  animation-name: santa;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timeline: scroll(block nearest);
+}
+
+.explanation {
+  content: url(/styles/lara-pocoyo/tree.png);
+  height:78px;
+  width: 63px;
+  position:absolute;
+  margin-top:0px ;
+  left:477px ;
+ }
+
+ h1::after{
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman1.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+right: 371px;
+}
+
+h2::before {
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman2.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+left: 440px;
+}
+}
+@media only screen and (min-width: 1400px){
+
+.explanation {
+  content: url(/styles/lara-pocoyo/tree.png);
+  height:78px;
+  width: 63px;
+  position:absolute;
+  margin-top:0px ;
+  left:690px ;
+ }
+
+ h1::after{
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman1.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+right: 571px;
+}
+
+h2::before {
+content: '';
+background-image:url(/styles/lara-pocoyo/snowman2.png) ;
+position: absolute;
+display: block;
+background-size: contain; 
+background-repeat: no-repeat;
+top: 123px;
+height: 83px;
+width: 170px;
+left: 660px;
+}
+}

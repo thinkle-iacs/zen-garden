@@ -1,0 +1,677 @@
+/* Required for honors students */
+/********************************** 
+* Design by:  [Lara L]
+* Design name:  [Valentine's Day]
+* 
+* License: [This work is licensed under CC BY-NC 4.0 ]
+* 
+* Acknowledgments/Sources:
+* - Chatgpt
+* - Pextel
+* -
+*/
+
+/* Starter code -- feel free to delete */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Mountains+of+Christmas:wght@400;700&family=Nosifer&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script:wght@400..700&family=Mountains+of+Christmas:wght@400;700&family=Nosifer&family=Orbitron:wght@400..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');/* Typography */
+
+.page-wrapper {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: dancing script;
+  color: #344c43;
+  text-shadow: 4px 4px 3px #2225;
+}
+
+p,ul{
+  font-family:Pixelify Sans ;
+  letter-spacing:1px ;
+
+}
+
+/* Background */
+#css-zen-garden {
+  /* Repeating stripes */
+  background-size: 40px 40px;
+  background-color: azure;
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(237, 254, 253, 0.9);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 660px;
+  margin: 0 auto;
+}
+.preamble,.intro,.explanation,.participation,.requirements{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  background: white;
+}
+.sidebar .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+header {
+  margin-top: 64px;
+}
+
+
+aside > div > div {
+  height: 64px;
+}
+
+aside ul {
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: transform 2s, opacity 600ms;
+}
+aside > div > div:hover ul {
+  transform: translateY(0);
+  opacity: 1;
+  background: white;
+}
+
+aside > div > div nav {
+  overflow: hidden;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  display: block;
+  padding: 8px 4px;
+}
+
+aside li a:first-child {
+  display: block;
+  background: rgb(255, 0, 0);
+  color: white;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+aside li {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+}
+.page-wrapper {
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper h3{
+  font-family: dancing script;
+  color: #feffff;
+  text-shadow: none;
+}
+
+h1::after{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  right: 163px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+
+}
+
+@keyframes heart {
+  0%, 100% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.5); 
+  }
+}
+
+h1::before{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  left: 163px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+ }
+
+ .explanation::before{
+  content:'';
+  background-image:url(/styles/lara-pocoyo/ghost.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+}
+  .responsive, a{
+    color: black;
+  }
+   
+  .requirements{
+    position: relative;
+  width: 100%;
+  height: 100%;
+  border:8px dashed ;
+}
+
+
+  .requirements::before{
+
+    background-color: rgb(206, 234, 245);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  content: url(/styles/lara-pocoyo/heart.png) "Happy Valentine's Day!Life without you is like HTML without CSS.";
+  width: 606px;
+  height: 349px;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  transition: transform 300ms, opacity 1s;
+  transform-origin: right;
+}
+
+.requirements:hover::before {
+  transform: rotateY(90deg);
+
+  opacity: 0;
+}
+.requeriments:hover::after {
+  transform: rotateY(90deg);
+  transform-origin: right;
+  opacity: 0;
+}
+.sidebar .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+}
+
+.select::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 43px;
+  left: 42px;
+} 
+
+
+.resources::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 43px;
+  right: 42px;
+}
+
+.archives{
+   content:'' ;
+  background-image: url(/styles/lara-pocoyo/baloon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 43px;
+  right: 398px;
+}
+
+@media only screen and (max-width: 768px) {
+
+.page-wrapper {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: dancing script;
+  color: #344c43;
+  text-shadow: 4px 4px 3px #2225;
+}
+
+p,ul{
+  font-family:Pixelify Sans ;
+  letter-spacing:1px ;
+
+}
+
+/* Background */
+#css-zen-garden {
+  /* Repeating stripes */
+  background-size: 40px 40px;
+  background-color: azure;
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(237, 254, 253, 0.9);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 660px;
+  margin: 0 auto;
+}
+.preamble,.intro,.explanation,.participation,.requirements{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 64px;
+  width: 100%;
+  background: white;
+}
+.sidebar .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+header {
+  margin-top: 64px;
+}
+
+
+aside > div > div {
+  height: 64px;
+}
+
+aside ul {
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: transform 2s, opacity 600ms;
+}
+aside > div > div:hover ul {
+  transform: translateY(0);
+  opacity: 1;
+  background: white;
+}
+
+aside > div > div nav {
+  overflow: hidden;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  display: block;
+  padding: 8px 4px;
+}
+
+aside li a:first-child {
+  display: block;
+  background: rgb(255, 0, 0);
+  color: white;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+aside li {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+body {
+  margin: 0;
+}
+.page-wrapper {
+  max-width: 640px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper h3{
+  font-family: dancing script;
+  color: #feffff;
+  text-shadow: none;
+}
+
+h1::after{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  right: 163px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+
+}
+
+@keyframes heart {
+  0%, 100% {
+    transform: scale(1); 
+  }
+  50% {
+    transform: scale(1.5); 
+  }
+}
+
+h1::before{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  left: 163px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+ }
+
+ .explanation::before{
+  content:'';
+  background-image:url(/styles/lara-pocoyo/ghost.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+}
+  .responsive, a{
+    color: black;
+  }
+   
+  .requirements{
+    position: relative;
+  width: 100%;
+  height: 100%;
+  border:8px dashed ;
+}
+
+
+  .requirements::before{
+
+    background-color: rgb(206, 234, 245);
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  content: url(/styles/lara-pocoyo/heart.png) "Happy Valentine's Day!Life without you is like HTML without CSS.";
+  width: 606px;
+  height: 349px;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  transition: transform 300ms, opacity 1s;
+  transform-origin: right;
+}
+
+.requirements:hover::before {
+  transform: rotateY(90deg);
+
+  opacity: 0;
+}
+.requeriments:hover::after {
+  transform: rotateY(90deg);
+  transform-origin: right;
+  opacity: 0;
+}
+.sidebar .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+}
+
+.select::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  width: 38px;
+  height: 43px;
+  left: 42px;
+} 
+
+
+.resources::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  width: 38px;
+  height: 43px;
+  right: 42px;
+}
+
+.archives{
+   content:'' ;
+  background-image: url(/styles/lara-pocoyo/baloon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  width: 38px;
+  height: 43px;
+  right: 398px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1399px) {
+  h1::before{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  left: 476px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+ }
+ h1::after{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  right: 476px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+
+}
+.sidebar .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 324px;
+}
+.archives{
+   content:'' ;
+  background-image: url(/styles/lara-pocoyo/baloon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 42px;
+  height: 43px;
+  right: 731px;
+}
+.resources::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  right: 101px;
+
+}
+.select::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  left: 101px;
+} 
+
+}
+
+@media only screen and (min-width: 1400px){
+ h1::before{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  left:671px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+ }
+ h1::after{
+  content: '';
+  position: absolute;
+  background-image: url(/styles/lara-pocoyo/heart.png);
+  background-size: contain;
+  background-repeat:no-repeat;
+  width: 33px;
+  height:67px;
+  top:136px;
+  right: 682px;
+  animation-name: heart;
+  animation-duration: 5s;
+  animation-iteration-count:infinite ;
+
+}
+.sidebar .wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 512px;
+}
+.archives{
+   content:'' ;
+  background-image: url(/styles/lara-pocoyo/baloon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 42px;
+  height: 43px;
+  right: 948px;
+}
+.resources::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  right: 259px;
+
+}
+.select::after{
+  content:'' ;
+  background-image: url(/styles/lara-pocoyo/birds.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 38px;
+  height: 44px;
+  left: 134px;
+} 
+
+}

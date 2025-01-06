@@ -1,0 +1,300 @@
+/********************************** 
+* Design by:  Chery Berroa
+* Design name:  Sakura Tree
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - Unsplash
+* - google fonts
+* -
+*/
+
+/* Starter code -- feel free to delete */
+/* Global Body Styling */
+body {
+  background-color: #111;
+  background-image: url("/styles/CheryBerroa/photo-1516205651411-aef33a44f7c2.jpeg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Main Wrapper */
+.page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+/* Header Styling with Neon Glow */
+header {
+  background-color: rgba(17, 17, 17, 0.8); /* Slight transparency for header */
+  color: #fff;
+  padding: 20px; /* Increased padding */
+  border-bottom: 5px solid #ff66cc; /* Neon pink border */
+  box-shadow: 0 0 20px #ff66cc; /* Glow effect */
+  margin-top: 50px; /* Reduced margin for header */
+}
+
+h1,
+h2 {
+  font-family: "Impact", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px; /* Reduced font size for title */
+  animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+.iacs {
+  color: #ff66cc; /* Neon pink color */
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 20px #ff66cc; /* Glow effect */
+}
+
+/* Intro, Main, Sidebar Section Padding */
+.intro,
+.main,
+.sidebar {
+  padding: 20px;
+}
+
+/* Neon Glow for h3 Headers */
+h3 {
+  color: #ff66cc; /* Neon pink color */
+  font-size: 24px;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 20px #ff66cc;
+}
+
+/* Content Sections with Neon Border and Background */
+.summary,
+.preamble,
+.explanation,
+.participation,
+.requirements {
+  margin-bottom: 30px;
+  background-color: rgba(51, 51, 51, 0.8); /* Slight transparency */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ff66cc; /* Neon pink border */
+  box-shadow: 0 0 20px #ff66cc; /* Glow effect */
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Neon Links Styling */
+a {
+  color: #ff66cc; /* Neon pink color */
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 15px #ff66cc; /* Glow effect */
+}
+
+a:hover {
+  color: #fff;
+  background-color: #ff66cc; /* Neon pink background */
+  padding: 5px;
+  text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc; /* Neon glow on hover */
+}
+
+/* Sidebar Styling with Neon Border */
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff66cc; /* Neon glow */
+  font-size: 16px; /* Set the default font size for the sidebar */
+}
+
+/* Design Selection Links Styling */
+.design-selection a {
+  font-weight: bold;
+  font-size: 16px; /* Set a uniform font size for the links */
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc; /* Glow effect */
+  color: #ff66cc; /* Neon color */
+  text-decoration: none; /* No underline */
+  padding: 5px 10px; /* Add padding for spacing */
+}
+
+/* Select A Design Section (Adjusted to match Archives & Resources) */
+#design-selection ul {
+  padding-left: 0;
+}
+
+#design-selection li {
+  margin: 10px 0;
+}
+
+#design-selection ul a {
+  color: #ff66cc;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc; /* Glow effect */
+}
+
+#design-selection ul a:hover {
+  color: #fff;
+  background-color: #ff66cc;
+  padding: 5px;
+  text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc; /* Glow effect on hover */
+}
+
+/* Sidebar Menu Items */
+aside > div > div {
+  height: auto; /* Allow content to stretch */
+}
+
+aside ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+aside ul li {
+  display: block;
+  padding: 8px 15px; /* Adjusted padding for better spacing */
+  font-size: 16px; /* Consistent font size for all list items */
+  text-align: center;
+}
+
+aside li a:first-child {
+  display: block;
+  background: #ff66cc; /* Neon pink */
+  color: white;
+  padding: 8px 15px; /* Add padding for better clickable area */
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px; /* Consistent font size */
+}
+
+/* Adjust hover for sidebar menu items */
+aside li a:hover {
+  background-color: #ff66cc;
+  color: #111;
+  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 15px #ff66cc; /* Glow effect */
+}
+
+/* Sidebar Archives & Resources Styling */
+#design-archives ul,
+#zen-resources ul {
+  padding-left: 0;
+}
+
+#design-archives li,
+#zen-resources li {
+  margin: 10px 0;
+}
+
+#zen-resources ul a {
+  color: #ff66cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#zen-resources ul a:hover {
+  color: #fff;
+  background-color: #ff66cc;
+  padding: 5px;
+}
+
+/* Neon Glow Animation */
+@keyframes neonGlow {
+  0% {
+    text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 20px #ff66cc,
+      0 0 30px #ff66cc;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff66cc, 0 0 20px #ff66cc, 0 0 30px #ff66cc,
+      0 0 40px #ff66cc;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff66cc, 0 0 20px #ff66cc,
+      0 0 30px #ff66cc;
+  }
+}
+
+/* Fixed Sidebar Menu Layout */
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px; /* Increased height for better visibility */
+  width: 100%;
+  background: rgba(17, 17, 17, 0.8); /* Transparent black background */
+  box-shadow: 0 0 20px #ff66cc; /* Neon glow */
+  z-index: 10;
+}
+
+.sidebar .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+header {
+  margin-top: 50px; /* Adjusted for smaller header */
+}
+
+/* Sidebar Menu Items */
+aside > div > div {
+  height: 60px; /* Increased height for better menu spacing */
+}
+
+aside ul {
+  transform: translateY(-110%);
+  opacity: 0;
+  transition: transform 300ms, opacity 600ms;
+}
+
+aside > div > div:hover ul {
+  transform: translateY(0);
+  opacity: 1;
+  background: rgba(17, 17, 17, 0.8); /* Ensure the hover menu has a slight transparent black background */
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  display: block;
+  padding: 6px 4px; /* Adjusted padding */
+}
+
+aside li a:first-child {
+  display: block;
+  background: #ff66cc; /* Neon pink */
+  color: white;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+aside li {
+  font-size: 0.8rem;
+  text-align: center;
+}

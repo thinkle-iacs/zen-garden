@@ -1,0 +1,197 @@
+/********************************** 
+* Design by:  Lilly B.
+* Design name:  I can't believe it's not Geocities!
+* 
+* License: MIT
+* 
+* Acknowledgments/Sources:
+* - Made with assistance from GPT-4o by OpenAI. https://chatgpt.com/share/67532b75-75f0-8009-951a-798c927c13e4 
+* - Good Old DOS" typeface is created by morderdrakonovich and was labeled as Public Domain, however, It's a good font and he deserves credit.  
+* - Code for sidebar buttons taken from StackOverflow. https://stackoverflow.com/a/710108 
+*/
+
+
+/*import fonts that will be used on the site*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* converted fonts to WOFF using convertio. https://convertio.co/ */
+@font-face {
+  font-family: GoodOldDOS;
+  /* save some precious precious bandwidth on the rare occasion someone already has goodolddos installed on their system. */
+  local("GoodOldDOS");
+  local("Good Old DOS");
+  src: url(/styles/geocities/GoD.ttf);
+  src: url(/styles/geocities/GoD.woff);
+}
+
+@font-face {
+  font-family: GoodOldDOS-D;
+  src: url(/styles/geocities/GoD-D.tff);
+  src: url(/styles/geocities/GoD-D.woff);
+}
+
+/*alright, now onto the text formatting junk!*/
+
+.iacs {
+  color: #0033a0;
+  text-shadow: 3px 3px 3px #c6093b;
+}
+h1 {
+  font-family: "GoodOldDOS", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #0033a0;
+  color: #c6093b;
+}
+
+/* pick the right fonts*/
+
+
+a {
+  font-family: "GoodOldDOS-D", sans-serif;
+  color:blue;
+}
+
+h2 {
+  font-family: "GoodOldDOS", sans-serif;
+}
+
+h3 {
+  font-family: "GoodOldDOS", sans-serif;
+}
+
+h4 {
+  font-family: "GoodOldDOS", sans-serif;
+}
+
+nav {
+  font-family: "GoodOldDOS", sans-serif;
+}
+
+p {
+  font-family: "Oswald", sans-serif;
+}
+
+#zen-requirements {
+  font-family: "Oswald", sans-serif;
+}
+
+code {
+  font-family: "GoodOldDOS", sans-serif;
+  font-size: smaller;
+  color: #0033a0;
+}
+
+/* add background image*/
+body {
+  /* no idea where this image originally came from, but as far as i can tell, the oldest instance of it is from angelfire back in 2008.*/
+  background-image: url(/styles/geocities/abstract1.jpg);
+}
+
+/*specify max width and other stuff about the page*/
+/*thank god im not in honors, doing reactive design with this theme woukld be hell.*/
+
+.page-wrapper {
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c5e9fa;
+  border-style: solid;
+  border-color: #83bede;
+  padding: 25px 25px 25px 25px;
+}
+
+.sidebar {
+  background-color: lightblue;
+  border-style: dotted;
+  border-color: #6ca5c4;
+  padding: 25px 25px 25px 25px;
+}
+
+.design-selection ul li .design-name{
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: blue;
+  padding: 0px 4px 0px 4px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+.design-selection ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.design-archives nav ul li a {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: blue;
+  padding: 0px 4px 0px 4px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+.design-archives nav ul li {
+  padding: 2px 4px 2px 4px;
+}
+
+.design-selection ul li {
+  padding: 2px 4px 2px 4px;
+}
+
+.zen-resources li a {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: blue;
+  padding: 0px 4px 0px 4px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+/*specify the grid for the site, easiest way of saying where goes what*/
+/*tbh i didnt know this existed until mr hinkle pointed it out (ty btw)*/
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content  sidebar"
+    "content2 content2";
+}
+
+header {
+  grid-area: header;
+}
+.intro {
+  grid-area: content;
+}
+main {
+  grid-area: content2;
+}
+aside {
+  grid-area: sidebar;
+}
+
+/* The following is the CSS for buttons at the bottom of the site. Made with assistance from GPT-4o by OpenAI.*/
+/*i didn't really end up using most of the code that was given by ChatGPT, but I'll keep the attribution here because it did help me lean a lil*/
+
+#zen-requirements::after {
+  content: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa::aaaaaaaaaaaaaaaaaaaaaaaaaaa";
+  color: #000;
+  color: rgba(0, 0, 0, 0);
+  /* this is a HORRIBLE solution, but forwhatever godforsaken reason, this WONT display without text in the content. So we give it what it wants, but then hide it. */
+  font-size: 25px;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 900px;
+  height: 31px;
+  background-image: url(/styles/geocities/gif.gif); /* Set your image URL */
+  background-size: contain; /* Ensures the image retains its original size */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  image-rendering: pixelated; /* Preserves pixel art sharpness */
+  z-index: 9999; /* Ensures it is above all other elements */
+}
