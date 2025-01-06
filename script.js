@@ -86,12 +86,21 @@ function updateSelections(includeAll = false, startWith = null) {
 
 function setupInitialList() {
   let selected = location.hash.slice(1);
+  let closestMatch = null;
+  let foundHash = false;
   for (let style of styles) {
     let selector = new StyleSelector(style);
     allSelectors.push(selector);
     if (selected == selector.id) {
       selector.applyStyle();
+      foundHash = true;
     }
+    if (!closestMatch && selector.id.includes(selected)) {
+      closestMatch = selector;
+    }
+  }
+  if (!foundHash && closestMatch) {
+    closestMatch.applyStyle();
   }
 
   updateSelections();
