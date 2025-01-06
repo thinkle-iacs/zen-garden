@@ -11,21 +11,21 @@ const styles = [
     "path": "th-fib/style.css",
     "designer": "Mr. Hinkle",
     "portfolio": "https://www.tomhinkle.net",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Block party",
     "path": "block-party/style.css",
     "designer": "Mr. Hinkle",
     "portfolio": "https://www.tomhinkle.net",
-    "highlight": true
+    "highlight": false
   },
   {
     "path": "ar-tree/style.css",
     "designer": "Aarav Patel",
     "name": "Fall Tree",
     "portfolio": "",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "The Cataclysm: as seen by scavenger in sewer",
@@ -171,7 +171,7 @@ const styles = [
     "path": "owenk/style.css",
     "designer": "Owen K",
     "portfolio": "",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Space Wide",
@@ -184,7 +184,7 @@ const styles = [
     "path": "beach-waves/style.css",
     "designer": "Mr. Hinkle",
     "portfolio": "https://www.tomhinkle.net",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Stars (by ChatGPT4)",
@@ -351,13 +351,15 @@ const styles = [
     "name": "Dev P",
     "path": "NRpatel002/style.css",
     "designer": "Design 1",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002",
+    highlight: true,
   },
   {
     "name": "Fall Forest",
     "path": "NRpatel002/style2.css",
     "designer": "Dev P",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002",
+    highlight: true,
   },
   {
     "name": "Design 3",
@@ -369,7 +371,8 @@ const styles = [
     "name": "indian colors",
     "path": "aravpatel2009/style.css",
     "designer": "Arav Patel",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-aravpatel2009"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-aravpatel2009",
+    highlight: true,
   },
   {
     "name": "The Future of Design...",
@@ -381,13 +384,14 @@ const styles = [
     "name": "Y2K",
     "path": "escaffidi08/style.css",
     "designer": "Ellie Scaffidi",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-escaffidi08"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-escaffidi08",
   },
   {
     "name": "Euphoric",
     "path": "leoo-joy/style.css",
     "designer": "Joy-Deborah",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-leoo-joy"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-leoo-joy",
+    highlight: true,
   },
   {
     "name": "style2",
@@ -399,19 +403,22 @@ const styles = [
     "name": "style",
     "path": "JewlianCruz/style.css",
     "designer": "Jewlian G.",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-JewlianCruz"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-JewlianCruz",
+    highlight: true,
   },
   {
     "name": "Celestial",
     "path": "maddieec0124/style.css",
     "designer": "Maddie Evans-Cole",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-maddieec0124"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-maddieec0124",
+    highlight: true,
   },
   {
     "name": "Lights Out",
     "path": "iGoob/style.css",
     "designer": "Joseph Burns",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-iGoob"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-iGoob",
+    highlight: true,
   },
   {
     "name": "style",
@@ -423,37 +430,43 @@ const styles = [
     "name": "A CSS Christmas",
     "path": "AAIDANN/style.css",
     "designer": "Aidan Negga",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AAIDANN"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AAIDANN",
+    highlight: true,
   },
   {
     "name": "Valentine's Day",
     "path": "lara-pocoyo/style.css",
     "designer": "Lara L",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo",
+    highlight: true,
   },
   {
     "name": "Christmas",
     "path": "lara-pocoyo/style2.css",
     "designer": "Lara L",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo",
+    highlight: true,
   },
   {
     "name": "Ghost",
     "path": "lara-pocoyo/style3.css",
     "designer": "Lara L",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo",
+    highlight: true,
   },
   {
     "name": "ECO",
     "path": "AngelDevia452/style.css",
     "designer": "Angel Devia",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AngelDevia452"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AngelDevia452",
+    highlight: true,
   },
   {
     "name": "hearts",
     "path": "nyjahrae/style.css",
     "designer": "Nyjahrae Brown",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-nyjahrae"
+    "portfolio": "https://github.com/IACS-CS/css-zen-garden-nyjahrae",
+    highlight: true
   },
   {
     "name": "style3",
@@ -471,7 +484,8 @@ const styles = [
     "name": "I can't believe it's not Geocities",
     "path": "geocities/style.css",
     "designer": "Lilly B.",
-    "portfolio": "https://lainiwakura.xyz/"
+    "portfolio": "https://lainiwakura.xyz/",
+    highlight: true
   },
   {
     "name": "Unfinished",
