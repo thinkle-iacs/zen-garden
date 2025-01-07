@@ -348,9 +348,9 @@ const styles = [
     "highlight": true
   },
   {
-    "name": "Dev P",
+    "designer": "Dev P",
     "path": "NRpatel002/style.css",
-    "designer": "Design 1",
+    "name": "Design 1",
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002",
     highlight: true,
   },
@@ -362,9 +362,9 @@ const styles = [
     highlight: true,
   },
   {
-    "name": "Design 3",
+    "designer": "Design 3",
     "path": "NRpatel002/style3.css",
-    "designer": "Dev P",
+    "name": "Dev P",
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
   },
   {
