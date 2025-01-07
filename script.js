@@ -29,8 +29,8 @@ class StyleSelector {
 
   setupHandler() {
     let styleLink = this.li.querySelector("a.design-name");
-    styleLink.addEventListener("click", () => {
-      this.applyStyle();
+    styleLink.addEventListener("click", (event) => {
+      this.applyStyle();      
     });
   }
 
@@ -38,6 +38,13 @@ class StyleSelector {
     document.querySelector("#thestyle").setAttribute("href", this.path);
     document.querySelector("#csslink").setAttribute("href", this.path);
     updateSelections(false, this);
+    setTimeout(
+      ()=>{
+        console.log('Scroll up');
+        window.scrollTo({top:0});
+        },
+        10
+      );
   }
 }
 let allSelectors = [];
@@ -84,7 +91,7 @@ function updateSelections(includeAll = false, startWith = null) {
   }
 }
 
-function setupInitialList() {
+function applyStyleForHash () {
   let selected = location.hash.slice(1);
   let closestMatch = null;
   let foundHash = false;
@@ -102,6 +109,10 @@ function setupInitialList() {
   if (!foundHash && closestMatch) {
     closestMatch.applyStyle();
   }
+}
+
+function setupInitialList() {
+  applyStyleForHash();
 
   updateSelections();
 
@@ -119,3 +130,10 @@ function setupInitialList() {
 }
 
 document.addEventListener("DOMContentLoaded", setupInitialList);
+window.addEventListener(
+  "hashchange",
+  function () {
+    applyStyleForHash();
+  },
+  false
+)
