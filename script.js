@@ -91,8 +91,11 @@ function updateSelections(includeAll = false, startWith = null) {
   }
 }
 
-function applyStyleForHash () {
+function applyStyleForHash () {  
   let selected = location.hash.slice(1);
+  if (selected == "all") {
+    return
+  }
   let closestMatch = null;
   let foundHash = false;
   for (let style of styles) {
