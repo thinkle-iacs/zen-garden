@@ -4,7 +4,7 @@ const styles = [
     "path": "default/style.css",
     "designer": "Mr. Hinkle",
     "portfolio": "https://www.tomhinkle.net",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Golden Ratio",
@@ -38,7 +38,7 @@ const styles = [
     "path": "emily-music/style.css",
     "designer": "Emily Myerov",
     "portfolio": "",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Halo",
@@ -51,7 +51,7 @@ const styles = [
     "path": "emanuelly-ferreira/style.css",
     "designer": "Emanuelly Ferreira.",
     "portfolio": "#",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Milky Way",
@@ -70,7 +70,7 @@ const styles = [
     "path": "zander2023/style.css",
     "designer": "Zander B-V",
     "portfolio": "",
-    "highlight": true
+    "highlight": false // true
   },
   {
     "name": "Tri-Tec Industries",
@@ -83,14 +83,14 @@ const styles = [
     "path": "24-ethan-simple/style.css",
     "designer": "Ethan-Matte",
     "portfolio": "https://sunryze-studios.netlify.app/web.html",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Retro Game",
     "path": "24-ethan-retro/style.css",
     "designer": "Ethan-matte",
     "portfolio": "https://sunryze-studios.netlify.app/web.html",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Zen Garden ",
@@ -103,42 +103,42 @@ const styles = [
     "path": "23-julian-construction/style.css",
     "designer": "julian-henry",
     "portfolio": "https://remarkable-pithivier-572d14.netlify.app/",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Cyberpunk",
     "path": "23-julian-cyberpunk/style.css",
     "designer": "julian-henry",
     "portfolio": "https://remarkable-pithivier-572d14.netlify.app/",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Haunted Graveyard",
     "path": "23-julian-haunted/style.css",
     "designer": "julian-henry",
     "portfolio": "https://remarkable-pithivier-572d14.netlify.app/",
-    "highlight": true
+    "highlight": false 
   },
   {
     "name": "Soaring Sky",
     "path": "seth-lupo-soaring-sky/style.css",
     "designer": "Seth Lupo",
     "portfolio": "https://sethlupo.dev/",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Modernist Blocks",
     "path": "seth-lupo-modernist-blocks/style.css",
     "designer": "Seth Lupo",
     "portfolio": "https://sethlupo.dev/",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Limbo",
     "path": "seth-lupo-limbo/style.css",
     "designer": "Seth Lupo",
     "portfolio": "https://sethlupo.dev/",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Eli's Dark Mode",
@@ -157,14 +157,14 @@ const styles = [
     "path": "avery-space/style.css",
     "designer": "Avery K",
     "portfolio": "",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "The Theater",
     "path": "avery-theater/style.css",
     "designer": "Avery K",
     "portfolio": "",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Bold Lines",
@@ -197,14 +197,14 @@ const styles = [
     "path": "gpt-8bit/style.css",
     "designer": "ChatGPT 4",
     "portfolio": "https://chat.openai.com/",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Delicate Touch (by ChatGPT4)",
     "path": "delicate-gpt/style.css",
     "designer": "ChatGPT 4",
     "portfolio": "https://chat.openai.com/",
-    "highlight": true
+    "highlight": false
   },
   {
     "name": "Stardust",
@@ -228,7 +228,7 @@ const styles = [
     "name": "Circus",
     "path": "LL-cirus/style.css",
     "designer": "L. Lovell",
-    "highlight": true,
+    "highlight": false,
     "portfolio": "https://lovell-web-design-portfolio.netlify.app/"
   },
   {
@@ -271,7 +271,7 @@ const styles = [
     "name": "Fall",
     "path": "GR-Fall/style.css",
     "designer": "Grayson Reska",
-    "highlight": true,
+    "highlight": false,
     "portfolio": "https://grayson-reska-portfolio.netlify.app/"
   },
   {
@@ -345,7 +345,7 @@ const styles = [
     "path": "RH-80s/style.css",
     "designer": "Rylie Hegarty",
     "portfolio": "https://rhwebdesignportfolio.netlify.app/ ",
-    "highlight": true
+    "highlight": false
   },
   {
     "designer": "Dev P",
@@ -365,6 +365,7 @@ const styles = [
     "designer": "Design 3",
     "path": "NRpatel002/style3.css",
     "name": "Dev P",
+    highlight: true,
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
   },
   {
@@ -378,12 +379,14 @@ const styles = [
     "name": "The Future of Design...",
     "path": "Lkidschool/style.css",
     "designer": "Joshua Simoneau",
+    highlight: true,
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-Lkidschool"
   },
   {
     "name": "Y2K",
     "path": "escaffidi08/style.css",
     "designer": "Ellie Scaffidi",
+    highlight: true,
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-escaffidi08",
   },
   {
@@ -424,6 +427,7 @@ const styles = [
     "name": "style",
     "path": "Adrianorib2/style.css",
     "designer": "Adrinao R.",
+    highlight: true,
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-Adrianorib2"
   },
   {
@@ -478,6 +482,7 @@ const styles = [
     "name": "Sakura Tree",
     "path": "CheryBerroa/style.css",
     "designer": "Chery Berroa",
+    highlight: true,
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-CheryBerroa"
   },
   {
@@ -491,6 +496,7 @@ const styles = [
     "name": "Unfinished",
     "path": "1234567890-qwertyuiop-asdfghjkl-zxcvbnm/style.css",
     "designer": "Ethan S.",
+    highlight: true,
     "portfolio": "https://github.com/IACS-CS/css-zen-garden-1234567890-qwertyuiop-asdfghjkl-zxcvbnm"
   }
 ];
