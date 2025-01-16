@@ -351,14 +351,14 @@ const styles = [
     "designer": "Dev P",
     "path": "NRpatel002/style.css",
     "name": "Design 1",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/",
     highlight: true,
   },
   {
     "name": "Fall Forest",
     "path": "NRpatel002/style2.css",
     "designer": "Dev P",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/",
     highlight: true,
   },
   {
@@ -366,13 +366,13 @@ const styles = [
     "path": "NRpatel002/style3.css",
     "name": "Dev P",
     highlight: true,
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-NRpatel002"
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/"
   },
   {
     "name": "indian colors",
     "path": "aravpatel2009/style.css",
     "designer": "Arav Patel",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-aravpatel2009",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-aravpatel2009/",
     highlight: true,
   },
   {
@@ -380,20 +380,20 @@ const styles = [
     "path": "Lkidschool/style.css",
     "designer": "Joshua Simoneau",
     highlight: true,
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-Lkidschool"
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-Lkidschool/"
   },
   {
     "name": "Y2K",
     "path": "escaffidi08/style.css",
     "designer": "Ellie Scaffidi",
     highlight: true,
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-escaffidi08",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-escaffidi08/",
   },
   {
     "name": "Euphoric",
     "path": "leoo-joy/style.css",
     "designer": "Joy-Deborah",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-leoo-joy",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-leoo-joy/",
     highlight: true,
   },
   {
@@ -406,21 +406,21 @@ const styles = [
     "name": "style",
     "path": "JewlianCruz/style.css",
     "designer": "Jewlian G.",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-JewlianCruz",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-JewlianCruz/",
     highlight: true,
   },
   {
     "name": "Celestial",
     "path": "maddieec0124/style.css",
     "designer": "Maddie Evans-Cole",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-maddieec0124",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-maddieec0124/",
     highlight: true,
   },
   {
     "name": "Lights Out",
     "path": "iGoob/style.css",
     "designer": "Joseph Burns",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-iGoob",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-iGoob/",
     highlight: true,
   },
   {
@@ -428,62 +428,56 @@ const styles = [
     "path": "Adrianorib2/style.css",
     "designer": "Adrinao R.",
     highlight: true,
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-Adrianorib2"
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-Adrianorib2/"
   },
   {
     "name": "A CSS Christmas",
     "path": "AAIDANN/style.css",
     "designer": "Aidan Negga",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AAIDANN",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-AAIDANN/",
     highlight: true,
   },
   {
     "name": "Valentine's Day",
     "path": "lara-pocoyo/style.css",
     "designer": "Lara L",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-lara-pocoyo/",
     highlight: true,
   },
   {
     "name": "Christmas",
     "path": "lara-pocoyo/style2.css",
     "designer": "Lara L",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-lara-pocoyo/",
     highlight: true,
   },
   {
     "name": "Ghost",
     "path": "lara-pocoyo/style3.css",
     "designer": "Lara L",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-lara-pocoyo",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-lara-pocoyo/",
     highlight: true,
   },
   {
     "name": "ECO",
     "path": "AngelDevia452/style.css",
     "designer": "Angel Devia",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-AngelDevia452",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-AngelDevia452/",
     highlight: true,
   },
   {
     "name": "hearts",
     "path": "nyjahrae/style.css",
     "designer": "Nyjahrae Brown",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-nyjahrae",
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-nyjahrae/",
     highlight: true
-  },
-  {
-    "name": "style3",
-    "path": "nyjahrae/style3.css",
-    "designer": "nyjahrae",
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-nyjahrae"
   },
   {
     "name": "Sakura Tree",
     "path": "CheryBerroa/style.css",
     "designer": "Chery Berroa",
     highlight: true,
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-CheryBerroa"
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-CheryBerroa/"
   },
   {
     "name": "I can't believe it's not Geocities",
@@ -497,7 +491,7 @@ const styles = [
     "path": "1234567890-qwertyuiop-asdfghjkl-zxcvbnm/style.css",
     "designer": "Ethan S.",
     highlight: true,
-    "portfolio": "https://github.com/IACS-CS/css-zen-garden-1234567890-qwertyuiop-asdfghjkl-zxcvbnm"
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-1234567890-qwertyuiop-asdfghjkl-zxcvbnm/"
   }
 ];
 exports.styles = styles;
