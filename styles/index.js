@@ -11,7 +11,7 @@ const styles = [
     "path": "th-fib/style.css",
     "designer": "Mr. Hinkle",
     "portfolio": "https://www.tomhinkle.net",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Block party",
@@ -70,7 +70,7 @@ const styles = [
     "path": "zander2023/style.css",
     "designer": "Zander B-V",
     "portfolio": "",
-    "highlight": false // true
+    "highlight": true
   },
   {
     "name": "Tri-Tec Industries",
@@ -90,7 +90,7 @@ const styles = [
     "path": "24-ethan-retro/style.css",
     "designer": "Ethan-matte",
     "portfolio": "https://sunryze-studios.netlify.app/web.html",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Zen Garden ",
@@ -103,42 +103,42 @@ const styles = [
     "path": "23-julian-construction/style.css",
     "designer": "julian-henry",
     "portfolio": "https://remarkable-pithivier-572d14.netlify.app/",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Cyberpunk",
     "path": "23-julian-cyberpunk/style.css",
     "designer": "julian-henry",
     "portfolio": "https://remarkable-pithivier-572d14.netlify.app/",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Haunted Graveyard",
     "path": "23-julian-haunted/style.css",
     "designer": "julian-henry",
     "portfolio": "https://remarkable-pithivier-572d14.netlify.app/",
-    "highlight": false 
+    "highlight": true 
   },
   {
     "name": "Soaring Sky",
     "path": "seth-lupo-soaring-sky/style.css",
     "designer": "Seth Lupo",
     "portfolio": "https://sethlupo.dev/",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Modernist Blocks",
     "path": "seth-lupo-modernist-blocks/style.css",
     "designer": "Seth Lupo",
     "portfolio": "https://sethlupo.dev/",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Limbo",
     "path": "seth-lupo-limbo/style.css",
     "designer": "Seth Lupo",
     "portfolio": "https://sethlupo.dev/",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Eli's Dark Mode",
@@ -157,14 +157,14 @@ const styles = [
     "path": "avery-space/style.css",
     "designer": "Avery K",
     "portfolio": "",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "The Theater",
     "path": "avery-theater/style.css",
     "designer": "Avery K",
     "portfolio": "",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Bold Lines",
@@ -184,20 +184,21 @@ const styles = [
     "path": "beach-waves/style.css",
     "designer": "Mr. Hinkle",
     "portfolio": "https://www.tomhinkle.net",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Stars (by ChatGPT4)",
     "path": "stars-gpt/style.css",
     "designer": "ChatGPT 4",
-    "portfolio": "https://chat.openai.com/"
+    "portfolio": "https://chat.openai.com/",
+    "highlight": false
   },
   {
     "name": "8-Bit (by ChatGPT4)",
     "path": "gpt-8bit/style.css",
     "designer": "ChatGPT 4",
     "portfolio": "https://chat.openai.com/",
-    "highlight": false
+    "highlight": true
   },
   {
     "name": "Delicate Touch (by ChatGPT4)",
@@ -210,7 +211,8 @@ const styles = [
     "name": "Stardust",
     "path": "stardust-klein/style.css",
     "designer": "Sarah K",
-    "portfolio": "https://sarah-klein-portfolio-shenanigans.netlify.app/"
+    "portfolio": "https://sarah-klein-portfolio-shenanigans.netlify.app/",
+    "highlight": true
   },
   {
     "name": "Artistry",
@@ -228,20 +230,23 @@ const styles = [
     "name": "Circus",
     "path": "LL-cirus/style.css",
     "designer": "L. Lovell",
-    "highlight": false,
-    "portfolio": "https://lovell-web-design-portfolio.netlify.app/"
+    "highlight": true,
+    "portfolio": "https://lovell-web-design-portfolio.netlify.app/",
+    
   },
   {
     "name": "Leaves",
     "path": "LL-leaves/style.css",
     "designer": "L. Lovell",
-    "portfolio": "https://lovell-web-design-portfolio.netlify.app/"
+    "portfolio": "https://lovell-web-design-portfolio.netlify.app/",
+    "highlight": true
   },
   {
     "name": "Minimalism",
     "path": "LL-minimalism/style.css",
     "designer": "L. Lovell",
-    "portfolio": "https://lovell-web-design-portfolio.netlify.app/"
+    "portfolio": "https://lovell-web-design-portfolio.netlify.app/",
+    "highlight": true
   },
   {
     "name": "NCB Office",
@@ -253,13 +258,15 @@ const styles = [
     "name": "Plant",
     "path": "EH-plant/style.css",
     "designer": "Emily Hanlon",
-    "portfolio": "#fixme"
+    "portfolio": "#fixme",
+    "highlight": true
   },
   {
     "name": "Halloween",
     "path": "GR-Halloween/style.css",
     "designer": "Grayson Reska",
-    "portfolio": "https://grayson-reska-portfolio.netlify.app/"
+    "portfolio": "https://grayson-reska-portfolio.netlify.app/",
+    "highlight": true
   },
   {
     "name": "Retro",
@@ -271,7 +278,7 @@ const styles = [
     "name": "Fall",
     "path": "GR-Fall/style.css",
     "designer": "Grayson Reska",
-    "highlight": false,
+    "highlight": true,
     "portfolio": "https://grayson-reska-portfolio.netlify.app/"
   },
   {
@@ -284,20 +291,15 @@ const styles = [
     "name": "Nature",
     "path": "KB-Nature/style.css",
     "designer": "Khang B",
-    "portfolio": "#fixme"
+    "portfolio": "#fixme",
+    "highlight": true
   },
   {
     "name": "Door",
     "path": "KB-Door/style.css",
     "designer": "Khang B",
     "portfolio": "#fixme"
-  },
-  {
-    "name": "The nightmare before christmas",
-    "path": "AK-halloween/style.css",
-    "designer": "Addison K.",
-    "portfolio": "#fixme"
-  },
+  },  
   {
     "name": "Cotton-Candy",
     "path": "Sams-Cotton-candy/style.css",
@@ -320,13 +322,15 @@ const styles = [
     "name": "Spooky Month",
     "path": "SB-Spooky-Month/style.css",
     "designer": "Sadie Bush",
-    "portfolio": "#fixme"
+    "portfolio": "#fixme",
+    "highlight": true
   },
   {
     "name": "Fish Tank",
     "path": "SB-Fish-Tank/style.css",
     "designer": "Sadie Bush",
-    "portfolio": "#fixme"
+    "portfolio": "#fixme",
+    "highlight": true
   },
   {
     "name": "CyberShock-Miguel",
@@ -345,14 +349,13 @@ const styles = [
     "path": "RH-80s/style.css",
     "designer": "Rylie Hegarty",
     "portfolio": "https://rhwebdesignportfolio.netlify.app/ ",
-    "highlight": false
+    "highlight": true,
   },
   {
     "designer": "Dev P",
     "path": "NRpatel002/style.css",
     "name": "Design 1",
-    "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/",
-    highlight: true,
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/",    
   },
   {
     "name": "Fall Forest",
@@ -364,8 +367,7 @@ const styles = [
   {
     "designer": "Design 3",
     "path": "NRpatel002/style3.css",
-    "name": "Dev P",
-    highlight: true,
+    "name": "Dev P",    
     "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/"
   },
   {
@@ -426,8 +428,7 @@ const styles = [
   {
     "name": "style",
     "path": "Adrianorib2/style.css",
-    "designer": "Adrinao R.",
-    highlight: true,
+    "designer": "Adrinao R.",    
     "portfolio": "https://iacs-cs.github.io/portfolio-project-Adrianorib2/"
   },
   {
@@ -475,8 +476,7 @@ const styles = [
   {
     "name": "Sakura Tree",
     "path": "CheryBerroa/style.css",
-    "designer": "Chery Berroa",
-    highlight: true,
+    "designer": "Chery Berroa",    
     "portfolio": "https://iacs-cs.github.io/portfolio-project-CheryBerroa/"
   },
   {
@@ -489,8 +489,7 @@ const styles = [
   {
     "name": "Unfinished",
     "path": "1234567890-qwertyuiop-asdfghjkl-zxcvbnm/style.css",
-    "designer": "Ethan S.",
-    highlight: true,
+    "designer": "Ethan S.",    
     "portfolio": "https://iacs-cs.github.io/portfolio-project-1234567890-qwertyuiop-asdfghjkl-zxcvbnm/"
   }
 ];
