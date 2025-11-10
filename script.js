@@ -30,7 +30,7 @@ class StyleSelector {
   setupHandler() {
     let styleLink = this.li.querySelector("a.design-name");
     styleLink.addEventListener("click", (event) => {
-      this.applyStyle();      
+      this.applyStyle();
     });
   }
 
@@ -39,12 +39,12 @@ class StyleSelector {
     document.querySelector("#csslink").setAttribute("href", this.path);
     updateSelections(false, this);
     setTimeout(
-      ()=>{
+      () => {
         console.log('Scroll up');
-        window.scrollTo({top:0});
-        },
-        10
-      );
+        window.scrollTo({ top: 0 });
+      },
+      10
+    );
   }
 }
 let allSelectors = [];
@@ -63,11 +63,11 @@ function getRandomSubarray(arr, size) {
   return shuffled.slice(0, size);
 }
 
-function grabSome(bigList) {  
-  let filteredList = bigList.filter((i)=>i.highlight);  
+function grabSome(bigList) {
+  let filteredList = bigList.filter((i) => i.highlight);
   if (filteredList.length >= 5) {
-    return getRandomSubarray(filteredList,5);
-  } else {  
+    return getRandomSubarray(filteredList, 5);
+  } else {
     return getRandomSubarray(bigList, 5);
   }
 }
@@ -91,11 +91,15 @@ function updateSelections(includeAll = false, startWith = null) {
   }
 }
 
-function applyStyleForHash () {  
+function applyStyleForHash() {
   let selected = location.hash.slice(1);
   if (selected == "all") {
     return
   }
+  // Reset the selector cache to avoid duplicates when navigating between designs
+  // Without this, each hash change would push another copy of every style
+  // into allSelectors, leading to duplicated entries in "view all".
+  allSelectors = [];
   let closestMatch = null;
   let foundHash = false;
   for (let style of styles) {
@@ -119,15 +123,22 @@ function setupInitialList() {
 
   updateSelections();
 
-  document.querySelector(".next a").addEventListener("click", function () {
+  document.querySelector(".next a").addEventListener("click", function (event) {
+    // Keep URL hash synced to the chosen design, not "#next"
+    event.preventDefault();
     let currentIndex = styles.findIndex(
       (style) => getSelectedStylePath().indexOf(style.path) > -1
     );
     let nextIndex = (currentIndex + 1) % styles.length;
-    new StyleSelector(styles[nextIndex]).applyStyle();
+    let nextSelector = new StyleSelector(styles[nextIndex]);
+    nextSelector.applyStyle();
+    // Update hash without firing hashchange (we already applied the style)
+    history.replaceState(null, "", `#${nextSelector.id}`);
   });
 
-  document.querySelector(".viewall a").addEventListener("click", function () {
+  document.querySelector(".viewall a").addEventListener("click", function (event) {
+    // Show all without polluting the URL with "#all"
+    event.preventDefault();
     updateSelections(true);
   });
 }
