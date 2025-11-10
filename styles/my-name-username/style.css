@@ -1,6 +1,6 @@
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  [Kabir Patel]
+* Design name:  [Holagraphic Space]
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
@@ -55,9 +55,11 @@ body {
   /* Existing code... */
 
   .page-wrapper .sidebar{
+  list-style: none;
+  text-decoration : none;
+  margin: 0;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid #ccc;
+  border: 1px solid #050505;
   padding: 1px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   width: 400px;
@@ -66,31 +68,184 @@ body {
   height: calc(100vh - 150px);
   overflow-y: auto;
   position: fixed;
-  background-color: #10b4b1;
+  background-color: rgba(33, 233, 230, 0.789);
     box-sizing: border-box;
     width: 300px;
     text-align: center;
-    border: 2px solid lightblue;
+    border: 2px solid rgba(173, 216, 230, 0.459);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
     box-shadow: 0 24px 48px rgba(246, 246, 246, 0.45), 0 8px 14px rgba(246, 246, 246, 0.45);
     border-radius: 15px;
     position: fixed;
 
+}
 
+ul .sidebar li {
+  list-style: none;
 
 }
 
 
-
-.page-wrapper:link:hover {
+.page-wrapper a[href="#style.css"]:hover {
   transition: 0.7s;
   color: #000000;
   background-color: rgb(0, 255, 229);
    box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
     font-weight: bold;
     border-radius: 15px;
-}
+  }
 
+ .page-wrapper a[href="https://gemini.google.com"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+ .page-wrapper a[href="#style2.css"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+.page-wrapper a[href="#style3.css"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+.page-wrapper a[href="#"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+ 
+ .page-wrapper a[href="https://meta.ai/"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+ 
+ .page-wrapper a[href="#style4.css"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+
+ .page-wrapper a[href="https://www.tomhinkle.net"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+ 
+  .page-wrapper a[href="#style5.css"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+  .page-wrapper a[href="https://claude.ai"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+  .page-wrapper a[href="#next"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+  .page-wrapper a[href="#all"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+   .page-wrapper a[href="style.css"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+   .page-wrapper a[href="https://www.w3schools.com/css/css_intro.asp"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+   .page-wrapper a[href="https://www.w3schools.com/css/css_grid.asp"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+ .page-wrapper a[href="https://fonts.google.com"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+   .page-wrapper a[href="https://codepen.io/collection/OyVeGb"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
+
+   .page-wrapper a[href="https://iacs-zen-garden.netlify.app/"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+ }
 h1 {
     background-color: #1ae8e5;
     margin-left: 900px;
