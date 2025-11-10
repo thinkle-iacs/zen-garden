@@ -556,9 +556,9 @@ const styles = [
   },
   {
     "skipped": false,
-    "name": "My Cat Coco",
+    "name": "Zen Coco",
     "path": "notground/style.css",
-    "designer": "Sky Perez",
+    "designer": "Sky P",
     "portfolio": "https://iacs-cs.github.io/web-design-portfolio-notground/",
     "url": "https://iacs-zen-garden.netlify.app/#notground",
     "fileName": "style.css"
@@ -651,6 +651,24 @@ const styles = [
     "designer": "Ryan Dean.",
     "portfolio": "https://IACS-CS.github.io/web-design-portfolio-deanbean9000/",
     "url": "https://iacs-zen-garden.netlify.app/#deanbean9000-style2",
+    "fileName": "style2.css"
+  },
+  {
+    "skipped": false,
+    "name": "Halloween",
+    "path": "owenhiltz/style.css",
+    "designer": "Owen Hiltz",
+    "portfolio": "https://IACS-CS.github.io/web-design-portfolio-OwenHiltz/",
+    "url": "https://iacs-zen-garden.netlify.app/#owenhiltz",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Rainbow",
+    "path": "notground-style2/style.css",
+    "designer": "Sky P",
+    "portfolio": "https://iacs-cs.github.io/web-design-portfolio-notground/",
+    "url": "https://iacs-zen-garden.netlify.app/#notground-style2",
     "fileName": "style2.css"
   }
 ];

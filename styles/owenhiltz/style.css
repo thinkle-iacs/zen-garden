@@ -1,6 +1,6 @@
 /********************************** 
 * Design by:  Owen Hiltz
-* Design name:  [your design name]
+* Design name:  Halloween
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
@@ -8,9 +8,8 @@
 * 
 * Acknowledgments/Sources:
 * - Image found with CHATGPT USING PROMPT "spooky hallowen background with jackolaterns"
-* - 
-* -
-*/
+* - /* AI-generated code: Created with the assistance of ChatGPT using the prompt "Move the entire page down by 75px" */
+
 
 /* Starter code -- feel free to delete */
 
@@ -51,7 +50,7 @@ center: center;
   padding: 1em;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 700px;
-  margin-top: 75px;
+ 
   opacity: 0.8; 
 }
 
@@ -183,4 +182,10 @@ body {
   max-width: 640px;
   margin: auto;
 }
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt "Move the entire page down by 75px" */
+body {
+padding-top: 75px;
+}
+/* End of AI-generated code */
 

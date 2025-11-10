@@ -1,11 +1,11 @@
 /********************************** 
-* Design by:  [ Sky P]
-* Design name:  [  Zen Coco]
+* Design by:  [Sky P]
+* Design name:  [Rainbow]
 * 
 * License: [MIT]
 * 
 * Acknowledgments/Sources:
-* - pictures by me
+* - 
 * - 
 * -
 */
@@ -13,44 +13,29 @@
 /* Starter code -- feel free to delete */
 
 /* Typography */
-.reenie-beanie-regular {
-  font-family: "Reenie Beanie", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-main {
-  font-family: "Grape Nuts", cursive;
-  font-weight: 400;
-  font-style: normal; }
-
-@import url("https://fonts.google.com/share?selection.family=Grape+Nuts");
 
 /* Get your own import URL from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 .page-wrapper {
   /* Main font */
- font-family: "Reenie Beanie", cursive;
+  font-family: Poppins, sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
+h6 {
   /* Header font */
-  font-family: "grape nuts", cursive;
+  font-family: "Dancing Script", cursive;
 }
 .intro {
-Background-image: url("/styles/notground/Project.png");
-background-size: 25cap;
-background-repeat: no-repeat;
-background-position: relative;
+color:rgb(255, 0, 0);
 }
 /* Background */
 #css-zen-garden {
-  background: linear-gradient(45deg, #f9c9f5 0%, #ffffff 100%);
+  background: linear-gradient(45deg, #ffcc01 0%, rgb(0, 255, 119),cyan, rgb(26, 26, 255), #d41af1 80%);
 }
 /* Page wrapper */
 .page-wrapper {
@@ -63,11 +48,12 @@ background-position: relative;
   margin-left: 310px;
 }
 
+
 a:link {
 color:rgb(255, 0, 123);
 }
 a:visited {
-color:rgb(235, 8, 235);
+color:rgb(167, 16, 167);
 }
 .design-selection li {
   border: solid 3px;
@@ -82,17 +68,20 @@ design-selection {
 a:hover {
 color:rgb(30, 242, 118);
 }
-#zen-supporting {
-Background-image: url("/styles/notground/coco3.PNG");
-background-size: 40cap;
-background-repeat: no-repeat;
-background-position: relative;
+#zen-summary {
+color:rgb(255, 1, 1);
+}
+#zen-preamble{
+  color:rgb(223, 93, 12);
+}
+#zen-explanation {
+color:rgb(251, 255, 1);
+}
+#zen-participation {
+color:rgb(28, 171, 15);
 }
 #zen-requirements {
-Background-image: url("/styles/notground/coco2.PNG");
-background-size: 35cap;
-background-repeat: no-repeat;
-background-position: relative;
+color:blue;
 }
 .sidebar{
   color:blue;
@@ -100,17 +89,7 @@ background-position: relative;
   top: 5px;
   left: 10px;
 height: 100dvh;
-width: 280px;
 overflow:scroll;
+scrollbar-gutter: left;
 }
 
-h2 {
-  background-image: url("/styles/notground/Project2.png");
-   background-size:300px;
-   height: 600px;
-   background-repeat: no-repeat;
-   background-position-x: -60px;
-   background-position-y: 50px;
-  position:fixed;
-left: 1300px; 
-}
