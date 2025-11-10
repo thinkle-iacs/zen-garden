@@ -1,0 +1,449 @@
+/**
+ * ********************************
+ * Design by:  [your name]
+ * Design name:  [your design name]
+ *
+ * License: [license name - e.g. MIT if you want to let others
+ * use the design with attribution, or All Rights Reserved if you
+ * don't want others to use the design]
+ *
+ * Acknowledgments/Sources:
+ * -
+ * -
+ * -
+ */
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+/* Theme variables for quick tuning */
+:root {
+  --panel-bg: rgba(6,4,8,0.96);         /* very dark panel for high contrast */
+  --panel-grad-start: #12030a;          /* deep maroon start */
+  --panel-grad-end: #040006;            /* near-black end */
+  --accent: #ff6a00;                    /* pumpkin orange */
+  --accent-bright: #ff8b2b;             /* brighter accent */
+  --text-strong: #fffdf8;               /* near-white text */
+  --muted: #cfcfcf;
+  --page-max-width: 780px;              /* keep in sync with .page-wrapper */
+  --control-width: 220px;               /* width assumed for control boxes */
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt "Make the cursor a little bigger by using the 64px cursor as primary" */
+body {
+  /* Prefer the 64x64 cursor so the scythe appears larger; fallback to 48/32/original then system cursor. Hotspots are center-ish for the larger images. */
+  cursor: url("/styles/ryut879/Cursor64.png") 32 32, url("/styles/ryut879/Cursor48.png") 24 24, url("/styles/ryut879/Cursor32.png") 16 16, url("/styles/ryut879/Cursor.png") 16 16, auto;
+}
+/* End of AI-generated code */
+
+.page-wrapper {
+  /* Main font: restored to project's original Montserrat for body text */
+  font-family: new rocker, 'Creepster', 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  box-sizing: border-box;
+  background: rgba(37, 123, 20, 0.662);
+  border: none; /* remove distracting line */
+  padding: 1rem; /* move content up slightly by reducing padding */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  max-width: 780px; /* narrower measure for better readability */
+  margin: 0 auto;
+  color: var(--text-strong);
+  font-size: 16px;
+  line-height: 1.65;
+  text-align: left;
+}
+
+/* Improve paragraph and list spacing for readable layout */
+.page-wrapper p,
+.page-wrapper li {
+  font-size: 1rem;
+  line-height: 1.65;
+  margin-bottom: 1.05rem;
+}
+.page-wrapper h1, .page-wrapper h2, .page-wrapper h3 { margin-top: 1.1rem; margin-bottom: 0.6rem; }
+.page-wrapper img { max-width: 100%; height: auto; display: block; margin: 0.75rem 0; }
+
+@media (min-width: 700px) {
+  .page-wrapper { padding: 1.25rem; }
+}
+
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  /* Header font */
+  font-family: 'Creepster', 'New Rocker', cursive;
+  text-shadow: 0 3px 18px rgba(0,0,0,0.7), 0 1px 0 rgba(255,106,0,0.06);
+  letter-spacing: 0.6px;
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt "Choose a popping, high-contrast color palette for a dark Halloween theme and implement it" */
+/* Color choices considered:
+   - Pumpkin orange (#ff6a00): classic Halloween, very readable on dark backgrounds.
+   - Toxic lime (#b8ff00): highest pop/contrast, edgy neon look.
+   - Electric purple (#b100ff): moody and thematic, less contrast than lime/orange.
+
+   Implementation decision: use pumpkin orange for headings (thematic + high contrast),
+   near-white for body copy for readability, and toxic lime for links/accents to make them pop.
+*/
+
+/* Body text: keep high readability */
+body {
+  color: #fffaf6; /* slightly warm near-white for contrast */
+  background-color: transparent;
+}
+
+/* Headings: popping pumpkin orange with glow */
+h1, h2, h3, h4, h5, h6 {
+  color: #ff6a00;
+  text-shadow: 0 2px 10px rgba(255,106,0,0.35), 0 1px 0 rgba(0,0,0,0.6);
+}
+
+/* Links and interactive accents: stronger Halloween pop
+   Replace the blocky pseudo-element underline with a gradient "sweep" underline
+   implemented with background-image so it animates smoothly and can use multiple colors. */
+a, a:link, a:visited {
+  color: #ffd86b; /* default warm gold */
+  transition: color 160ms ease, transform 160ms ease, text-shadow 220ms ease, filter 220ms ease;
+  text-decoration: none;
+  /* gradient underline is implemented via background-image sized at 0% height, then expanded on hover */
+  background-image: linear-gradient(90deg, var(--accent) 0%, #b100ff 60%, #ff8b2b 100%);
+  background-size: 0% 3px; /* width% x height */
+  background-position: left 96%; /* place near text baseline */
+  background-repeat: no-repeat;
+  padding-bottom: 2px; /* room for the underline */
+}
+
+/* Poppy hover: brighten color, scale slightly, and sweep the gradient underline across */
+a:hover, a:focus, a:focus-visible {
+  color: #fff7ee; /* brighter warm white */
+  transform: translateZ(0) scale(1.03);
+  text-shadow: 0 8px 30px rgba(255,106,0,0.98), 0 0 48px rgba(177,0,255,0.22);
+  filter: drop-shadow(0 14px 48px rgba(255,110,40,0.24));
+  background-size: 100% 3px;
+  background-position: right 96%;
+}
+
+/* keyboard focus ring for accessibility */
+a:focus-visible {
+  box-shadow: 0 0 0 4px rgba(255,106,0,0.12);
+  border-radius: 4px;
+}
+
+/* Small accent for metadata or subtle labels */
+.muted {
+  color: #cfcfcf;
+}
+/* End of AI-generated code */
+
+
+/* Background */
+#css-zen-garden {
+  /* Use the background image only (restored to original simple image background). */
+  background-image: url("/styles/ryut879/BackgroundFortnite.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Control clusters: split left & right vertical stacks, desktop only */
+@media (min-width: 700px) {
+  .sidebar .wrapper { position: fixed; top: 0; left: 0; right: 0; height: 0; pointer-events: none; z-index: 1400; }
+  .sidebar .wrapper > * { pointer-events: auto; }
+
+  /* Left vertical stack (design selector + archives) */
+  #design-selection,
+  #design-archives {
+    position: fixed;
+    left: 1.25rem;
+    width: auto;
+    /* darker, higher-contrast panel */
+    background: linear-gradient(180deg, var(--panel-grad-start), var(--panel-grad-end));
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,138,43,0.14);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.55);
+    transition: transform 260ms ease, box-shadow 260ms ease, background 260ms ease;
+  }
+  #design-selection { top: 0.75rem; }
+  /* increase gap so 'Select a design' and 'Archives' are well separated */
+  #design-archives { top: calc(0.75rem + 180px); }
+
+  /* Right vertical stack (resources + requirements toggle) */
+  .zen-resources,
+  .requirements-toggle {
+    position: fixed;
+    right: 1.25rem;
+    width: auto;
+    background: linear-gradient(180deg, var(--panel-grad-start), var(--panel-grad-end));
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,138,43,0.14);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.55);
+    transition: transform 260ms ease, box-shadow 260ms ease, background 260ms ease;
+  }
+  .zen-resources { top: 0.75rem; }
+  .requirements-toggle { top: calc(0.75rem + 72px); }
+
+  /* Hover glow and lift */
+  #design-selection:hover, #design-archives:hover, .zen-resources:hover, .requirements-toggle:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 28px 80px rgba(255,106,0,0.12), 0 10px 40px rgba(0,0,0,0.6);
+    background: linear-gradient(180deg, rgba(20,6,10,0.38), rgba(6,2,6,0.18));
+  }
+}
+
+/* Requirements toggle button in the top-right cluster */
+.requirements-toggle {
+  background: linear-gradient(180deg, rgba(40,0,40,0.3), rgba(10,0,10,0.25));
+  color: #ffdfc9;
+  border: 1px solid rgba(255,106,0,0.12);
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
+.requirements-toggle:hover,
+.requirements-toggle:focus {
+  background: linear-gradient(180deg, rgba(60,0,60,0.5), rgba(20,0,20,0.4));
+  outline: none;
+  transform: translateY(-1px);
+}
+
+/* Make sure the cluster items look consistent */
+.sidebar .wrapper .design-selection,
+.sidebar .wrapper .design-archives,
+.sidebar .wrapper .zen-resources {
+  /* use the theme variables for consistent, high-contrast panels */
+  background: linear-gradient(180deg, var(--panel-grad-start), var(--panel-grad-end));
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,138,43,0.08);
+  color: var(--text-strong);
+}
+
+
+/* Resources: clean list (no bullets) and Halloween accents */
+.zen-resources nav > ul { list-style: none; margin: 0; padding: 0; }
+.zen-resources nav > ul li { padding: 6px 0; }
+.zen-resources nav > ul li a { color: #f4f4f4; text-decoration: none; display: block; padding: 6px 10px; border-radius: 6px; }
+.zen-resources nav > ul li a:hover { background: rgba(255,106,0,0.06); color: #fff; }
+
+/* Requirements dropdown panel (hidden by default) */
+.requirements {
+  position: fixed;
+  top: 4rem;
+  right: 1rem;
+  width: 360px;
+  max-height: 68vh;
+  overflow: auto;
+  background: linear-gradient(180deg, var(--panel-grad-start), var(--panel-grad-end));
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 28px 90px rgba(0,0,0,0.86);
+  border: 1px solid rgba(255,138,43,0.10);
+  transform: translateY(-8px) scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 260ms ease, transform 260ms ease;
+  z-index: 1500;
+}
+
+html.show-requirements .requirements {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+/* Decorative arrow pointing to the top-right control (two-layer triangle for border + fill) */
+.requirements::before,
+.requirements::after {
+  content: "";
+  position: absolute;
+  right: 28px; /* aligns with the toggle button position */
+  top: -12px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+/* darker fill matching panel top */
+.requirements::before {
+  border-bottom: 10px solid rgba(18,4,18,0.98);
+  transform-origin: center;
+  transform: translateY(-6px) scale(0.96);
+  opacity: 0;
+  transition: transform 260ms cubic-bezier(.2,.9,.2,1), opacity 220ms ease;
+}
+
+/* subtle outline/border under the fill to match panel border */
+.requirements::after {
+  border-bottom: 12px solid rgba(255,106,0,0.06);
+  top: -13px;
+  right: 27px;
+}
+
+/* show / pop the arrow when panel opens */
+html.show-requirements .requirements::before {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* small bounce to add life */
+@keyframes req-pop {
+  0% { transform: translateY(-6px) scale(0.96); }
+  60% { transform: translateY(2px) scale(1.02); }
+  100% { transform: translateY(0) scale(1); }
+}
+
+html.show-requirements .requirements {
+  animation: req-pop 360ms ease;
+}
+
+.requirements h3 { color: #ff8b2b; margin-top: 0; }
+.requirements ul { list-style: none; padding-left: 0; margin: 0; }
+.requirements li { padding: 8px 0; /* no dividing line for a cleaner look */ }
+.requirements li:last-child { border-bottom: none; }
+
+/* Close button inside requirements (script adds element) */
+.requirements .req-close { position: absolute; top: 8px; right: 10px; background: transparent; border: none; color: #fff; font-size: 1.1rem; cursor: pointer; }
+
+
+/* Additional desktop layout and animation tweaks to avoid overlap and add Halloween polish */
+@media (min-width:700px) {
+  /* make room so the fixed control cluster doesn't cover content */
+  .page-wrapper {
+    padding-top: 2.5rem; /* reduce big gap so content doesn't get pushed down */
+  }
+
+  /* slightly nudge the cluster down if the header area is small */
+  .sidebar .wrapper { top: 1.2rem; }
+
+  /* floating hover effect for cluster items */
+  .sidebar .wrapper > div {
+    transition: transform 260ms cubic-bezier(.2,.9,.2,1), box-shadow 260ms ease, background 260ms ease;
+    will-change: transform, box-shadow;
+  }
+  .sidebar .wrapper > div:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 18px 60px rgba(0,0,0,0.6), 0 0 24px rgba(255,106,0,0.06);
+  }
+
+  /* Dropdown slide/fade from the right for desktop */
+  .design-selection nav > ul,
+  .design-archives nav > ul,
+  .zen-resources nav > ul {
+    transform-origin: top right;
+    transform: translateX(8px) translateY(-6px) scale(0.98);
+    opacity: 0;
+    transition: opacity 260ms ease, transform 260ms cubic-bezier(.2,.9,.2,1), max-height 260ms ease;
+    pointer-events: none;
+  }
+  .design-selection:hover nav > ul,
+  .design-selection:focus-within nav > ul,
+  .design-archives:hover nav > ul,
+  .design-archives:focus-within nav > ul,
+  .zen-resources:hover nav > ul,
+  .zen-resources:focus-within nav > ul {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* Make requirements panel sit a bit lower to avoid header overlap */
+  .requirements { top: 3.5rem; right: 1rem; }
+}
+
+/* Position control sections symmetrically to avoid overlap: left cluster and right cluster */
+@media (min-width:500px) {
+  /* unified left & right cluster spacing with increased separation to avoid overlap */
+  /* left cluster */
+  #design-selection { position: fixed; left: 1rem; top: 0.9rem; width: 200px; }
+  /* larger separation for better readability */
+  #design-archives { position:fixed; left: 1rem; top: calc(30.9rem + 260px); width: 200px; }
+
+  /* right cluster */
+  .zen-resources { position: fixed; right: 1rem; top: 0.9rem; width: 200px; }
+  .requirements-toggle { position: fixed; right: 1rem; top: calc(0.9rem + 200px); }
+
+  /* Ensure dropdowns for left cluster open from the left edge toward the right */
+  #design-selection nav > ul,
+  #design-archives nav > ul { left: 0; right: auto; transform-origin: top left; transform: translateX(-10px) translateY(-6px) scale(0.98); }
+
+  /* Right cluster dropdowns: anchor at right, open toward left */
+  .zen-resources nav > ul { right: 0; left: auto; transform-origin: top right; transform: translateX(10px) translateY(-6px) scale(0.98); }
+
+  /* control items font weight and clearer labels */
+  .sidebar .wrapper > div, .sidebar .wrapper > div * { font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; font-weight: 600; color: #fff; }
+
+  /* stronger glow on hover for accessibility and style */
+  #design-selection:hover, #design-archives:hover, .zen-resources:hover, .requirements-toggle:hover {
+    box-shadow: 0 30px 90px rgba(255,106,0,0.16), 0 14px 48px rgba(0,0,0,0.65);
+    text-shadow: 0 2px 12px rgba(255,138,43,0.75);
+  }
+}
+
+/* Halloween glow animation for interactive elements */
+@keyframes pumpkin-glow {
+  0% { box-shadow: 0 6px 18px rgba(255,106,0,0.02); }
+  50% { box-shadow: 0 18px 60px rgba(255,106,0,0.10); }
+  100% { box-shadow: 0 6px 18px rgba(255,106,0,0.02); }
+}
+
+.requirements-toggle:hover, .sidebar .wrapper > div:hover {
+  animation: pumpkin-glow 2.4s ease-in-out infinite;
+}
+
+/* Reduce chance of overlap on medium/large but short viewports */
+@media (min-width:700px) and (max-height:640px) {
+  .page-wrapper { padding-top: 3.5rem; }
+  .requirements { top: 3.6rem; max-height: 60vh; }
+}
+
+/* Large-desktop: place control stacks outside the centered page wrapper using clamp so
+   they never intrude into the content area. The clamp prevents negative offsets on
+   smaller wide screens while still nudging controls away on very large viewports. */
+@media (min-width:1100px) {
+  #design-selection, #design-archives {
+    /* prefer to place controls just outside the centered page: clamp(min, preferred, max) */
+    left: clamp(1rem, calc(50% - (var(--page-max-width) / 2) - var(--control-width) - 1rem), 6rem);
+    width: var(--control-width);
+    top: 0.95rem;
+  }
+  /* large-desktop: push archives further to ensure no crowding */
+  #design-archives { top: calc(0.95rem + 260px); }
+
+  .zen-resources, .requirements-toggle {
+    right: clamp(1rem, calc(50% - (var(--page-max-width) / 2) - var(--control-width) - 1rem), 6rem);
+    width: var(--control-width);
+    top: 0.95rem;
+  }
+  .requirements-toggle { top: calc(0.95rem + 180px); }
+
+  /* ensure these controls float above all content */
+  #design-selection, #design-archives, .zen-resources, .requirements-toggle {
+    z-index: 1600;
+    border: 1px solid rgba(255,138,43,0.14);
+    background: linear-gradient(180deg, var(--panel-grad-start), var(--panel-grad-end));
+  }
+
+  /* a brighter, more vibrant accent on hover */
+  #design-selection:hover, #design-archives:hover, .zen-resources:hover, .requirements-toggle:hover {
+    background: linear-gradient(180deg, rgba(255,110,40,0.12), rgba(30,6,6,0.36));
+    box-shadow: 0 40px 110px rgba(255,106,0,0.18), 0 18px 60px rgba(0,0,0,0.72);
+    transform: translateY(-8px) scale(1.03);
+  }
+
+  /* slightly reduce dropdown width on very large screens so they don't overlap the page area */
+  #design-selection nav > ul, #design-archives nav > ul, .zen-resources nav > ul { max-width: 260px; }
+}
+
+

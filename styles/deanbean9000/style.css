@@ -1,0 +1,743 @@
+/********************************** 
+* Design by:  [Ryan Dean]
+* Design name:  [Star Battle]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+ Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+.page-wrapper {
+  /* Main font */
+  font-family: "Orbitron", sans-serif;
+/* Fixed invalid CSS selector syntax */
+#design-selection:hover {
+  /* Styles will be added later if needed */
+}
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Orbitron", cursive;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+}
+h2, h3, h4, h5, h6 {
+  font-size: 60px;
+}
+a {
+  color: rgb(255, 232, 102);
+  text-decoration: underline; 
+}
+h1 {
+ color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  text-align: center;
+  font-size: 60px;
+}
+h2 {
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: yellow;
+  text-align: center;
+}
+/* Background */
+#css-zen-garden {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  /* starry image + darker radial overlay for stronger contrast */
+  background:
+    radial-gradient(ellipse at center,
+      rgba(0,0,0,0.65) 0%,
+      rgba(0,0,0,0.50) 60%,
+      rgba(0,0,0,0.95) 100%),
+    url("/styles/deanbean9000/starry-sky-1655503_1280.jpg") center center / cover no-repeat;
+
+  perspective: 1200px;
+  perspective-origin: 50% 90%;
+}
+
+/* Desktop: optionally keep background fixed for subtle parallax */
+@media (min-width: 901px) {
+  #css-zen-garden {
+    background-attachment: fixed;
+  }
+}
+
+/* Mobile: don't use fixed (avoids janky behavior) */
+@media (max-width: 900px) {
+  #css-zen-garden {
+    background-attachment: scroll;
+  }
+}
+
+/* Page wrapper */
+.page-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;                         /* center vertically */
+  transform-origin: 50% 50%;        /* pivot from center for balanced tilt */
+  /* center and tilt back slightly; translateZ to avoid a completely flat look */
+  transform: translate(-50%, -50%) rotateX(48deg) translateZ(20px);
+
+  /* smaller centered corridor */
+  width: 70vw;                      /* main width (tweak to taste) */
+  max-width: 1000px;
+  height: 80vh;                     /* keep scrollable height */
+  box-sizing: border-box;
+
+  /* spacing: top padding places the copy down on the tilted plane; bottom padding gives scroll room */
+  padding: 12vh 4vw 30vh;           /* top / sides / bottom */
+
+  /* scrolling */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  /* visual & type */
+  background: transparent;
+  color: #ffea00;
+  font-family: "Libre Franklin", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Constrain line length for better reading without editing HTML --- */
+/* apply to the page-wrapper's direct children (headings, paragraphs, lists, etc.) */
+.page-wrapper > * {
+  max-width: 60ch;     /* comfortable line length */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+/* --- Improve text contrast and legibility --- */
+.page-wrapper h1,
+.page-wrapper h2,
+.page-wrapper h3 {
+  text-align: center;
+  color: #ffea00;
+  margin: 0 0 1rem;
+  -webkit-text-stroke: 0.8px rgba(0,0,0,0.75); /* crisp outline */
+  text-shadow:
+    0 2px 0 rgba(0,0,0,0.65),
+    0 6px 18px rgba(0,0,0,0.6);                  /* soft depth shadow */
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+}
+
+/* body text/readability */
+.page-wrapper p,
+.page-wrapper li {
+  font-family: "Orbitron", sans-serif;   /* Added Orbitron font */
+  text-align: center;            /* classic crawl is centered */
+  color: #ffea00;
+  font-size: 1.05rem;
+  line-height: 1.8;              /* generous line-height for readability */
+  letter-spacing: 0.03em;
+  margin: 0 0 1.25rem;
+  text-shadow:
+    0 1px 0 rgba(0,0,0,0.6),
+    0 6px 12px rgba(0,0,0,0.45);
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.35)); /* small blur for separation from background */
+}
+
+/* remove list markers in the crawl */
+.page-wrapper ul,
+.page-wrapper ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- Top & bottom fade (so edges feel cinematic and text remains readable) --- */
+/* Use both mask and gradient for cross-browser softness */
+.page-wrapper::before {
+  content: "";
+  pointer-events: none;
+  inset: 0;                      /* cover viewport so fade follows tilt visually */
+  background: linear-gradient(to bottom,
+              rgba(0,0,0,1) 0%,
+              rgba(0,0,0,0.0) 12%,
+              rgba(0,0,0,0.0) 88%,
+              rgba(0,0,0,1) 100%);
+  mix-blend-mode: normal;
+  z-index: 999;                  /* on top visually but pointer-events none keeps scrolling possible */
+  transform: translateZ(0);
+  /* Slight blur to smooth the fade edges */
+  backdrop-filter: blur(0.6px);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%);
+}
+
+/* small unobtrusive scrollbar */
+.page-wrapper::-webkit-scrollbar { width: 10px; height: 10px; }
+.page-wrapper::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 6px; }
+
+/* --- Responsive: reduce tilt and pop on small viewports for legibility --- */
+@media (max-width: 900px) {
+  #css-zen-garden { perspective: 1000px; perspective-origin: 50% 88%; }
+  .page-wrapper {
+    top: -8vh;
+    transform: translateX(-50%) rotateX(50deg) translateZ(12px);
+    padding: 16vh 6vw 20vh;
+    width: 110vw;
+    height: 130vh;
+  }
+  .page-wrapper > * { max-width: 66ch; }
+  .page-wrapper p { font-size: 1rem; line-height: 1.7; }
+}
+
+@media (max-width: 480px) {
+  #css-zen-garden { perspective: 900px; perspective-origin: 50% 86%; }
+  .page-wrapper {
+    top: -6vh;
+    transform: translateX(-50%) rotateX(52deg) translateZ(8px);
+    padding: 12vh 5vw 18vh;
+    width: 105vw;
+    height: 125vh;
+  }
+  .page-wrapper > * { max-width: 70ch; }
+  .page-wrapper p { font-size: 0.98rem; line-height: 1.6; }
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "make the star-wars crawl even taller so more text is visible (pure CSS)" */
+
+.page-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 50%;
+  /* Slightly more frontal but still tilted; translateZ to avoid flatness */
+  transform: translate(-50%, -50%) rotateX(46deg) translateZ(30px);
+
+  /* Taller panel so more lines are visible */
+  width: 70vw;
+  max-width: 1100px;
+  height: 98vh;          /* <-- increased from earlier values */
+
+  box-sizing: border-box;
+
+  /* Reduce paddings so visible text area increases:
+     visible region ≈ height - (padding-top + padding-bottom) */
+  padding: 1vh 4vw 12vh; /* top / sides / bottom */
+
+  /* scrolling */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  background: transparent;
+  color: #ffea00;
+  font-family: "Libre Franklin", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keep comfortable line length */
+.page-wrapper > * {
+  max-width: 60ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+/* Responsive adjustments: keep the crawl taller on smaller screens too */eens too */
+@media (max-width: 900px) {
+  .page-wrapper {
+    width: 86vw;
+    height: 96vh;          /* nearly full height on tablets */
+    padding: 8vh 6vw 10vh;
+    transform: translate(-50%, -50%) rotateX(48deg) translateZ(18px);
+  }
+  .page-wrapper > * { max-width: 66ch; }
+  .page-wrapper p { font-size: 1rem; line-height: 1.65; }
+}
+}
+
+@media (max-width: 480px) {
+  .page-wrapper {
+    width: 94vw;
+    height: 92vh;          /* keep some room for UI chrome on mobile */          /* keep some room for UI chrome on mobile */
+    padding: 8vh 5vw 10vh;
+    transform: translate(-50%, -50%) rotateX(50deg) translateZ(12px);;
+  }
+  .page-wrapper > * { max-width: 70ch; }
+  .page-wrapper p { font-size: 0.98rem; line-height: 1.55; }}
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "make the star-wars crawl fade smoothly at top and bottom instead of going straight to black" */
+
+/* Remove any previous fixed overlay that caused a hard black rectangle */
+.page-wrapper::before { display: none !important; }
+
+/* Soft stage overlay (tied to the stage so it doesn't create a fixed band) */
+#css-zen-garden::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+
+  /* transparent center, gentle darkening toward top & bottom */
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.0) 0%,
+    rgba(0,0,0,0.5) 6%,
+    rgba(0,0,0,0.15) 12%,
+    rgba(0,0,0,0.0) 30%,
+    rgba(0,0,0,0.0) 70%,
+    rgba(0,0,0,0.15) 88%,
+    rgba(0,0,0,0.5) 94%,
+    rgba(0,0,0,0.0) 100%
+  );
+
+  /* subtle blur to soften the transition (optional; light value) */
+  backdrop-filter: blur(0.4px);
+}
+
+/* Mask the content so it itself fades out near top & bottom */
+.page-wrapper > * {
+  /* cross-browser mask for smooth fade of content edges */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* Fallback if a browser doesn't support mask-image: use a softer overlay (keeps readability) */
+@supports not (mask-image: linear-gradient(to bottom, transparent, black)) {
+  #css-zen-garden::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.2) 0%,
+      rgba(0,0,0,0.0) 12%,
+      rgba(0,0,0,0.0) 88%,
+      rgba(0,0,0,0.2) 100%
+    );
+  }
+}
+
+/* End of AI-generated code */
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "fade above and below the crawl without fading the text" */
+
+/* Soft stage fade behind the crawl (does NOT dim the text) */
+#css-zen-garden::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0; /* behind the crawl content */
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.85) 0%,
+    rgba(0,0,0,0.45) 6%,
+    rgba(0,0,0,0.12) 14%,
+    rgba(0,0,0,0.0) 24%,
+    rgba(0,0,0,0.0) 76%,
+    rgba(0,0,0,0.12) 86%,
+    rgba(0,0,0,0.45) 94%,
+    rgba(0,0,0,0.85) 100%
+  );
+  backdrop-filter: blur(0.4px); /* softens the band edges */
+}
+
+/* Ensure the crawl text sits above the stage fade so text remains bright */
+.page-wrapper {
+  position: relative; /* keep current absolute/transform placement but ensure stacking context */
+  z-index: 1;
+}
+
+/* Remove any content masks that might fade the text itself */
+.page-wrapper > * {
+  -webkit-mask-image: none !important;
+  mask-image: none !important;
+}
+
+/* Fallback for browsers that don't support backdrop-filter (so fade is still soft) */
+@supports not (backdrop-filter: blur(0.4px)) {
+  #css-zen-garden::before {
+    background: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.75) 0%,
+      rgba(0,0,0,0.35) 6%,
+      rgba(0,0,0,0.08) 14%,
+      rgba(0,0,0,0.0) 24%,
+      rgba(0,0,0,0.0) 76%,
+      rgba(0,0,0,0.08) 86%,
+      rgba(0,0,0,0.35) 94%,
+      rgba(0,0,0,0.75) 100%
+    );
+  }
+}
+
+/* End of AI-generated code */
+
+/* AI-generated: Adjust headers to black fill with yellow outline
+   Prompt used: "make the rest of the headers the same color with the black inside and yellow outside as the honors requirement header" */
+
+/* Apply to all headers, scoped to the page area to avoid global side-effects */
+#css-zen-garden h1,
+#css-zen-garden h2,
+#css-zen-garden h3,
+#css-zen-garden h4,
+#css-zen-garden h5,
+#css-zen-garden h6,
+.page-wrapper h1,
+.page-wrapper h2,
+.page-wrapper h3,
+.page-wrapper h4,
+.page-wrapper h5,
+.page-wrapper h6 {
+  font-family: "Orbitron", cursive; /* keep the header font you used */
+  color: #000;                      /* black fill */
+  -webkit-text-stroke-width: 1px;   /* stroke width for WebKit */
+  -webkit-text-stroke-color: #ffea00; /* yellow outline for WebKit */
+
+  /* Non-WebKit fallback: simulate outline with multiple text-shadows */
+  text-shadow:
+    -1px -1px 0 #ffea00,
+     1px -1px 0 #ffea00,
+    -1px  1px 0 #ffea00,
+     1px  1px 0 #ffea00,
+    -2px  0   0 #ffea00,
+     2px  0   0 #ffea00,
+     0   -2px 0 #ffea00,
+     0    2px 0 #ffea00;
+
+  /* preserve visual weight and legibility */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: tweak sizes if some headers were previously large */
+.page-wrapper h2,
+.page-wrapper h3,
+.page-wrapper h4,
+.page-wrapper h5,
+.page-wrapper h6 {
+  /* Set a consistent size for all heading levels */
+  font-size: 2.5rem;
+}
+
+
+
+/* Flatten the crawl while hovering or keyboard-focusing the Select a Design area */
+#css-zen-garden:has(#design-selection:hover, #design-selection:focus-within) .page-wrapper {
+  /* remove the tilt and perceived depth */
+  transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+  transform-origin: 50% 50% !important;
+
+  /* tighten vertical padding so the flattened section looks natural */
+  padding-top: 6vh !important;
+  padding-bottom: 8vh !important;
+
+  /* allow natural flow when flattened */
+  height: auto !important;
+
+  /* smooth animation */
+  transition: transform 280ms cubic-bezier(.2,.9,.2,1), padding 280ms cubic-bezier(.2,.9,.2,1);
+  /* subtle elevation so it still reads above the stage */
+  z-index: 2;
+}
+
+/* Flatten the crawl while hovering the Select a Design area (preserve layout to avoid jumping) */
+#css-zen-garden:has(#design-selection:hover) .page-wrapper {
+  /* only alter the visual tilt, do not change height -> prevents scroll jumping */
+  transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+  transform-origin: 50% 50% !important;
+
+  /* preserve the panel dimensions used when not flattened (matches your taller panel) */
+  height: 98vh !important;
+  padding: 1vh 4vw 12vh !important;
+
+  /* keep scrolling behaviour unchanged */
+  overflow-y: auto !important;
+
+  /* animation for smooth transition */
+  transition: transform 280ms cubic-bezier(.2,.9,.2,1);
+  will-change: transform;
+  z-index: 2;
+}
+
+/* Make sure the effect also works nicely on smaller screens */
+@media (max-width: 900px) {
+  #css-zen-garden:has(#design-selection:hover, #design-selection:focus-within) .page-wrapper {
+    transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+    padding: 4vh 6vw 6vh !important;
+    width: 90vw !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #css-zen-garden:has(#design-selection:hover, #design-selection:focus-within) .page-wrapper {
+    transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+    padding: 3.5vh 5vw 5vh !important;
+    width: 94vw !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 900px) {
+  #css-zen-garden:has(#design-selection:hover) .page-wrapper {
+    transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+    height: 96vh !important;   /* match your responsive height */
+    padding: 8vh 6vw 10vh !important;
+    width: 86vw !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #css-zen-garden:has(#design-selection:hover) .page-wrapper {
+    transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+    height: 92vh !important;   /* match your small-screen height */
+    padding: 8vh 5vw 10vh !important;
+    width: 94vw !important;
+  }
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "animate the crawl smoothly both when hovering over and when the cursor moves off
+    the Select a Design area (pure CSS)". 
+   This moves the transition to the base .page-wrapper so the reverse (unhover) uses the same easing. */
+
+.page-wrapper {
+  /* ensure both hover-on and hover-off animate the visual tilt and padding */
+  transition: transform 280ms cubic-bezier(.2,.9,.2,1), padding 280ms cubic-bezier(.2,.9,.2,1);
+  will-change: transform, padding;
+}
+
+/* Keep the responsive rules in sync (optional but helpful) */
+@media (max-width: 900px) {
+  .page-wrapper {
+    transition: transform 280ms cubic-bezier(.2,.9,.2,1), padding 280ms cubic-bezier(.2,.9,.2,1);
+    will-change: transform, padding;
+  }
+}
+@media (max-width: 480px) {
+  .page-wrapper {
+    transition: transform 240ms cubic-bezier(.2,.9,.2,1), padding 240ms cubic-bezier(.2,.9,.2,1);
+    will-change: transform, padding;
+  }
+}
+
+/* End of AI-generated code */
+
+/* Flatten + color change when hovering or focusing the design-selection, archives, or resources lists.
+   Targets the stage when any of those areas are hovered/focused so the crawl flattens and text animates.
+   Uses a CSS variable so the colour is easy to update later. */
+:root{
+  --crawl-accent: #29EEF7;
+  --crawl-default: #ffea00;
+}
+
+/* Default crawl colour and smooth transition for both hover and unhover */
+.page-wrapper,
+.page-wrapper p,
+.page-wrapper li,
+.page-wrapper a {
+  color: var(--crawl-accent) !important;
+  transition: transform 280ms cubic-bezier(.2,.9,.2,1),
+              color 220ms ease,
+              padding 280ms cubic-bezier(.2,.9,.2,1);
+  will-change: transform, color, padding;
+}
+
+/* Make paragraph/list items inherit from .page-wrapper so color toggles reliably */
+.page-wrapper p,
+.page-wrapper li,
+.page-wrapper a {
+  color: inherit !important;
+}
+
+/* Trigger: hover or keyboard-focus inside design-selection, archives, or resources */
+/* Applies flatten transform + blue colour only while hovered/focused */
+#css-zen-garden:has(
+  #design-selection:hover,
+  #design-selection:focus-within,
+  #design-archives:hover,
+  #design-archives:focus-within,
+  #zen-resources:hover,
+  #zen-resources:focus-within
+) .page-wrapper {
+  transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+  transform-origin: 50% 50% !important;
+  color: var(--crawl-accent) !important;
+  z-index: 2;
+}
+
+/* Also explicitly colour the crawl content elements while the trigger is active */
+#css-zen-garden:has(
+  #design-selection:hover,
+  #design-selection:focus-within,
+  #design-archives:hover,
+  #design-archives:focus-within,
+  #zen-resources:hover,
+  #zen-resources:focus-within
+) .page-wrapper p,
+#css-zen-garden:has(
+  #design-selection:hover,
+  #design-selection:focus-within,
+  #design-archives:hover,
+  #design-archives:focus-within,
+  #zen-resources:hover,
+  #zen-resources:focus-within
+) .page-wrapper li,
+#css-zen-garden:has(
+  #design-selection:hover,
+  #design-selection:focus-within,
+  #design-archives:hover,
+  #design-archives:focus-within,
+  #zen-resources:hover,
+  #zen-resources:focus-within
+) .page-wrapper a {
+  color: var(--crawl-accent) !important;
+}
+
+/* Colour the panel headings (the small "Select a Design", "Archives", "Resources" headings) while hovered/focused */
+#css-zen-garden:has(#design-selection:hover, #design-selection:focus-within)    #design-selection h3,
+#css-zen-garden:has(#design-archives:hover, #design-archives:focus-within)      #design-archives h3,
+#css-zen-garden:has(#zen-resources:hover, #zen-resources:focus-within)         #zen-resources h3 {
+  color: var(--crawl-accent) !important;
+  transition: color 220ms ease;
+}
+
+/* Keep responsive behaviour in sync: only change transform (no height/padding toggles) to avoid jumps */
+@media (max-width: 900px) {
+  #css-zen-garden:has(
+    #design-selection:hover,
+    #design-selection:focus-within,
+    #design-archives:hover,
+    #design-archives:focus-within,
+    #zen-resources:hover,
+    #zen-resources:focus-within
+  ) .page-wrapper {
+    transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+    color: var(--crawl-accent) !important;
+  }
+}
+@media (max-width: 480px) {
+  #css-zen-garden:has(
+    #design-selection:hover,
+    #design-selection:focus-within,
+    #design-archives:hover,
+    #design-archives:focus-within,
+    #zen-resources:hover,
+    #zen-resources:focus-within
+  ) .page-wrapper {
+    transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+    color: var(--crawl-accent) !important;
+  }
+}
+
+/* ------------------------------
+   Scoped: panel-only blue on hover
+   ------------------------------ */
+
+/* easy-to-tune variables */
+:root {
+  --crawl-accent: #29EEF7;  /* blue */
+  --crawl-default: #ffea00; /* yellow */
+}
+
+/* default: crawl stays yellow */
+.page-wrapper,
+.page-wrapper p,
+.page-wrapper li,
+.page-wrapper a {
+  color: var(--crawl-default) !important;
+  transition: color 220ms ease, transform 280ms cubic-bezier(.2,.9,.2,1);
+  will-change: color, transform;
+}
+
+/* Flatten the stage when any of the three panels is hovered/focused */
+#css-zen-garden:has(
+  #design-selection:hover,
+  #design-selection:focus-within,
+  #design-archives:hover,
+  #design-archives:focus-within,
+  #zen-resources:hover,
+  #zen-resources:focus-within
+) .page-wrapper {
+  transform: translate(-50%, -50%) rotateX(0deg) translateZ(0) !important;
+  transform-origin: 50% 50% !important;
+  /* keep crawl color as default here — we change only the hovered panel below */
+}
+
+/* Change only the SELECT-A-DESIGN panel's text to blue while it is hovered/focused */
+#css-zen-garden:has(#design-selection:hover, #design-selection:focus-within) #design-selection,
+#css-zen-garden:has(#design-selection:hover, #design-selection:focus-within) #design-selection a {
+  color: var(--crawl-accent) !important;
+  transition: color 220ms ease;
+}
+
+/* Make the SELECT-A-DESIGN header solid blue with no stroke/shadow while hovered/focused */
+#css-zen-garden:has(#design-selection:hover, #design-selection:focus-within) #design-selection h3 {
+  color: var(--crawl-accent) !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+  /* keep font/size as-is */
+}
+
+/* Same behavior for ARCHIVES (only that panel's content/header becomes blue while hovered) */
+#css-zen-garden:has(#design-archives:hover, #design-archives:focus-within) #design-archives,
+#css-zen-garden:has(#design-archives:hover, #design-archives:focus-within) #design-archives a {
+  color: var(--crawl-accent) !important;
+  transition: color 220ms ease;
+}
+#css-zen-garden:has(#design-archives:hover, #design-archives:focus-within) #design-archives h3 {
+  color: var(--crawl-accent) !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+
+/* Same behavior for RESOURCES */
+#css-zen-garden:has(#zen-resources:hover, #zen-resources:focus-within) #zen-resources,
+#css-zen-garden:has(#zen-resources:hover, #zen-resources:focus-within) #zen-resources a {
+  color: var(--crawl-accent) !important;
+  transition: color 220ms ease;
+}
+#css-zen-garden:has(#zen-resources:hover, #zen-resources:focus-within) #zen-resources h3 {
+  color: var(--crawl-accent) !important;
+  -webkit-text-stroke: 0 !important;
+  text-shadow: none !important;
+}
+
+/* Responsive: keep the same targeted color behavior on smaller screens */
+@media (max-width: 900px) {
+  #css-zen-garden:has(#design-selection:hover, #design-selection:focus-within) #design-selection,
+  #css-zen-garden:has(#design-archives:hover, #design-archives:focus-within) #design-archives,
+  #css-zen-garden:has(#zen-resources:hover, #zen-resources:focus-within) #zen-resources {
+    color: var(--crawl-accent) !important;
+  }
+}
+
+
+

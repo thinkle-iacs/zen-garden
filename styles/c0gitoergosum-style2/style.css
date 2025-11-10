@@ -1,0 +1,140 @@
+/* Required for honors students */
+/********************************** 
+* Design by:  Jordan
+* Design name:  Jordan Troughton and the awful, terrible, no good design.
+* 
+* License: But why would you want to use it?
+* 
+* Acknowledgments/Sources:
+* - Tiger image: from Sharp Photography, https://sharpphotography.co.uk
+* - Copilot autocomplete used. Yeah, I know, shame on me. 
+* - Fonts from Google Fonts. 
+**********************************  
+Ureka!
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+p {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: lawngreen;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 20px;
+  color: white; /* because sure why not */
+}
+/* oh god why */
+/* Background */
+body {
+  background: linear-gradient(
+    to right,
+    rgb(255, 0, 0),    /* Red */
+    rgb(255, 127, 0),  /* Orange */
+    rgb(255, 255, 0),  /* Yellow */
+    rgb(0, 255, 0),    /* Green */
+    rgb(0, 0, 255),    /* Blue */
+    rgb(75, 0, 130),   /* Indigo */
+    rgb(148, 0, 211)   /* Violet */
+  );
+}
+/* IACS letter animation */
+.iacs {
+   width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myAnimation {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+/* ewwwww */
+/* Page wrapper time */
+.page-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  padding: 60px 50px;
+  z-index: 1;
+}
+/* sidebar */
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+}
+/* sidebar animations */
+.sidebar {
+  animation-name: slide-in;
+  animation-duration: 297ms; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* image using only css */
+.page-wrapper::before {
+  content: " ";
+  position: absolute;
+  left: 20px;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  display: block;
+  background-image: url("/styles/c0gitoergosum-style2/tiger.jpg");
+  background-repeat: no-repeat;
+}
+/* okay what now */
+/* preamble section */
+.preamble {
+  background-color: #676141 /* disgusting yellow, but hey 676141 is the hex code for it and that's funny apparently */;
+  border-radius: 1px;
+  padding: 10px; /* be grateful its not 67 px of padding */
+  margin-bottom: 67px; /* I will sing the 67 song. */
+} 
+.preamble h3 {
+  color: #beefed; /* delightful color, unfortunately it has to be used in this. */
+}
+.preamble p {
+  color: #deadde; /* another delightful color */
+}
+/* making all links really large and purple. */
+a, a:link, a:visited {
+  color: purple;
+  font-size: 24px;
+  text-decoration: none;
+} 
+a:hover, a:focus {
+  color: violet;
+  text-decoration: underline;
+}
+/* I'm going to be honest with you, I fear I have created a demon wearing the flesh of a css code. Whatever is on this page is likely beyond my mere mortal understanding. Good luck. */
+/* 

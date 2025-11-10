@@ -1,0 +1,105 @@
+/********************************** 
+* Design by:  Jordan Troughton
+* Design name:  Christmas!!!
+* 
+* License: Free use.
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap');
+body {
+  background: radial-gradient(white 1px, transparent 1px),
+    radial-gradient(white 1px, transparent 1px),
+    linear-gradient(to bottom, #b3e0ff, #004466); /* its snowing!!!! */
+  background-position: 0 0, 25px 25px, 0 0;
+  background-size: 50px 50px, 50px 50px, cover;
+  background-attachment: fixed;
+  color: #black;
+}
+.page-wrapper {
+  max-width: 900px;
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 25px;
+rgba(0,0,0,0.15);
+  padding: 60px 50px;
+  z-index: 1;
+}
+.iacs {
+  animation-name: fade-color;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+}
+
+@keyframes fade-color {
+  0% {
+    color: red;
+  }
+  100% {
+    color: green;
+  }
+}
+.mountains-of-christmas-regular {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mountains-of-christmas-bold {
+  font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+p {
+  font-family: Helvetica
+}
+h1 {
+  font-family: Mountains of Christmas
+}
+/* ...existing code... */
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "Make all links red instead of default blue" */
+a,
+a:link,
+a:visited {
+  color: #b30000; /* festive red */
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: #ff4d4d;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(255, 77, 77, 0.25);
+}
+/* End of AI-generated code */
+
+/* Beginning of regular code -- no ai used below this line */
+.sidebar {
+  width: 160px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #b9e2aa; 
+  overflow-x: hidden; 
+  padding-top: 20px;
+}
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    display: block;
+}
+.sidebar a:hover {
+    color: #e93e3e;
+    background-color: #fff;
+} 

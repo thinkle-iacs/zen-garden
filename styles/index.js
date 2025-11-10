@@ -117,7 +117,7 @@ const styles = [
     "path": "23-julian-haunted/style.css",
     "designer": "julian-henry",
     "portfolio": "https://remarkable-pithivier-572d14.netlify.app/",
-    "highlight": true 
+    "highlight": true
   },
   {
     "name": "Soaring Sky",
@@ -231,8 +231,7 @@ const styles = [
     "path": "LL-cirus/style.css",
     "designer": "L. Lovell",
     "highlight": true,
-    "portfolio": "https://lovell-web-design-portfolio.netlify.app/",
-    
+    "portfolio": "https://lovell-web-design-portfolio.netlify.app/"
   },
   {
     "name": "Leaves",
@@ -299,7 +298,7 @@ const styles = [
     "path": "KB-Door/style.css",
     "designer": "Khang B",
     "portfolio": "#fixme"
-  },  
+  },
   {
     "name": "Cotton-Candy",
     "path": "Sams-Cotton-candy/style.css",
@@ -349,25 +348,25 @@ const styles = [
     "path": "RH-80s/style.css",
     "designer": "Rylie Hegarty",
     "portfolio": "https://rhwebdesignportfolio.netlify.app/ ",
-    "highlight": true,
+    "highlight": true
   },
   {
     "designer": "Dev P",
     "path": "NRpatel002/style.css",
     "name": "Design 1",
-    "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/",    
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/"
   },
   {
     "name": "Fall Forest",
     "path": "NRpatel002/style2.css",
     "designer": "Dev P",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/",
-    highlight: true,
+    "highlight": true
   },
   {
     "designer": "Design 3",
     "path": "NRpatel002/style3.css",
-    "name": "Dev P",    
+    "name": "Dev P",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-NRpatel002/"
   },
   {
@@ -375,28 +374,28 @@ const styles = [
     "path": "aravpatel2009/style.css",
     "designer": "Arav Patel",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-aravpatel2009/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "The Future of Design...",
     "path": "Lkidschool/style.css",
     "designer": "Joshua Simoneau",
-    highlight: true,
+    "highlight": true,
     "portfolio": "https://iacs-cs.github.io/portfolio-project-Lkidschool/"
   },
   {
     "name": "Y2K",
     "path": "escaffidi08/style.css",
     "designer": "Ellie Scaffidi",
-    highlight: true,
-    "portfolio": "https://iacs-cs.github.io/portfolio-project-escaffidi08/",
+    "highlight": true,
+    "portfolio": "https://iacs-cs.github.io/portfolio-project-escaffidi08/"
   },
   {
     "name": "Euphoric",
     "path": "leoo-joy/style.css",
     "designer": "Joy-Deborah",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-leoo-joy/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "style2",
@@ -409,26 +408,26 @@ const styles = [
     "path": "JewlianCruz/style.css",
     "designer": "Jewlian G.",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-JewlianCruz/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "Celestial",
     "path": "maddieec0124/style.css",
     "designer": "Maddie Evans-Cole",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-maddieec0124/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "Lights Out",
     "path": "iGoob/style.css",
     "designer": "Joseph Burns",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-iGoob/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "style",
     "path": "Adrianorib2/style.css",
-    "designer": "Adrinao R.",    
+    "designer": "Adrinao R.",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-Adrianorib2/"
   },
   {
@@ -436,47 +435,47 @@ const styles = [
     "path": "AAIDANN/style.css",
     "designer": "Aidan Negga",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-AAIDANN/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "Valentine's Day",
     "path": "lara-pocoyo/style.css",
     "designer": "Lara L",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-lara-pocoyo/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "Christmas",
     "path": "lara-pocoyo/style2.css",
     "designer": "Lara L",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-lara-pocoyo/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "Ghost",
     "path": "lara-pocoyo/style3.css",
     "designer": "Lara L",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-lara-pocoyo/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "ECO",
     "path": "AngelDevia452/style.css",
     "designer": "Angel Devia",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-AngelDevia452/",
-    highlight: true,
+    "highlight": true
   },
   {
     "name": "hearts",
     "path": "nyjahrae/style.css",
     "designer": "Nyjahrae Brown",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-nyjahrae/",
-    highlight: true
+    "highlight": true
   },
   {
     "name": "Sakura Tree",
     "path": "CheryBerroa/style.css",
-    "designer": "Chery Berroa",    
+    "designer": "Chery Berroa",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-CheryBerroa/"
   },
   {
@@ -484,13 +483,94 @@ const styles = [
     "path": "geocities/style.css",
     "designer": "Lilly B.",
     "portfolio": "https://lainiwakura.xyz/",
-    highlight: true
+    "highlight": true
   },
   {
     "name": "Unfinished",
     "path": "1234567890-qwertyuiop-asdfghjkl-zxcvbnm/style.css",
-    "designer": "Ethan S.",    
+    "designer": "Ethan S.",
     "portfolio": "https://iacs-cs.github.io/portfolio-project-1234567890-qwertyuiop-asdfghjkl-zxcvbnm/"
+  },
+  {
+    "skipped": false,
+    "name": "Spilt",
+    "path": "blokmaster21309/style.css",
+    "designer": "BlokMaster21309",
+    "portfolio": "https://IACS-CS.github.io/web-design-portfolio-BlokMaster21309/",
+    "url": "https://iacs-zen-garden.netlify.app/#blokmaster21309",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Think About It",
+    "path": "cornjuice14/style.css",
+    "designer": "CJ Myerov",
+    "portfolio": "https://iacs-cs.github.io/web-design-portfolio-CornJuice14/",
+    "url": "https://iacs-zen-garden.netlify.app/#cornjuice14",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Retro Space Garden",
+    "path": "ismah2009/style.css",
+    "designer": "Ismah Sengendo",
+    "portfolio": "https://IACS-CS.github.io/web-design-portfolio-Ismah2009/",
+    "url": "https://iacs-zen-garden.netlify.app/#ismah2009",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Lost letter",
+    "path": "nicolasdeo4l/style.css",
+    "designer": "Nicolas G",
+    "portfolio": "https://github.com/NicolasDEO4l",
+    "url": "https://iacs-zen-garden.netlify.app/#nicolasdeo4l",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Christmas!!!",
+    "path": "c0gitoergosum/style.css",
+    "designer": "Jordan Troughton",
+    "portfolio": "https://github.com/c0gitoergosum",
+    "url": "https://iacs-zen-garden.netlify.app/#c0gitoergosum",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Star Battle",
+    "path": "deanbean9000/style.css",
+    "designer": "Ryan Dean",
+    "portfolio": "https://IACS-CS.github.io/web-design-portfolio-deanbean9000/",
+    "url": "https://iacs-zen-garden.netlify.app/#deanbean9000",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "kellens domain",
+    "path": "kellboss9/style.css",
+    "designer": "kellen humphrey",
+    "portfolio": "https://github.com/kellboss9",
+    "url": "https://iacs-zen-garden.netlify.app/#kellboss9",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "My Cat Coco",
+    "path": "notground/style.css",
+    "designer": "Sky Perez",
+    "portfolio": "https://iacs-cs.github.io/web-design-portfolio-notground/",
+    "url": "https://iacs-zen-garden.netlify.app/#notground",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Ancient Scroll",
+    "path": "westonsoun-dam-crypto/style.css",
+    "designer": "Weston Soun-Dam",
+    "portfolio": "https://IACS-CS.github.io/web-design-portfolio-westonsoun-dam-crypto/",
+    "url": "https://iacs-zen-garden.netlify.app/#westonsoun-dam-crypto",
+    "fileName": "style.css"
   }
 ];
 exports.styles = styles;

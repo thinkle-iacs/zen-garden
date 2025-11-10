@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+/********************************** 
+* Design by:  CJ Myerov
+* Design name:  [Think About It]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - Thought Bubble png: https://freesvg.org/thought-bubble
+* - Purple Brain: https://picryl.com/media/brain-human-anatomy-anatomy-health-medical-b79c9f
+* - Colorful Brain: https://medium.com/@velidran/from-chaos-to-clarity-24e2a01f29fa
+* - I had ChatGPT help me make lines 340-364 and 380-385 for pulse effect and background animation
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&display=swap');
+
+.page-wrapper {
+  /* Main font */
+  font-family: "Story Script";
+  color:rgb(255, 130, 130);
+  font-size: small;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Kablammo", system-ui;
+}
+
+
+/* Background */
+#css-zen-garden {
+  
+  background-color: rgb(0, 0, 0);
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  border: 1px solid #fff25d;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 0 auto;
+  position:relative;
+  height: 800px;
+  background: url("/styles/cornjuice14/ColorfulBrain.png");
+background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+h2,h3,h4 {
+  padding-left: 35%;
+  /* zeroing out vertical space -- it gets positioned
+  with negative margin on .summary */
+  height: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.summary {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 6%;
+  padding-left: 17%;
+  padding-right: 12%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  /* start at top center */
+  top: 40vh;
+  left: calc(32vw - 400px);
+  /* zoom from top */
+  transform-origin: top; 
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.summary::before {
+  content: "The Beauty Of CSS Design";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+
+.summary:hover {
+  scale: 0.75;
+}
+.page-wrapper h2 {
+    display:none;
+}
+
+.preamble {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 5%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+  position: absolute;
+  /* position bottom left */
+  bottom: 30vh;
+  left: 20vw;
+  transform-origin: bottom left;
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.preamble::before {
+  content: "The Road to Enlightenment";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.preamble:hover {
+  scale: 0.75;
+}
+.preamble h3{
+  display: none;
+}
+
+.explanation {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 5%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+  position: absolute;
+   top: 40vh;
+  left: calc(50vw - 400px);
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.explanation::before {
+  content: "So What Is This About?";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.explanation:hover {
+  scale: 0.75;
+}
+.explanation h3{
+  display: none;
+}
+
+.participation {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 5%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+  font-size: x-large;
+  position: absolute;
+   top: 5vh;
+  left: calc(43vw - 400px);
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.participation::before {
+  content: "Rules of the Garden";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.participation:hover {
+  scale: 0.75;
+}
+.participation h3{
+  display: none;
+}
+
+.requirements {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 5%;
+  padding-left: 20%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+position: absolute;
+   top: 5vh;
+  left: calc(40vw - 400px);
+  transform-origin: bottom left;
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.requirements::before {
+  content: "Requirements";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.requirements:hover {
+  scale: 0.75;
+}
+.requirements h3{
+  display: none;
+}
+
+.design-selection {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 4%;
+  padding-left: 20%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+  font-size: x-large;
+position: absolute;
+   top: 10vh;
+  left: calc(15vw - 400px);
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.design-selection::before {
+  content: "Select A Design";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.design-selection:hover {
+  scale: 0.75;
+}
+.design-selection h3{
+  display: none;
+}
+
+.design-archives {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 4%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+  font-size: xx-large;
+position: absolute;
+  top: -3vh;
+  left: calc(30vw - 400px);
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.design-archives::before {
+  content: "Archives";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.design-archives:hover {
+  scale: 0.75;
+}
+.design-archives h3{
+  display: none;
+}
+
+.zen-resources {
+  background: url("/styles/cornjuice14/thought_bubble.svg");
+  width: 800px;
+  height: 450px;
+  padding-top: 4%;
+  padding-left: 17%;
+  padding-right: 11%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -45px;
+  font-size: large;
+position: absolute;
+   top: 58vh;
+  left: calc(37vw - 400px);
+  scale: 0.15;
+  transition: scale 300ms;
+}
+.zen-resources::before {
+  content: "Resources";
+  font-size: 1.5em;
+  font-weight: bold;
+font-family: "Kablammo";
+text-align: center;
+display: block;
+}
+.zen-resources:hover {
+  scale: 0.75;
+}
+.zen-resources h3{
+  display: none;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Apply pulse effect on hover */
+.summary:hover,
+.preamble:hover,
+.explanation:hover,
+.participation:hover,
+.requirements:hover,
+.design-selection:hover,
+.design-archives:hover,
+.zen-resources:hover {
+  animation: pulse 1s;
+  animation-iteration-count: 2;
+  z-index: 10; /* bring hovered bubble to front */
+}
+
+/* Animate background gradient on page */
+#css-zen-garden {
+  background: linear-gradient(270deg, #ff8a8a, #a38aff, #8affc1);
+  background-size: 600% 600%;
+  animation: gradientShift 60s ease infinite;
+}
+
+/* Add title text styling */
+h1 {
+    background: linear-gradient(270deg, #0995f3, #f3a405, #e10e82);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    color: transparent;
+    background-size: 600% 600%;
+    animation: gradientShift 60s ease infinite;
+    font-size: 3em;
+    padding-top: none;
+}
+
+/* Keyframes for smooth gradient shift */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+li{
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(12, 104, 22);
+}

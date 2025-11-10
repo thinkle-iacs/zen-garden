@@ -1,0 +1,300 @@
+/********************************** 
+* Design by:  [Nicolas G]
+* Design name:  [Lost letter]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - Copilot helped with some of the CSS
+* - Google Fonts
+* -Chatgpt for all images
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Borel&family=Quintessential&display=swap");
+
+:root {
+  --paper-bg: rgba(250, 244, 236, 0.94);
+  --text-brown: #533726; 
+  --heading-brown: #3e2716;
+  --accent: #856d30; 
+  --muted: #7a5b3a;
+}
+.page-wrapper {
+  /* Main font */
+  font-family: Quintessential, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: Quintessential, cursive;
+}
+
+/* Background */
+#css-zen-garden {
+  background-image: url("/styles/nicolasdeo4l/Image2.png");
+  background-size: cover;
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+
+  background: url("/styles/nicolasdeo4l/image.png") center/cover no-repeat;
+  border: 2px solid var(--accent);
+  /* shift content slightly to the right for better composition */
+  padding: 1.25rem 1.5rem 1.25rem 2rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  /* leave room for the fixed sidebar; overridden on small screens */
+  margin-left: 200px;
+  margin-right: auto;
+  max-width: calc(100% - 240px);
+  color: var(--text-brown);
+  font-weight: 500; /* slightly thicker body weight for readability */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* slim aside.sidebar defined later; remove earlier duplicate */
+
+/* Make text inside the wrapper more legible and visually pleasing */
+.page-wrapper p,
+.page-wrapper li,
+.page-wrapper dd,
+.page-wrapper dt {
+  color: var(--text-brown);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* Headings: stronger, darker brown to separate from body text */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-brown);
+  line-height: 1.15;
+  font-weight: 700; /* stronger headings for clarity */
+}
+
+/* Links inside the paper wrapper use the warm accent and gain contrast */
+.page-wrapper a {
+  color: var(--accent);
+  text-decoration: underline dotted rgba(133, 109, 48, 0.25);
+}
+.page-wrapper a:hover,
+.page-wrapper a:focus {
+  color: #5a421f;
+  text-decoration-color: rgba(133, 109, 48, 0.6);
+}
+
+/* Slightly soften the view-css button to fit the paper aesthetic */
+.view-css a {
+  background: linear-gradient(
+    180deg,
+    rgba(174, 142, 39, 0.12),
+    rgba(174, 142, 39, 0.06)
+  );
+  color: var(--heading-brown);
+  border-color: rgba(133, 109, 48, 0.3);
+}
+
+/* Small-screen tweak: reduce left margin when sidebar collapses */
+@media (max-width: 860px) {
+  .page-wrapper {
+    margin-left: 0;
+    max-width: 820px;
+  }
+}
+
+aside .design-selection h3,
+aside .design-archives h3,
+aside .zen-resources h3 {
+  color: #ffdca3;
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem 0;
+  letter-spacing: 0.02em;
+}
+
+aside nav ul {
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+aside nav li {
+  margin: 0.25rem 0;
+}
+
+aside nav a {
+  display: block;
+  padding: 0.5rem 0.7rem;
+  color: #ffeedd;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 160ms ease, transform 140ms ease;
+}
+
+aside nav a:hover,
+aside nav a:focus {
+  background: #c2983c;
+  transform: translateX(6px);
+  outline: none;
+}
+
+.view-css a {
+  background: #ae8e27ee;
+  padding: 0.55rem 0.7rem;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.view-css a:hover,
+aside nav a:focus {
+  box-shadow: 0 0 0 3px rgb(205, 151, 71);
+}
+
+@media (max-width: 860px) {
+  aside.sidebar {
+    position: static;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    border-right: none;
+    padding: 1rem 0;
+  }
+
+  .page-wrapper {
+    margin-left: 0;
+    max-width: 820px;
+  }
+}
+
+/* On small screens make the affordance full-width to be easier to tap */
+@media (max-width: 540px) {
+  .requirements .responsive {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0.4rem 0;
+  }
+}
+
+/* Mobile: make affordance span full width for easier tapping */
+@media (max-width: 860px) {
+  .requirements .responsive {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0.6rem 0;
+    text-align: center;
+  }
+}
+aside.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 160px; 
+  background: linear-gradient(
+    180deg,
+    rgba(10, 12, 30, 0.98),
+    rgba(30, 18, 40, 0.95)
+  );
+  color: #f7f7f7;
+  padding: 1rem 0.6rem; 
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.28);
+  overflow-y: auto;
+  z-index: 900;
+  border-right: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+aside .design-selection h3,
+aside .design-archives h3,
+aside .zen-resources h3 {
+  font-size: 0.82rem;
+  margin-bottom: 0.4rem;
+}
+
+aside nav ul {
+  padding-left: 0;
+}
+
+aside nav a {
+  display: block;
+  padding: 0.32rem 0.5rem;
+  color: #ffeedd;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  font-weight: 600; 
+}
+
+
+aside nav a:hover,
+aside nav a:focus {
+  background: rgba(255, 255, 255, 0.035);
+  transform: translateX(5px);
+}
+
+@media (max-width: 860px) {
+  aside.sidebar {
+    position: static;
+    height: auto;
+    width: auto;
+    box-shadow: none;
+    border-right: none;
+    padding: 1rem 0;
+  }
+
+  .page-wrapper {
+    margin-left: 0;
+    max-width: 820px;
+  }
+}
+
+/. */
+.requirements .responsive {
+  display: inline-block;
+  padding: 0.45rem 0.75rem;
+  color: var(--heading-brown);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 230, 180, 0.06),
+    rgba(255, 210, 122, 0.02)
+  );
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  font-weight: 600;
+  transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease,
+    color 120ms ease;
+}
+.requirements .responsive:hover,
+.requirements .responsive:focus {
+  transform: translateY(-3px);
+  background: rgba(255, 210, 122, 0.08);
+  color: #5a421f;
+  outline: none;
+}
+
+
+@media (max-width: 860px) {
+  .requirements .responsive {
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0.6rem 0;
+    text-align: center;
+  }
+}

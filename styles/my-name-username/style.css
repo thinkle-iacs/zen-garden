@@ -1,0 +1,351 @@
+/********************************** 
+* Design by:  [your name]
+* Design name:  [your design name]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.page-wrapper {
+  /* Main font */
+  font-family: Poppins, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Dancing Script", cursive;
+}
+
+/* Background */
+
+body {
+  background: url("/styles/my-name-username/nasa.jpg");
+}
+
+
+/* Page wrapper */
+/*
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: 0 auto;
+
+}
+  /* Existing code... */
+
+  .page-wrapper .sidebar{
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  padding: 1px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin-left:1px;
+  top: 150px;
+  height: calc(100vh - 150px);
+  overflow-y: auto;
+  position: fixed;
+  background-color: #10b4b1;
+    box-sizing: border-box;
+    width: 300px;
+    text-align: center;
+    border: 2px solid lightblue;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 24px 48px rgba(246, 246, 246, 0.45), 0 8px 14px rgba(246, 246, 246, 0.45);
+    border-radius: 15px;
+    position: fixed;
+
+
+
+}
+
+
+
+.page-wrapper:link:hover {
+  transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+h1 {
+    background-color: #1ae8e5;
+    margin-left: 900px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    width: 400px;
+    text-align: center;
+    border: 2px solid lightblue;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 24px 48px rgba(246, 246, 246, 0.45), 0 8px 14px rgba(246, 246, 246, 0.45);
+    border-radius: 15px;
+    position: fixed;
+    top: 1px;
+    right: 30px;
+    top: 3px;
+    right: 950px;
+
+
+
+}
+
+  
+
+
+
+
+  #zen-summary  {
+    color:aqua;
+  }
+
+
+
+.intro #zen-summary {
+  border: 2px solid lightblue;
+  background-color: rgb(4, 105, 105);
+  width: 500px;
+  margin-left: 500px;
+  box-shadow: 0 25px 48px rgb(255, 255, 255), 0 8px 14px rgba(246, 246, 246, 0.45);
+  border-radius: 15px;
+}
+
+#zen-summary:hover {
+  transition: 0.5s;box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 50px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    }
+
+    // ...existing code...
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "How can I make #zen-summary do a bouce animation" */
+#zen-summary {
+  /* choose one of the patterns below */
+
+  /* Option A — subtle continuous float */
+  /* animation: zen-float 4s ease-in-out infinite; */
+
+  /* Option B — bounce only on hover (preferred for less motion) */
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+#zen-summary:hover {
+  animation: zen-bounce 800ms cubic-bezier(.2,.8,.2,1);
+  transform-origin: center;
+}
+
+/* keyframes */
+@keyframes zen-float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes zen-bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-18px); }
+  50%  { transform: translateY(0); }
+  65%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #zen-summary,
+  #zen-summary:hover {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* End of AI-generated code */
+
+// ...existing code...
+```// filepath: /workspaces/css-zen-garden-My-Name-Username/style.css
+// ...existing code...
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt
+   "How can I make #zen-summary do a bouce animation" */
+#zen-summary {
+  /* choose one of the patterns below */
+
+  /* Option A — subtle continuous float */
+  /* animation: zen-float 4s ease-in-out infinite; */
+
+  /* Option B — bounce only on hover (preferred for less motion) */
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+#zen-summary:hover {
+  animation: zen-bounce 800ms cubic-bezier(.2,.8,.2,1);
+  transform-origin: center;
+}
+
+#zen-summary a[href="http://www.csszengarden.com/"]:hover {
+  transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+
+}
+/* keyframes */
+@keyframes zen-float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes zen-bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-18px); }
+  50%  { transform: translateY(0); }
+  65%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #zen-summary,
+  #zen-summary:hover {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* End of AI-generated code */
+
+#zen-preamble:hover {
+  transition: 0.5s;box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 50px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+
+  
+  animation: zen-bounce 800ms cubic-bezier(.2,.8,.2,1);
+  transform-origin: center;
+}
+
+/* keyframes */
+@keyframes zen-float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes zen-bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-18px); }
+  50%  { transform: translateY(0); }
+  65%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  #zen-summary,
+  #zen-summary:hover {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+#zen-preamble {
+  color:aqua;
+  border: 2px solid lightblue;
+    background-color: rgb(4, 105, 105);
+    width: 500px;
+    margin-left: 500px;
+    box-shadow: 0 25px 48px rgb(255, 255, 255), 0 8px 14px rgba(246, 246, 246, 0.45);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+
+
+
+.explanation {
+    border: 2px solid lightblue;
+    background-color: rgb(4, 105, 105);
+    width: 500px;
+    margin-left: 500px;
+    box-shadow: 0 25px 48px rgb(255, 255, 255), 0 8px 14px rgba(246, 246, 246, 0.45);
+    border-radius: 15px;
+    margin-top: 20px;
+    color:aqua;
+  }
+
+  .explanation:hover {
+    transition: 0.5s;box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 50px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+      font-weight: bold;
+  
+    animation: zen-bounce 800ms cubic-bezier(.2,.8,.2,1);
+    transform-origin: center;
+  }
+
+
+.participation {
+    border: 2px solid lightblue;
+    background-color: rgb(4, 105, 105);
+    width: 500px;
+    margin-left: 500px;
+    box-shadow: 0 25px 48px rgb(255, 255, 255), 0 8px 14px rgba(246, 246, 246, 0.45);
+    border-radius: 15px;
+    margin-top: 20px;
+    color:aqua;
+  }
+  .participation:hover {
+    transition: 0.5s;box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 50px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+      font-weight: bold;
+  
+    animation: zen-bounce 800ms cubic-bezier(.2,.8,.2,1);
+    transform-origin: center;
+  }
+
+  .requirements {
+    border: 2px solid lightblue;
+    background-color: rgb(4, 105, 105);
+    width: 500px;
+    margin-left: 500px;
+    box-shadow: 0 25px 48px rgb(255, 255, 255), 0 8px 14px rgba(246, 246, 246, 0.45);
+    border-radius: 15px;
+    margin-top: 20px;
+    color:aqua;
+  }
+  .requirements:hover {
+    transition: 0.5s;box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35), 0 4px 8px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 50px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+      font-weight: bold;
+    animation: zen-bounce 800ms cubic-bezier(.2,.8,.2,1);
+    transform-origin: center;
+  }
+
+  .requirements:hover { a[href="https://www.w3schools.com/html/html_responsive.asp"]:hover {
+    transition: 0.7s;
+  color: #000000;
+  background-color: rgb(0, 255, 229);
+   box-shadow: 0 10px 48px rgb(34, 202, 205), 0 8px 14px rgba(246, 246, 246, 0.45);
+    font-weight: bold;
+    border-radius: 15px;
+  }

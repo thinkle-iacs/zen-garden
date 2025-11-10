@@ -1,0 +1,105 @@
+/********************************** 
+* Design by:  [ Sky Perez]
+* Design name:  [  My Cat Coco]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.page-wrapper {
+  /* Main font */
+  font-family: Poppins, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  /* Header font */
+  font-family: "Dancing Script", cursive;
+}
+.intro {
+Background-image: url("/styles/notground/Project.png");
+background-size: 25cap;
+background-repeat: no-repeat;
+background-position: relative;
+}
+/* Background */
+#css-zen-garden {
+  background: linear-gradient(45deg, #f9c9f5 0%, #ffffff 100%);
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(247, 174, 210, 0.9);
+  border: 1px solid #f54689cc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin-left: 310px;
+}
+
+a:link {
+color:rgb(255, 0, 123);
+}
+a:visited {
+color:rgb(235, 8, 235);
+}
+.design-selection li {
+  border: solid 3px;
+margin-top: 10px;
+margin-right: 15px;
+background-color: rgb(255, 255, 255);
+list-style-type: none;
+}
+design-selection {
+  padding-top: 30 px;
+} 
+a:hover {
+color:rgb(30, 242, 118);
+}
+#zen-supporting {
+Background-image: url("/styles/notground/coco3.PNG");
+background-size: 40cap;
+background-repeat: no-repeat;
+background-position: relative;
+}
+#zen-requirements {
+Background-image: url("/styles/notground/coco2.PNG");
+background-size: 35cap;
+background-repeat: no-repeat;
+background-position: relative;
+}
+.sidebar{
+  color:blue;
+  position: fixed;
+  top: 5px;
+  left: 10px;
+height: 100dvh;
+overflow:scroll;
+}
+
+h2 {
+  background-image: url("/styles/notground/Project2.png");
+   background-size:300px;
+   height: 600px;
+   background-repeat: no-repeat;
+   background-position-x: -60px;
+   background-position-y: 50px;
+  position:fixed;
+left: 1300px; 
+}

@@ -1,0 +1,56 @@
+/* Required for honors students */
+/********************************** 
+* Design by:  [your name]
+* Design name:  [your design name]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+/* Typography */
+.page-wrapper {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #344c43;
+  text-shadow: 4px 4px 3px #2225;
+}
+
+/* Background */
+#css-zen-garden {
+  /* Repeating stripes */
+  background-size: 40px 40px;
+  background-image: linear-gradient(
+    45deg,
+    #d1ece2 25%,
+    transparent 25%,
+    transparent 50%,
+    #d1ece2 50%,
+    #d1ece2 75%,
+    transparent 75%,
+    transparent
+  );
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(237, 254, 253, 0.9);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 660px;
+  margin: 0 auto;
+}

@@ -1,0 +1,246 @@
+/********************************** 
+* Design by:  [Weston Soun-Dam]
+* Design name:  [Ancient Scroll]
+* 
+* License: MIT
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;700;900&family=Dancing+Script:wght@400;700&display=swap');
+
+html, body {
+  /* Main site font (body copy) */
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Header font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+}
+
+/* Background */
+#css-zen-garden {
+  background: linear-gradient(45deg, #871717 0%, #000000 100%);
+}
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 960px;
+  margin: auto;
+  background-image: url("/styles/westonsoun-dam-crypto/scroll-1033117_1280.webp");
+}
+
+#css-zen-garden {
+  position: relative;
+  padding: 6rem 0;
+
+  background-image: url("/styles/westonsoun-dam-crypto/japan-1805865_1280.jpg");
+  background-size: cover;
+
+  overflow: visible;
+  background-color:
+}
+
+li; {
+  font-size: 20px;
+  list-style: menu;
+  transition: transform 100ms;
+
+}
+
+li;:hover{
+  transform: scale(0.5);
+  background:white;
+  transform-origin: top left;
+  color:blue;
+  background-color: #000000
+
+}
+li;.active{
+  transfom: scale(0.50);
+
+}
+
+/* Left side panel */
+.page-wrapper::before {
+  content: "Select a design• Ancient Scroll• Minimal• Wave• Floral";
+  position: fixed; ;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15rem;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(180deg, rgba(255,250,240,0.98), rgba(245,235,210,0.96));
+  color: #2b1d12;
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  border-radius: 10px;
+  box-shadow: 0 18px 40px rgba(6,4,3,0.45), inset 0 1px 0 rgba(255,255,255,0.6);
+  border: 1px solid rgba(70,40,20,0.12);
+  white-space: wrap;
+  z-index: 320;
+}
+
+/* Right side panel */
+.page-wrapper::after {
+  content: "Themes\n• Aged Paper\n• Bamboo\n• Night Sky\n• Paperless";
+  position: fixed;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13.5rem;
+  padding: 0.75rem 0.95rem;
+  background: linear-gradient(180deg, rgba(255,250,240,0.95), rgba(240,230,200,0.94));
+  color: #2b1d12;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  border-radius: 10px;
+  box-shadow: 0 18px 40px rgba(6,4,3,0.45), inset 0 1px 0 rgba(255,255,255,0.6);
+  border: 1px solid rgba(70,40,20,0.12);
+  white-space: pre-wrap;
+  z-index: 320;
+  pointer-events: none; /* decorative only */
+}
+
+/* Responsiveness: collapse side panels into top-left stacked panel on narrow screens */
+@media (max-width: 880px) {
+  .page-wrapper::before,
+  .page-wrapper::after {
+    position: absolute;
+    left: 1rem;
+    right: auto;
+    top: 1rem;
+    transform: none;
+    width: calc(100% - 2rem);
+    margin: 0 auto 0.6rem;
+    border-radius: 8px;
+    z-index: 320;
+  }
+  .page-wrapper::after { top: calc(1rem + 3.25rem); } /* stack below the first panel */
+}
+
+/* Fix for previously broken li rules (correct selectors + gentle hover) */
+li {
+  font-size: 18px;
+  margin: 0.25rem 0;
+  transition: transform 140ms ease, color 120ms ease, background-color 120ms ease;
+  list-style: disc;
+}
+
+li:hover {
+  transform: translateX(6px);
+  color: #0b4a8b;
+  background-color: rgba(255,255,255,0.95);
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt "make the menu drop down" */
+/* End of AI-generated code */
+
+/* Dropdown menu (pure CSS, no HTML changes) */
+nav,
+.menu,
+.main-nav,
+.site-nav,
+#menu {
+  /* ensure ancestor has correct stacking context for absolute dropdowns */
+  position: relative;
+  z-index: 999;
+}
+
+/* make list items the positioning context for their submenu */
+nav ul li,
+.menu ul li,
+.main-nav ul li,
+.site-nav ul li,
+#menu ul li {
+  position: relative;
+}
+
+/* hide nested lists by default and style the dropdown card */
+nav ul li ul,
+.menu ul li ul,
+.main-nav ul li ul,
+.site-nav ul li ul,
+#menu ul li ul {
+  display: block; /* keep in DOM for accessibility */
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  min-width: 12.5rem;
+  padding: 0.5rem;
+  margin: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255,250,240,0.98), rgba(245,235,210,0.96));
+  box-shadow: 0 18px 40px rgba(6,4,3,0.35), inset 0 1px 0 rgba(255,255,255,0.6);
+  border: 1px solid rgba(70,40,20,0.12);
+  list-style: none;
+  transform-origin: top center;
+  transform: translateY(-8px) scale(0.98);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 220ms cubic-bezier(.2,.9,.3,1), opacity 200ms ease;
+  z-index: 1200;
+}
+
+/* reveal submenu on hover or keyboard focus */
+nav ul li:hover > ul,
+nav ul li:focus-within > ul,
+.menu ul li:hover > ul,
+.menu ul li:focus-within > ul,
+.main-nav ul li:hover > ul,
+.main-nav ul li:focus-within > ul,
+.site-nav ul li:hover > ul,
+.site-nav ul li:focus-within > ul,
+#menu ul li:hover > ul,
+#menu ul li:focus-within > ul {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* style submenu links to match main menu */
+nav ul li ul a,
+.menu ul li ul a,
+.main-nav ul li ul a,
+.site-nav ul li ul a,
+#menu ul li ul a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #2b200f;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 140ms ease, transform 140ms ease;
+}
+
+/* hover/focus for submenu links */
+nav ul li ul a:hover,
+nav ul li ul a:focus,
+.menu ul li ul a:hover,
+.menu ul li ul a:focus {
+  background: linear-gradient(180deg, rgba(200,140,70,0.06), rgba(140,90,40,0.04));
+  color: #0b0402;
+  transform: translateX(6px);
+}
+
+
+
+

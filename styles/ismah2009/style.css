@@ -1,0 +1,261 @@
+/********************************** 
+* Design by:  Ismah Sengendo
+* Design name:  Retro Space Garden
+* 
+* License: "No Rights Reserved"
+* 
+* Acknowledgments/Sources:
+* - I used ChatGPT to help me generate some of the CSS code. All labled below
+*/
+
+
+
+
+/* Get your own import URL from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Jersey+10&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+
+
+
+.page-wrapper {
+  /* Main font */
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  background: transparent;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: 'Honk', system-ui;
+  font-size: 40px;
+  text-align: center;
+}
+
+h1{
+  margin: 0;
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  background-color: #efd9de;
+}
+
+h2{
+  margin: 0;
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  background-color: #efd9de;
+}
+
+/* Background */
+#css-zen-garden {
+  background-image: url("/styles/ismah2009/Firefly_Gemini\ Flash_generate\ me\ a\ pixel\ night\ star\ sky\ i\ can\ use\ for\ a\ bacground\ make\ the\ clor\ scheme\ hav\ 783560.png"); /* pixel sky*/
+  background-size: cover;   
+  background-position: left; 
+  background-repeat: no-repeat; 
+  background: linear-gradient(45deg, #54b847 0%, #fec325, 100%);
+}
+/* Page wrapper */
+.page-wrapper {
+background: none;
+}
+
+aside {
+ background: #ff40af;
+ position:fixed;
+ top: 0;
+ left: 0;
+ width: 230px;
+ height: 100dvh;
+ overflow: hidden;
+ overflow-y: auto;
+ color:#000000;
+ font-size: 20px;
+}
+
+aside a{
+  color:#000000;
+  letter-spacing: 1px;
+}
+
+aside h3{
+  text-align: center;
+  background-color: #613485;
+  color: #fffa75;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 23px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+}
+
+body{
+  color: #fffa75;
+}
+
+body a{
+  color: #fffa75;
+}
+
+.page-wrapper{
+  margin-left: 230px;
+}
+
+
+main p,
+main li,
+.intro p {
+  background-color: #343785;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+main p,
+main li,
+.intro p {
+  opacity: 0;
+  transform: translateX(-70px);
+  transition: 0.6s;
+}
+
+header {
+  width: 640px;
+  margin:auto;
+  background-color: #efd9de;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt:
+"Can you give me CSS code so that for each of the body texts under each header (not the menu); when I hover over the header or the body text section, the body text slides in from the left with a smooth transition effect? Also, for list items under headers, can you make them slide in one by one with a slight delay between each item?" */
+/* when you hover over headers or their sections, text slides in */
+h3:hover ~ p,
+h3:hover ~ ul li,
+.summary:hover p,
+.preamble:hover p,
+.explanation:hover p,
+.participation:hover p,
+.requirements:hover p,
+.participation:hover li,
+.requirements:hover li {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+/* list items come in one by one */
+.participation li:nth-child(1),
+.requirements li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.participation li:nth-child(2),
+.requirements li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.participation li:nth-child(3),
+.requirements li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt:
+"Can you give me CSS code to create a custom scrollbar that looks like a rocket ship? The scrollbar track should resemble outer space with a dark background, and the scrollbar thumb should be an image of a rocket ship that points upwards as you scroll down the page."
+/* Scrollbar container */
+::-webkit-scrollbar {
+  width: 30px; /* gives room for the rocket */
+}
+
+/* Track (the space behind the rocket) */
+::-webkit-scrollbar-track {
+  background:#613485; /* dark “space” color */
+  border-radius: 20px;
+}
+
+/* The rocket thumb itself */
+::-webkit-scrollbar-thumb {
+  background: url("/styles/ismah2009/download.png") center center no-repeat;
+  background-size: 150%;          /* keeps rocket proportional */
+  border-radius: 20px;           /* rounded edges */
+  background-color: transparent; /* make sure no color hides it */
+  transform: rotate(0deg);       /* faces up — change to 180deg to flip */
+}
+
+/* AI-generated code: Created with the assistance of ChatGPT using the prompt:
+"Can you give me CSS code to style the navigation menu in the aside section so that each link appears as a yellow button with rounded corners? The buttons should have a slight shadow effect, and when hovered over, they should change to a darker yellow and slightly enlarge. Additionally, hide any unwanted text like 'by' that may appear between the links."
+/* Style the navigation menu in the aside section */
+aside nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Remove default list formatting and center contents */
+aside nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make every list item a button container */
+aside nav ul li {
+  background-color: #fffa75;          /* yellow button color */
+  border-radius: 12px;
+  margin: 10px 0;                     /* space between buttons */
+  width: 80%;                         /* consistent centered width */
+  transition: all 0.25s ease;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  text-align: center;
+  font-size: 0;                       /* hide unwanted text like "by" */
+}
+
+/* Make every link fill its yellow button */
+aside nav ul li a {
+  display: block;
+  width: 100%;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  font-size: 1rem;                    /* restore link text only */
+}
+
+/* Hide second link + the literal "by" between them */
+aside nav ul li a + a,
+aside nav ul li a + a::before {
+  display: none !important;
+}
+
+/* Hover + click effects */
+aside nav ul li:hover {
+  background-color: #fcec5f;          /* lighter yellow on hover */
+  transform: scale(1.05);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.35);
+}
+aside nav ul li:active {
+  transform: scale(0.97);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+

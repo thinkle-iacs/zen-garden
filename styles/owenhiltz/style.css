@@ -1,0 +1,186 @@
+/********************************** 
+* Design by:  Owen Hiltz
+* Design name:  [your design name]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - Image found with CHATGPT USING PROMPT "spooky hallowen background with jackolaterns"
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+.page-wrapper {
+  /* Main font */
+font-family: "Eater", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Eater", cursive;
+}
+
+/* Background */
+/*AI-generated code: Created with the assistance of ChatGPT using the prompt: "Fix #css-zen-garden background rule to include a background image correctly" */
+#css-zen-garden {
+min-height: 100vh;
+padding-left: 400px;
+background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
+background: url("/styles/owenhiltz/spooky-pumpkin.png");
+center: center;
+
+}
+/* End of AI-generated code */
+/* Page wrapper */
+.page-wrapper {
+  box-sizing: border-box;
+  background: rgba(222, 116, 16, 0.9);
+  border: 1px solid #ccc;
+  padding: 1em;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-top: 75px;
+  opacity: 0.8; 
+}
+
+.design-selection{
+text-align:center;
+position:fixed;
+top:0px;
+left:0px;
+background:rgba(222, 116, 16, 0.9);
+height :75px;
+Width: 500px;
+
+}
+
+
+
+.design-archives{
+text-align:center;
+position:fixed;
+top:0px;
+left:500px;
+background:rgba(222, 116, 16, 0.9);
+height :75px;
+Width: 500px;
+
+}
+
+.zen-resources{
+text-align:center;
+position:fixed;
+top:0px;
+left:1000px;
+background:rgba(222, 116, 16, 0.9);
+height :75px;
+Width: 500px;
+
+
+}
+#css-zen-garden {
+  background: image
+}
+
+
+ 
+.sidebar .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+
+
+
+*/
+
+/* Style each menu container */
+aside > div > div {
+  height: 64px;
+}
+
+/* Position the menu so it is 
+out of view at the start... */
+aside ul {
+  /* Move it up */
+  transform: translateY(-110%);
+  /* Make it transparent */
+  opacity: 0;
+  /* Remove transition 
+  if you don't want 
+  animation */
+  transition: transform 300ms, opacity 600ms;
+}
+aside > div > div:hover ul {
+  /* Change these lines to change
+  how it moves etc -- you could 
+  remove transform or remove 
+  opacity to make it *just* fade
+  or just slide down -- you can 
+  also play with other animations   
+  */
+  transform: translateY(0);
+  opacity: 1;
+  background: white;
+}
+
+aside > div > div nav {
+  overflow: hidden;
+}
+
+/* Some basic menu styling --
+remove the standard list stuff */
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+aside ul li {
+  display: block;
+  padding: 8px 4px;
+}
+
+/* Style our main link in
+each item as a button */
+aside li a:first-child {
+  display: block;
+  background: orange;
+  color: white;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  width: 100%;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+aside li {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* A bit of generic styling for the page */
+
+body {
+  margin: 0;
+}
+.page-wrapper {
+  max-width: 640px;
+  margin: auto;
+}
+

@@ -1,0 +1,88 @@
+/********************************** 
+* Design by:  [kellen humphrey]
+* Design name:  [kellens domain]
+* 
+* License: [license name - e.g. MIT if you want to let others
+* use the design with attribution, or All Rights Reserved if you
+* don't want others to use the design]
+* 
+* Acknowledgments/Sources:
+* - 
+* - 
+* -
+*/
+
+/* Starter code -- feel free to delete */
+
+/* Typography */
+
+/* Get your own import URL from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.page-wrapper {
+  /* Main font */
+  font-family: Poppins, sans-serif;
+  margin-right: 230px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Header font */
+  font-family: "Dancing Script", cursive;
+  color: red;
+  text-shadow: 1px 1px rgb(104, 36, 36);
+}
+
+/* Background */
+#css-zen-garden {
+  background: url("/styles/kellboss9/sky-to-hell.png");
+  background-size: cover;
+  background-position: center;
+}
+/* Page wrapper */
+.page-wrapper {
+  
+}
+p, li{
+  color: rgb(206, 23, 23);
+  text-shadow: 0.6px 0.6px black;
+  text-align: justify;
+}
+
+aside {
+  position: fixed;
+  top: 50%;
+  right: 1px;       /* change to left: 1.5rem; to pin on the left side */
+  transform: translateY(-50%);
+  width: 220px;
+  max-width: 30vw;
+  z-index: 9999;
+  display: block;         /* ensure block layout for the fixed box */
+  box-sizing: border-box;
+  padding: 0.5rem;
+  font-size: 0.8em;
+  border: 2px 2px solid black;
+  background-color: rgba(172, 3, 3, 0.217);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+a {
+  color: black;
+  text-shadow: 0.6px 0.6px black;
+
+}
+
+a:hover{
+  opacity: 0%;
+  color: red;
+  transition: opacity 0.4s ease, color 0.3s ease;
+}
+
+li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
