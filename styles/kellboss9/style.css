@@ -2,14 +2,12 @@
 * Design by:  [kellen humphrey]
 * Design name:  [kellens domain]
 * 
-* License: [license name - e.g. MIT if you want to let others
-* use the design with attribution, or All Rights Reserved if you
-* don't want others to use the design]
+* License: no rights reserved
 * 
 * Acknowledgments/Sources:
-* - 
-* - 
-* -
+* - I asked co-pilot to help me make the side menu.
+* - The background image is from chatgbt.
+* 
 */
 
 /* Starter code -- feel free to delete */
@@ -36,22 +34,22 @@ h6 {
   text-shadow: 1px 1px rgb(104, 36, 36);
 }
 
-/* Background */
+/* AI-generated Background */
 #css-zen-garden {
   background: url("/styles/kellboss9/sky-to-hell.png");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 /* Page wrapper */
-.page-wrapper {
-  
-}
+
 p, li{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: rgb(206, 23, 23);
   text-shadow: 0.6px 0.6px black;
   text-align: justify;
 }
 
+/* ai-generated fixed sidebar */
 aside {
   position: fixed;
   top: 50%;
@@ -79,10 +77,17 @@ a {
 a:hover{
   opacity: 0%;
   color: red;
+  text-shadow: 0.2px 0.2px orange;
   transition: opacity 0.4s ease, color 0.3s ease;
 }
 
 li {
   margin-bottom: 10px;
   list-style-type: none;
+}
+
+
+#zen-explanation:hover, #zen-participation:hover, #zen-requirements:hover, #zen-preamble:hover {
+  opacity: 0%;
+  transition: opacity 8s ease;
 }

@@ -670,6 +670,24 @@ const styles = [
     "portfolio": "https://iacs-cs.github.io/web-design-portfolio-notground/",
     "url": "https://iacs-zen-garden.netlify.app/#notground-style2",
     "fileName": "style2.css"
+  },
+  {
+    "skipped": false,
+    "name": "Pinky",
+    "path": "hillary-n-n/style.css",
+    "designer": "awesomesauce",
+    "portfolio": "https://iacs-cs.github.io/web-design-portfolio-Hillary-N-N/",
+    "url": "https://iacs-zen-garden.netlify.app/#hillary-n-n",
+    "fileName": "style.css"
+  },
+  {
+    "skipped": false,
+    "name": "Hockey",
+    "path": "jadenneves-mma/style.css",
+    "designer": "Jaden",
+    "portfolio": "https://IACS-CS.github.io/web-design-portfolio-jadenneves-mma/",
+    "url": "https://iacs-zen-garden.netlify.app/#jadenneves-mma",
+    "fileName": "style.css"
   }
 ];
 exports.styles = styles;

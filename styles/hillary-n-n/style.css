@@ -1,6 +1,6 @@
 /********************************** 
-* Design by:  [your name]
-* Design name:  [your design name]
+* Design by:  [@awesomesauce]
+* Design name:  [Pinky]
 * 
 * License: [license name - e.g. MIT if you want to let others
 * use the design with attribution, or All Rights Reserved if you
@@ -19,7 +19,13 @@
 /* Get your own import URL from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+#css-zen-garden {
+  background-image:
+  url("/styles/hillary-n-n/Firefly.jpg");
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .page-wrapper {
   /* Main font */
   font-family: "Bitcount Grid Single", sans-serif;
@@ -35,27 +41,38 @@ h6 {
   font-family: "Poppins", cursive;
   color:mistyrose;;
   text-align:center;
+  border: 5px solid mistyrose;
   
 }
 h1{
 color:mistyrose;
 font-family: "Poppins", cursive;
 text-align: center;
-border: 5px solid mistyrose;
+background-origin: padding-box;
+border:5px solid mistyrose;
 border-radius: 10px;
 background-color: black;
 box-shadow:0 0 20px black;
 margin-bottom: 100px;
+}
+h2{
+  display: inline-block; 
+  width:94%;
+  border: 5px solid mistyrose;
+  padding:10px;
+  border-radius: 8px;
+  background-color: black;
+  box-shadow: 0 0 10px black;
+  margin-bottom: 10px;
 }
 .summary{
   border:5px solid mistyrose;
   background-color:black;
   border-radius:10px;
   box-shadow:0 0 20px black;
-  padding:10px;
   font-size:20px;
-  padding-top:100px;
   margin-top:-5em;
+  padding-top:90px;
   margin-bottom:50px;
 }
 .preamble h3{
@@ -130,11 +147,12 @@ margin-bottom: 100px;
   box-shadow:0 0 20px black;
   margin-bottom:50px;
   padding:10px;
-  font-size:20px
+  font-size:20px;
   }
-.requirements ul{
-  list-style:none;
-}
+  h4{
+    border-radius: 10px;
+    padding:10px;
+  }
 .design-selection{
   border: 5px solid mistyrose;
   border-radius:10px;
@@ -190,38 +208,35 @@ margin-bottom: 100px;
   font-size:25px;
   text-align:center;
 }
+.requirements ul{
+  list-style:none;
+}
 .zen-resources{
   border:5px solid mistyrose;
   background-color:black;
   border-radius:10px;
   box-shadow:0 0 20px black;
-  margin-bottom:50px;
+  margin-top:-285px;
   padding:10px;
   font-size:20px;
-  box-shadow: 0 0 20px black;
-  margin-left: 540px;
-  box-sizing: border-box;
-  margin-top:-283px
+  margin-left:50%;
+}
+.zen-resources h3{
+  border:5px solid mistyrose;
+  margin-bottom: 30px;;
+  text-align:center;
+  padding:10px;
+  border-radius:10px;
+  margin-top:10px;
+  background-color:black;
 }
 .zen-resources ul{
   list-style:none;
-  margin-right:25px
-}
-.requirements h4{
-border:5px solid mistyrose;
-margin-bottom: 30px;;
-text-align:center;
-padding:10px;
-border-radius:10px;
-margin-top:10px;
-background-color:black;
 }
 
-/* Layout */
-/* Background */
-#css-zen-garden {
-  background: linear-gradient(45deg, #f3f3f3 0%, #c8c8c8 100%);
-}
+
+
+
 /* Page wrapper */
 .page-wrapper {
   box-sizing: border-box;
